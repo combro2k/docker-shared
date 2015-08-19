@@ -14,7 +14,7 @@ declare -A build
 build=(
     ['trusty']='ubuntu'
     ['vivid']='ubuntu'
-    ['willy']='ubuntu'
+    ['wily']='ubuntu'
     ['wheezy']='debian'
     ['jessie']='debian'
     ['stretch']='debian'
@@ -40,7 +40,7 @@ function build()
         --include="${include}" \
         --force-check-gpg \
         "${2}" \
-        "${urls[${1}]}" > ${build_log} 2>&1
+        "${urls[${1}]}" 2>&1 | tee ${build_log}
     echo
 
     return 0

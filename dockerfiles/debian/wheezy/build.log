@@ -1,0 +1,13 @@
++ mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs
++ debootstrap --components=main,universe --variant=minbase --include=inetutils-ping,iproute2,net-tools,vim-nox,less --force-check-gpg wheezy /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs http://http.debian.net/debian/
+I: Retrieving Release 
+I: Retrieving Release.gpg 
+I: Checking Release signature
+I: Valid Release signature (key id ED6D65271AACF0FF15D123036FB2A1C265FFB764)
+I: Validating Packages 
+I: Resolving dependencies of required packages...
+I: Resolving dependencies of base packages...
+I: Found additional required dependencies: insserv libbz2-1.0 libdb5.1 libsemanage-common libsemanage1 libslang2 libustr-1.0-1 
+I: Found additional base dependencies: debian-archive-keyring gnupg gpgv libapt-pkg4.12 libexpat1 libffi5 libgdbm3 libgpm2 liblua5.1-0 libncursesw5 libperl5.14 libpython2.7 libreadline6 libruby1.9.1 libsqlite3-0 libssl1.0.0 libstdc++6 libusb-0.1-4 libyaml-0-2 mime-support netbase python2.7 python2.7-minimal readline-common tcl8.5 vim-common vim-runtime 
+I: Checking component main on http://http.debian.net/debian...
+E: Couldn't find these debs: iproute2
