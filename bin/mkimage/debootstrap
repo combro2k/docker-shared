@@ -238,3 +238,9 @@ fi
 
 	mkdir "$rootfsDir/var/lib/apt/lists/partial" # Lucid... "E: Lists directory /var/lib/apt/lists/partial is missing."
 )
+
+(
+	set -x
+	curl -sL 'https://github.com/krallin/tini/releases/tag/v0.5.0' -o "$rootfsDir/usr/bin/tini"
+	chmod +x "$rootfsDir/usr/bin/tini"
+)

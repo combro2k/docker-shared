@@ -65,8 +65,8 @@ I: Retrieving initscripts 2.88dsf-59.2ubuntu1
 I: Validating initscripts 2.88dsf-59.2ubuntu1
 I: Retrieving insserv 1.14.0-5ubuntu3
 I: Validating insserv 1.14.0-5ubuntu3
-I: Retrieving iproute2 3.16.0-2ubuntu2
-I: Validating iproute2 3.16.0-2ubuntu2
+I: Retrieving iproute2 4.1.1-1ubuntu1
+I: Validating iproute2 4.1.1-1ubuntu1
 I: Retrieving less 458-3
 I: Validating less 458-3
 I: Retrieving libacl1 2.2.52-2
@@ -658,12 +658,12 @@ Hit http://archive.ubuntu.com wily Release
 Get:3 http://archive.ubuntu.com wily-updates Release [63.5 kB]
 Get:4 http://archive.ubuntu.com wily-security Release [63.5 kB]
 Get:5 http://archive.ubuntu.com wily/main amd64 Packages [1875 kB]
-Get:6 http://archive.ubuntu.com wily/universe amd64 Packages [8618 kB]
+Get:6 http://archive.ubuntu.com wily/universe amd64 Packages [8616 kB]
 Get:7 http://archive.ubuntu.com wily-updates/main amd64 Packages [40 B]
 Get:8 http://archive.ubuntu.com wily-updates/universe amd64 Packages [40 B]
 Get:9 http://archive.ubuntu.com wily-security/main amd64 Packages [40 B]
 Get:10 http://archive.ubuntu.com wily-security/universe amd64 Packages [40 B]
-Fetched 10.6 MB in 9s (1137 kB/s)
+Fetched 10.6 MB in 11s (951 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -671,6 +671,8 @@ Building dependency tree...
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 + rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_wily_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_wily_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_wily_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_wily-security_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_wily-security_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_wily-security_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_wily-security_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_wily_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_wily-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_wily-updates_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_wily-updates_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_wily-updates_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/partial
 + mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/partial
++ curl -sL https://github.com/krallin/tini/releases/tag/v0.5.0 -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/usr/bin/tini
++ chmod +x /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/usr/bin/tini
 + tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs.tar.xz --directory /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs '--transform=s,^./,,' .
 + cat > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/Dockerfile'
 + echo 'CMD ["/bin/bash"]'

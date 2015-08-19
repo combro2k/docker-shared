@@ -93,7 +93,7 @@ echo >&2 "+ cat > '$dir/Dockerfile'"
 cat > "$dir/Dockerfile" <<EOF
 FROM scratch
 ADD $(basename "$tarFile") /
-ONBUILD apt-get update && apt-get dist-upgrade -y && apt-get clean && rm -fr /var/lib/apt
+ENTRYPOINT [\"/usr/bin/tini\"]
 EOF
 
 # if our generated image has a decent shell, let's set a default command

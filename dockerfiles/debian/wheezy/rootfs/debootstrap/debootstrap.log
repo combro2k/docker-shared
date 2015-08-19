@@ -10,3 +10,9 @@ gpgv: Signature made za 25 apr 2015 12:59:41 CEST using RSA key ID 2B90D010
 gpgv: Can't check signature: public key not found
 gpgv: Signature made za 25 apr 2015 13:07:40 CEST using RSA key ID 65FFB764
 gpgv: Good signature from "Wheezy Stable Release Key <debian-release@lists.debian.org>"
+gpgv: Signature made za 25 apr 2015 12:59:41 CEST using RSA key ID 46925553
+gpgv: Good signature from "Debian Archive Automatic Signing Key (7.0/wheezy) <ftpmaster@debian.org>"
+gpgv: Signature made za 25 apr 2015 12:59:41 CEST using RSA key ID 2B90D010
+gpgv: Can't check signature: public key not found
+gpgv: Signature made za 25 apr 2015 13:07:40 CEST using RSA key ID 65FFB764
+gpgv: Good signature from "Wheezy Stable Release Key <debian-release@lists.debian.org>"
