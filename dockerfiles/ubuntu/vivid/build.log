@@ -4,7 +4,6 @@ I: Retrieving Release
 I: Retrieving Release.gpg 
 I: Checking Release signature
 I: Valid Release signature (key id 790BC7277767219C42C86F933B4FE6ACC0B21F32)
-I: Retrieving Packages 
 I: Validating Packages 
 I: Retrieving Packages 
 I: Validating Packages 
@@ -653,11 +652,11 @@ Get:3 http://archive.ubuntu.com vivid-updates Release [63.5 kB]
 Get:4 http://archive.ubuntu.com vivid-security Release [63.5 kB]
 Get:5 http://archive.ubuntu.com vivid/main amd64 Packages [1766 kB]
 Get:6 http://archive.ubuntu.com vivid/universe amd64 Packages [8393 kB]
-Get:7 http://archive.ubuntu.com vivid-updates/main amd64 Packages [229 kB]
-Get:8 http://archive.ubuntu.com vivid-updates/universe amd64 Packages [126 kB]
-Get:9 http://archive.ubuntu.com vivid-security/main amd64 Packages [134 kB]
-Get:10 http://archive.ubuntu.com vivid-security/universe amd64 Packages [62.9 kB]
-Fetched 10.8 MB in 12s (856 kB/s)
+Get:7 http://archive.ubuntu.com vivid-updates/main amd64 Packages [231 kB]
+Get:8 http://archive.ubuntu.com vivid-updates/universe amd64 Packages [127 kB]
+Get:9 http://archive.ubuntu.com vivid-security/main amd64 Packages [136 kB]
+Get:10 http://archive.ubuntu.com vivid-security/universe amd64 Packages [64.0 kB]
+Fetched 10.8 MB in 12s (868 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -707,7 +706,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 10.3 MB in 13s (735 kB/s)
+Fetched 10.3 MB in 13s (754 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
 (Reading database ... 11582 files and directories currently installed.)
 Preparing to unpack .../bsdutils_1%3a2.25.2-4ubuntu3_amd64.deb ...
@@ -729,8 +728,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Aug 19 22:37:10 UTC 2015.
-Universal Time is now:  Wed Aug 19 22:37:10 UTC 2015.
+Local time is now:      Thu Aug 20 19:42:39 UTC 2015.
+Universal Time is now:  Thu Aug 20 19:42:39 UTC 2015.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 (Reading database ... 11582 files and directories currently installed.)
@@ -832,7 +831,7 @@ Updating certificates in /etc/ssl/certs... 0 added, 0 removed; done.
 Running hooks in /etc/ca-certificates/update.d....done.
 + rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_vivid_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_vivid_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_vivid_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_vivid-security_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_vivid-security_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_vivid-security_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_vivid-security_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_vivid_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_vivid-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_vivid-updates_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_vivid-updates_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_vivid-updates_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/partial
 + mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/tag/v0.5.0 -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/bin/tini
++ curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/bin/tini
 + chmod +x /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/bin/tini
 + tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs.tar.xz --directory /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs '--transform=s,^./,,' .
 + cat > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/Dockerfile'

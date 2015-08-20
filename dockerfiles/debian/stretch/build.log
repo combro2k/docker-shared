@@ -1,9 +1,10 @@
 + mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs
-+ debootstrap --components=main,universe --variant=minbase --include=inetutils-ping,iproute2,net-tools,vim-nox,less --force-check-gpg stretch /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs http://http.debian.net/debian/
++ debootstrap --components=main --variant=minbase --include=inetutils-ping,iproute2,net-tools,vim-nox,less --force-check-gpg stretch /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs http://http.debian.net/debian/
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
 I: Valid Release signature (key id A1BD8E9D78F7FE5C3E65D8AF8B48AD6246925553)
+I: Retrieving Packages 
 I: Validating Packages 
 I: Resolving dependencies of required packages...
 I: Resolving dependencies of base packages...
@@ -146,8 +147,8 @@ I: Retrieving libyaml-0-2 0.1.6-3
 I: Validating libyaml-0-2 0.1.6-3
 I: Retrieving lsb-base 4.1+Debian13+nmu1
 I: Validating lsb-base 4.1+Debian13+nmu1
-I: Retrieving liblua5.2-0 5.2.3-1.1
-I: Validating liblua5.2-0 5.2.3-1.1
+I: Retrieving liblua5.2-0 5.2.4-1
+I: Validating liblua5.2-0 5.2.4-1
 I: Retrieving dmsetup 2:1.02.90-2.2
 I: Validating dmsetup 2:1.02.90-2.2
 I: Retrieving libdevmapper1.02.1 2:1.02.90-2.2
@@ -654,9 +655,9 @@ Get:1 http://security.debian.org stretch/updates InRelease [62.8 kB]
 Get:2 http://security.debian.org stretch/updates/main amd64 Packages [20 B]
 Get:3 http://http.debian.net stretch InRelease [135 kB]
 Get:4 http://http.debian.net stretch-updates InRelease [106 kB]
-Get:5 http://http.debian.net stretch/main amd64 Packages [9485 kB]
+Get:5 http://http.debian.net stretch/main amd64 Packages [9488 kB]
 Get:6 http://http.debian.net stretch-updates/main amd64 Packages [20 B]
-Fetched 9789 kB in 2s (3369 kB/s)
+Fetched 9792 kB in 1s (6224 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -664,7 +665,7 @@ Building dependency tree...
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 + rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/http.debian.net_debian_dists_stretch_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/http.debian.net_debian_dists_stretch_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/http.debian.net_debian_dists_stretch-updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/http.debian.net_debian_dists_stretch-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/security.debian.org_dists_stretch_updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/security.debian.org_dists_stretch_updates_main_binary-amd64_Packages.gz
 + mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/tag/v0.5.0 -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/usr/bin/tini
++ curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/usr/bin/tini
 + chmod +x /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/usr/bin/tini
 + tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs.tar.xz --directory /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs '--transform=s,^./,,' .
 + cat > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/Dockerfile'

@@ -32,10 +32,13 @@ function build()
     curdest="${dest}/${1}/${2}"
     build_log="${curdest}/build.log"
 
+    components="main"
+    [[ "${1}" == "ubuntu" ]] && components+=",universe"
+
     echo
     mkdir -p "${curdest}"
     sudo ${bin}/mkimage.sh -d "${curdest}" debootstrap \
-        --components="main,universe" \
+        --components="${components}" \
         --variant="${variant}" \
         --include="${include}" \
         --force-check-gpg \

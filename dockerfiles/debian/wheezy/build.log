@@ -1,5 +1,5 @@
 + mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs
-+ debootstrap --components=main,universe --variant=minbase --include=inetutils-ping,iproute2,net-tools,vim-nox,less --force-check-gpg wheezy /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs http://http.debian.net/debian/
++ debootstrap --components=main --variant=minbase --include=inetutils-ping,iproute2,net-tools,vim-nox,less --force-check-gpg wheezy /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs http://http.debian.net/debian/
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature

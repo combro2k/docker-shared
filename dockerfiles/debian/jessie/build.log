@@ -1,5 +1,5 @@
 + mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs
-+ debootstrap --components=main,universe --variant=minbase --include=inetutils-ping,iproute2,net-tools,vim-nox,less --force-check-gpg jessie /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs http://http.debian.net/debian/
++ debootstrap --components=main --variant=minbase --include=inetutils-ping,iproute2,net-tools,vim-nox,less --force-check-gpg jessie /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs http://http.debian.net/debian/
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
@@ -616,7 +616,7 @@ I: Base system installed successfully.
 + rootfs_chroot dpkg-divert --local --rename --add /sbin/initctl
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 + /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs dpkg-divert --local --rename --add /sbin/initctl
-Leaving 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
+Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + cp -a /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/usr/sbin/policy-rc.d /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/sbin/initctl
 + sed -i 's/^exit.*/exit 0/' /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/sbin/initctl
 + rootfs_chroot apt-get clean
@@ -641,18 +641,17 @@ Leaving 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 + /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
-Get:1 http://http.debian.net jessie InRelease [134 kB]
-Get:2 http://http.debian.net jessie-updates InRelease [123 kB]
-Get:3 http://http.debian.net jessie/main amd64 Packages [9038 kB]
-Get:4 http://security.debian.org jessie/updates InRelease [63.1 kB]
-Get:5 http://security.debian.org jessie/updates/main amd64 Packages [167 kB]
+Get:1 http://security.debian.org jessie/updates InRelease [63.1 kB]
+Get:2 http://security.debian.org jessie/updates/main amd64 Packages [171 kB]
+Get:3 http://http.debian.net jessie InRelease [134 kB]
+Get:4 http://http.debian.net jessie-updates InRelease [123 kB]
+Get:5 http://http.debian.net jessie/main amd64 Packages [9038 kB]
 Get:6 http://http.debian.net jessie-updates/main amd64 Packages [3614 B]
-Fetched 9529 kB in 2s (4707 kB/s)
+Fetched 9533 kB in 1s (5854 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
-Reading state information...
 The following packages will be upgraded:
   libexpat1 libssl1.0.0 tzdata
 3 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
@@ -681,7 +680,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 1308 kB in 0s (2914 kB/s)
+Fetched 1308 kB in 0s (3491 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
 (Reading database ... 11401 files and directories currently installed.)
 Preparing to unpack .../libssl1.0.0_1.0.1k-3+deb8u1_amd64.deb ...
@@ -700,8 +699,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Aug 19 22:20:17 UTC 2015.
-Universal Time is now:  Wed Aug 19 22:20:17 UTC 2015.
+Local time is now:      Thu Aug 20 19:26:43 UTC 2015.
+Universal Time is now:  Thu Aug 20 19:26:43 UTC 2015.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up libssl1.0.0:amd64 (1.0.1k-3+deb8u1) ...
@@ -718,7 +717,7 @@ Setting up libexpat1:amd64 (2.1.0-6+deb8u1) ...
 Processing triggers for libc-bin (2.19-18) ...
 + rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/http.debian.net_debian_dists_jessie_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/http.debian.net_debian_dists_jessie_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/http.debian.net_debian_dists_jessie-updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/http.debian.net_debian_dists_jessie-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_main_binary-amd64_Packages.gz
 + mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/tag/v0.5.0 -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini
++ curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini
 + chmod +x /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini
 + tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs.tar.xz --directory /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs '--transform=s,^./,,' .
 + cat > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/Dockerfile'

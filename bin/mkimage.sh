@@ -93,7 +93,7 @@ echo >&2 "+ cat > '$dir/Dockerfile'"
 cat > "$dir/Dockerfile" <<EOF
 FROM scratch
 ADD $(basename "$tarFile") /
-ENTRYPOINT [\"/usr/bin/tini\"]
+ENTRYPOINT ["/usr/bin/tini", "--"]
 EOF
 
 # if our generated image has a decent shell, let's set a default command
