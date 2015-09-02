@@ -1,5 +1,5 @@
 + mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs
-+ debootstrap --components=main --variant=minbase --include=inetutils-ping,iproute,vim-nox,less --force-check-gpg stretch /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs http://httpredir.debian.org/debian
++ debootstrap --components=main --variant=minbase --include=inetutils-ping,iproute,vim-nox,less,lsb-release --force-check-gpg stretch /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs http://httpredir.debian.org/debian
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
@@ -9,7 +9,7 @@ I: Validating Packages
 I: Resolving dependencies of required packages...
 I: Resolving dependencies of base packages...
 I: Found additional required dependencies: adduser dmsetup insserv libapparmor1 libaudit-common libaudit1 libbz2-1.0 libcap2 libcap2-bin libcryptsetup4 libdb5.3 libdebconfclient0 libdevmapper1.02.1 libgcrypt20 libgpg-error0 libkmod2 libncursesw5 libprocps4 libseccomp2 libsemanage-common libsemanage1 libsystemd0 libudev1 libustr-1.0-1 procps systemd systemd-sysv udev 
-I: Found additional base dependencies: debian-archive-keyring gnupg gpgv iproute2 libapt-pkg4.12 libexpat1 libffi6 libgdbm3 libgmp10 libgpm2 liblua5.2-0 libperl5.20 libpython2.7 libpython2.7-minimal libpython2.7-stdlib libreadline6 libruby2.1 libsqlite3-0 libssl1.0.0 libstdc++6 libtcl8.6 libusb-0.1-4 libyaml-0-2 mime-support netbase readline-common vim-common vim-runtime 
+I: Found additional base dependencies: debian-archive-keyring dh-python distro-info-data gnupg gpgv iproute2 libapt-pkg4.12 libdpkg-perl libexpat1 libffi6 libgdbm3 libgmp10 libgpm2 liblua5.2-0 libmpdec2 libperl5.20 libpython2.7 libpython2.7-minimal libpython2.7-stdlib libpython3-stdlib libpython3.4-minimal libpython3.4-stdlib libreadline6 libruby2.1 libsqlite3-0 libssl1.0.0 libstdc++6 libtcl8.6 libusb-0.1-4 libyaml-0-2 mime-support netbase perl perl-modules python3 python3-minimal python3.4 python3.4-minimal readline-common vim-common vim-runtime 
 I: Checking component main on http://httpredir.debian.org/debian...
 I: Retrieving libacl1 2.2.52-2
 I: Validating libacl1 2.2.52-2
@@ -23,12 +23,12 @@ I: Retrieving libapt-pkg4.12 1.0.9.10
 I: Validating libapt-pkg4.12 1.0.9.10
 I: Retrieving libattr1 1:2.4.47-2
 I: Validating libattr1 1:2.4.47-2
-I: Retrieving libaudit-common 1:2.4.2-1
-I: Validating libaudit-common 1:2.4.2-1
-I: Retrieving libaudit1 1:2.4.2-1
-I: Validating libaudit1 1:2.4.2-1
-I: Retrieving base-files 9.2
-I: Validating base-files 9.2
+I: Retrieving libaudit-common 1:2.4.4-1
+I: Validating libaudit-common 1:2.4.4-1
+I: Retrieving libaudit1 1:2.4.4-1
+I: Validating libaudit1 1:2.4.4-1
+I: Retrieving base-files 9.4
+I: Validating base-files 9.4
 I: Retrieving base-passwd 3.5.38
 I: Validating base-passwd 3.5.38
 I: Retrieving bash 4.3-13
@@ -53,10 +53,16 @@ I: Retrieving debian-archive-keyring 2014.3
 I: Validating debian-archive-keyring 2014.3
 I: Retrieving debianutils 4.5.1
 I: Validating debianutils 4.5.1
+I: Retrieving dh-python 2.20150826
+I: Validating dh-python 2.20150826
 I: Retrieving diffutils 1:3.3-1+b1
 I: Validating diffutils 1:3.3-1+b1
+I: Retrieving distro-info-data 0.27
+I: Validating distro-info-data 0.27
 I: Retrieving dpkg 1.18.2
 I: Validating dpkg 1.18.2
+I: Retrieving libdpkg-perl 1.18.2
+I: Validating libdpkg-perl 1.18.2
 I: Retrieving e2fslibs 1.42.13-1
 I: Validating e2fslibs 1.42.13-1
 I: Retrieving e2fsprogs 1.42.13-1
@@ -71,8 +77,8 @@ I: Retrieving findutils 4.4.2-9+b1
 I: Validating findutils 4.4.2-9+b1
 I: Retrieving gcc-4.8-base 4.8.4-4
 I: Validating gcc-4.8-base 4.8.4-4
-I: Retrieving gcc-4.9-base 4.9.3-3
-I: Validating gcc-4.9-base 4.9.3-3
+I: Retrieving gcc-4.9-base 4.9.3-4
+I: Validating gcc-4.9-base 4.9.3-4
 I: Retrieving gcc-5-base 5.1.1-14
 I: Validating gcc-5-base 5.1.1-14
 I: Retrieving libgcc1 1:5.1.1-14
@@ -89,10 +95,10 @@ I: Retrieving multiarch-support 2.19-19
 I: Validating multiarch-support 2.19-19
 I: Retrieving libgmp10 2:6.0.0+dfsg-7
 I: Validating libgmp10 2:6.0.0+dfsg-7
-I: Retrieving gnupg 1.4.19-3
-I: Validating gnupg 1.4.19-3
-I: Retrieving gpgv 1.4.19-3
-I: Validating gpgv 1.4.19-3
+I: Retrieving gnupg 1.4.19-5
+I: Validating gnupg 1.4.19-5
+I: Retrieving gpgv 1.4.19-5
+I: Validating gpgv 1.4.19-5
 I: Retrieving libgpm2 1.20.4-6.1+b2
 I: Validating libgpm2 1.20.4-6.1+b2
 I: Retrieving grep 2.21-2
@@ -107,18 +113,18 @@ I: Retrieving init 1.23
 I: Validating init 1.23
 I: Retrieving insserv 1.14.0-5
 I: Validating insserv 1.14.0-5
-I: Retrieving iproute 1:4.0.0-1
-I: Validating iproute 1:4.0.0-1
-I: Retrieving iproute2 4.0.0-1
-I: Validating iproute2 4.0.0-1
+I: Retrieving iproute 1:4.1.1-1
+I: Validating iproute 1:4.1.1-1
+I: Retrieving iproute2 4.1.1-1
+I: Validating iproute2 4.1.1-1
 I: Retrieving libkmod2 21-1
 I: Validating libkmod2 21-1
 I: Retrieving less 458-3
 I: Validating less 458-3
-I: Retrieving libcap2 1:2.24-9
-I: Validating libcap2 1:2.24-9
-I: Retrieving libcap2-bin 1:2.24-9
-I: Validating libcap2-bin 1:2.24-9
+I: Retrieving libcap2 1:2.24-11
+I: Validating libcap2 1:2.24-11
+I: Retrieving libcap2-bin 1:2.24-11
+I: Validating libcap2-bin 1:2.24-11
 I: Retrieving libffi6 3.2.1-3
 I: Validating libffi6 3.2.1-3
 I: Retrieving libgcrypt20 1.6.3-2
@@ -147,8 +153,10 @@ I: Retrieving libusb-0.1-4 2:0.1.12-25
 I: Validating libusb-0.1-4 2:0.1.12-25
 I: Retrieving libyaml-0-2 0.1.6-3
 I: Validating libyaml-0-2 0.1.6-3
-I: Retrieving lsb-base 4.1+Debian13+nmu1
-I: Validating lsb-base 4.1+Debian13+nmu1
+I: Retrieving lsb-base 4.1+Debian14
+I: Validating lsb-base 4.1+Debian14
+I: Retrieving lsb-release 4.1+Debian14
+I: Validating lsb-release 4.1+Debian14
 I: Retrieving liblua5.2-0 5.2.4-1
 I: Validating liblua5.2-0 5.2.4-1
 I: Retrieving dmsetup 2:1.02.104-1
@@ -159,16 +167,18 @@ I: Retrieving mawk 1.3.3-17
 I: Validating mawk 1.3.3-17
 I: Retrieving mime-support 3.59
 I: Validating mime-support 3.59
-I: Retrieving libncurses5 5.9+20150516-2
-I: Validating libncurses5 5.9+20150516-2
-I: Retrieving libncursesw5 5.9+20150516-2
-I: Validating libncursesw5 5.9+20150516-2
-I: Retrieving libtinfo5 5.9+20150516-2
-I: Validating libtinfo5 5.9+20150516-2
-I: Retrieving ncurses-base 5.9+20150516-2
-I: Validating ncurses-base 5.9+20150516-2
-I: Retrieving ncurses-bin 5.9+20150516-2
-I: Validating ncurses-bin 5.9+20150516-2
+I: Retrieving libmpdec2 2.4.1-1
+I: Validating libmpdec2 2.4.1-1
+I: Retrieving libncurses5 6.0+20150810-1
+I: Validating libncurses5 6.0+20150810-1
+I: Retrieving libncursesw5 6.0+20150810-1
+I: Validating libncursesw5 6.0+20150810-1
+I: Retrieving libtinfo5 6.0+20150810-1
+I: Validating libtinfo5 6.0+20150810-1
+I: Retrieving ncurses-base 6.0+20150810-1
+I: Validating ncurses-base 6.0+20150810-1
+I: Retrieving ncurses-bin 6.0+20150810-1
+I: Validating ncurses-bin 6.0+20150810-1
 I: Retrieving netbase 5.3
 I: Validating netbase 5.3
 I: Retrieving libssl1.0.0 1.0.2d-1
@@ -185,8 +195,12 @@ I: Retrieving libpcre3 2:8.35-7
 I: Validating libpcre3 2:8.35-7
 I: Retrieving libperl5.20 5.20.2-6
 I: Validating libperl5.20 5.20.2-6
+I: Retrieving perl 5.20.2-6
+I: Validating perl 5.20.2-6
 I: Retrieving perl-base 5.20.2-6
 I: Validating perl-base 5.20.2-6
+I: Retrieving perl-modules 5.20.2-6
+I: Validating perl-modules 5.20.2-6
 I: Retrieving libprocps4 2:3.3.10-2
 I: Validating libprocps4 2:3.3.10-2
 I: Retrieving procps 2:3.3.10-2
@@ -197,6 +211,20 @@ I: Retrieving libpython2.7-minimal 2.7.10-3
 I: Validating libpython2.7-minimal 2.7.10-3
 I: Retrieving libpython2.7-stdlib 2.7.10-3
 I: Validating libpython2.7-stdlib 2.7.10-3
+I: Retrieving libpython3-stdlib 3.4.3-4
+I: Validating libpython3-stdlib 3.4.3-4
+I: Retrieving python3 3.4.3-4
+I: Validating python3 3.4.3-4
+I: Retrieving python3-minimal 3.4.3-4
+I: Validating python3-minimal 3.4.3-4
+I: Retrieving libpython3.4-minimal 3.4.3-7
+I: Validating libpython3.4-minimal 3.4.3-7
+I: Retrieving libpython3.4-stdlib 3.4.3-7
+I: Validating libpython3.4-stdlib 3.4.3-7
+I: Retrieving python3.4 3.4.3-7
+I: Validating python3.4 3.4.3-7
+I: Retrieving python3.4-minimal 3.4.3-7
+I: Validating python3.4-minimal 3.4.3-7
 I: Retrieving libreadline6 6.3-8+b3
 I: Validating libreadline6 6.3-8+b3
 I: Retrieving readline-common 6.3-8
@@ -556,7 +584,9 @@ I: Unpacking the base system...
 I: Unpacking apt...
 I: Unpacking libapt-pkg4.12:amd64...
 I: Unpacking debian-archive-keyring...
-I: Unpacking libexpat1:amd64...
+I: Unpacking dh-python...
+I: Unpacking distro-info-data...
+I: Unpacking libdpkg-perl...
 I: Unpacking libstdc++6:amd64...
 I: Unpacking libgdbm3:amd64...
 I: Unpacking libgmp10:amd64...
@@ -570,14 +600,21 @@ I: Unpacking less...
 I: Unpacking libffi6:amd64...
 I: Unpacking libusb-0.1-4:amd64...
 I: Unpacking libyaml-0-2:amd64...
+I: Unpacking lsb-release...
 I: Unpacking liblua5.2-0:amd64...
 I: Unpacking mime-support...
+I: Unpacking libmpdec2:amd64...
 I: Unpacking netbase...
-I: Unpacking libssl1.0.0:amd64...
 I: Unpacking libperl5.20...
+I: Unpacking perl...
+I: Unpacking perl-modules...
 I: Unpacking libpython2.7:amd64...
 I: Unpacking libpython2.7-minimal:amd64...
 I: Unpacking libpython2.7-stdlib:amd64...
+I: Unpacking libpython3-stdlib:amd64...
+I: Unpacking python3...
+I: Unpacking libpython3.4-stdlib:amd64...
+I: Unpacking python3.4...
 I: Unpacking libreadline6:amd64...
 I: Unpacking readline-common...
 I: Unpacking libruby2.1:amd64...
@@ -589,13 +626,14 @@ I: Unpacking vim-runtime...
 I: Configuring the base system...
 I: Configuring readline-common...
 I: Configuring libgdbm3:amd64...
-I: Configuring libexpat1:amd64...
 I: Configuring less...
-I: Configuring libssl1.0.0:amd64...
 I: Configuring mime-support...
 I: Configuring libgpm2:amd64...
 I: Configuring gpgv...
+I: Configuring perl-modules...
+I: Configuring distro-info-data...
 I: Configuring iproute2...
+I: Configuring perl...
 I: Configuring libyaml-0-2:amd64...
 I: Configuring libgmp10:amd64...
 I: Configuring debian-archive-keyring...
@@ -610,16 +648,24 @@ I: Configuring libperl5.20...
 I: Configuring libpython2.7-minimal:amd64...
 I: Configuring libapt-pkg4.12:amd64...
 I: Configuring libusb-0.1-4:amd64...
+I: Configuring libmpdec2:amd64...
 I: Configuring libreadline6:amd64...
 I: Configuring netbase...
 I: Configuring inetutils-ping...
 I: Configuring libruby2.1:amd64...
 I: Configuring iproute...
 I: Configuring gnupg...
+I: Configuring libdpkg-perl...
 I: Configuring apt...
+I: Configuring libpython3.4-stdlib:amd64...
 I: Configuring libpython2.7-stdlib:amd64...
+I: Configuring libpython3-stdlib:amd64...
 I: Configuring libpython2.7:amd64...
+I: Configuring python3.4...
 I: Configuring vim-nox...
+I: Configuring dh-python...
+I: Configuring python3...
+I: Configuring lsb-release...
 I: Configuring libc-bin...
 I: Base system installed successfully.
 + echo exit 101 > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/usr/sbin/policy-rc.d'
@@ -652,12 +698,12 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Get:1 http://security.debian.org stretch/updates InRelease [62.8 kB]
-Get:2 http://httpredir.debian.org stretch InRelease [135 kB]
-Get:3 http://security.debian.org stretch/updates/main amd64 Packages [20 B]
-Get:4 http://httpredir.debian.org stretch-updates InRelease [106 kB]
-Get:5 http://httpredir.debian.org stretch/main amd64 Packages [9487 kB]
+Get:2 http://security.debian.org stretch/updates/main amd64 Packages [20 B]
+Get:3 http://httpredir.debian.org stretch InRelease [157 kB]
+Get:4 http://httpredir.debian.org stretch-updates InRelease [121 kB]
+Get:5 http://httpredir.debian.org stretch/main amd64 Packages [9499 kB]
 Get:6 http://httpredir.debian.org stretch-updates/main amd64 Packages [20 B]
-Fetched 9791 kB in 1s (5932 kB/s)
+Fetched 9840 kB in 4s (2382 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
