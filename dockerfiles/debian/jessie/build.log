@@ -664,14 +664,14 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Get:1 http://security.debian.org jessie/updates InRelease [63.1 kB]
-Get:2 http://security.debian.org jessie/updates/main amd64 Packages [178 kB]
 Ign http://httpredir.debian.org jessie InRelease
-Get:3 http://httpredir.debian.org jessie-updates InRelease [142 kB]
+Get:2 http://httpredir.debian.org jessie-updates InRelease [128 kB]
+Get:3 http://security.debian.org jessie/updates/main amd64 Packages [182 kB]
 Hit http://httpredir.debian.org jessie Release.gpg
 Get:4 http://httpredir.debian.org jessie-updates/main amd64 Packages [3614 B]
 Hit http://httpredir.debian.org jessie Release
 Get:5 http://httpredir.debian.org jessie/main amd64 Packages [9035 kB]
-Fetched 9422 kB in 3s (2907 kB/s)
+Fetched 9412 kB in 1s (6324 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...

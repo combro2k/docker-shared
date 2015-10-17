@@ -15,18 +15,18 @@ I: Retrieving libacl1 2.2.52-2
 I: Validating libacl1 2.2.52-2
 I: Retrieving adduser 3.113+nmu3
 I: Validating adduser 3.113+nmu3
-I: Retrieving libapparmor1 2.9.2-3
-I: Validating libapparmor1 2.9.2-3
+I: Retrieving libapparmor1 2.10-2+b1
+I: Validating libapparmor1 2.10-2+b1
 I: Retrieving apt 1.0.10.2
 I: Validating apt 1.0.10.2
 I: Retrieving libapt-pkg4.16 1.0.10.2
 I: Validating libapt-pkg4.16 1.0.10.2
 I: Retrieving libattr1 1:2.4.47-2
 I: Validating libattr1 1:2.4.47-2
-I: Retrieving libaudit-common 1:2.4.4-1
-I: Validating libaudit-common 1:2.4.4-1
-I: Retrieving libaudit1 1:2.4.4-1
-I: Validating libaudit1 1:2.4.4-1
+I: Retrieving libaudit-common 1:2.4.4-4
+I: Validating libaudit-common 1:2.4.4-4
+I: Retrieving libaudit1 1:2.4.4-4
+I: Validating libaudit1 1:2.4.4-4
 I: Retrieving base-files 9.4
 I: Validating base-files 9.4
 I: Retrieving base-passwd 3.5.38
@@ -55,14 +55,14 @@ I: Retrieving debianutils 4.5.1
 I: Validating debianutils 4.5.1
 I: Retrieving dh-python 2.20150826
 I: Validating dh-python 2.20150826
-I: Retrieving diffutils 1:3.3-1+b1
-I: Validating diffutils 1:3.3-1+b1
+I: Retrieving diffutils 1:3.3-2
+I: Validating diffutils 1:3.3-2
 I: Retrieving distro-info-data 0.27
 I: Validating distro-info-data 0.27
-I: Retrieving dpkg 1.18.2
-I: Validating dpkg 1.18.2
-I: Retrieving libdpkg-perl 1.18.2
-I: Validating libdpkg-perl 1.18.2
+I: Retrieving dpkg 1.18.3
+I: Validating dpkg 1.18.3
+I: Retrieving libdpkg-perl 1.18.3
+I: Validating libdpkg-perl 1.18.3
 I: Retrieving e2fslibs 1.42.13-1
 I: Validating e2fslibs 1.42.13-1
 I: Retrieving e2fsprogs 1.42.13-1
@@ -79,20 +79,20 @@ I: Retrieving gcc-4.8-base 4.8.5-1
 I: Validating gcc-4.8-base 4.8.5-1
 I: Retrieving gcc-4.9-base 4.9.3-4
 I: Validating gcc-4.9-base 4.9.3-4
-I: Retrieving gcc-5-base 5.2.1-17
-I: Validating gcc-5-base 5.2.1-17
-I: Retrieving libgcc1 1:5.2.1-17
-I: Validating libgcc1 1:5.2.1-17
-I: Retrieving libstdc++6 5.2.1-17
-I: Validating libstdc++6 5.2.1-17
+I: Retrieving gcc-5-base 5.2.1-22
+I: Validating gcc-5-base 5.2.1-22
+I: Retrieving libgcc1 1:5.2.1-22
+I: Validating libgcc1 1:5.2.1-22
+I: Retrieving libstdc++6 5.2.1-22
+I: Validating libstdc++6 5.2.1-22
 I: Retrieving libgdbm3 1.8.3-13.1
 I: Validating libgdbm3 1.8.3-13.1
-I: Retrieving libc-bin 2.19-20
-I: Validating libc-bin 2.19-20
-I: Retrieving libc6 2.19-20
-I: Validating libc6 2.19-20
-I: Retrieving multiarch-support 2.19-20
-I: Validating multiarch-support 2.19-20
+I: Retrieving libc-bin 2.19-22
+I: Validating libc-bin 2.19-22
+I: Retrieving libc6 2.19-22
+I: Validating libc6 2.19-22
+I: Retrieving multiarch-support 2.19-22
+I: Validating multiarch-support 2.19-22
 I: Retrieving libgmp10 2:6.0.0+dfsg-7
 I: Validating libgmp10 2:6.0.0+dfsg-7
 I: Retrieving gnupg 1.4.19-5
@@ -121,18 +121,18 @@ I: Retrieving libkmod2 21-1
 I: Validating libkmod2 21-1
 I: Retrieving less 458-3
 I: Validating less 458-3
-I: Retrieving libcap2 1:2.24-11
-I: Validating libcap2 1:2.24-11
-I: Retrieving libcap2-bin 1:2.24-11
-I: Validating libcap2-bin 1:2.24-11
+I: Retrieving libcap2 1:2.24-12
+I: Validating libcap2 1:2.24-12
+I: Retrieving libcap2-bin 1:2.24-12
+I: Validating libcap2-bin 1:2.24-12
 I: Retrieving libffi6 3.2.1-3
 I: Validating libffi6 3.2.1-3
 I: Retrieving libgcrypt20 1.6.3-2
 I: Validating libgcrypt20 1.6.3-2
 I: Retrieving libgpg-error0 1.20-1
 I: Validating libgpg-error0 1.20-1
-I: Retrieving liblocale-gettext-perl 1.05-9
-I: Validating liblocale-gettext-perl 1.05-9
+I: Retrieving liblocale-gettext-perl 1.07-1
+I: Validating liblocale-gettext-perl 1.07-1
 I: Retrieving libseccomp2 2.2.3-2
 I: Validating libseccomp2 2.2.3-2
 I: Retrieving libselinux1 2.3-2+b1
@@ -153,10 +153,10 @@ I: Retrieving libusb-0.1-4 2:0.1.12-27
 I: Validating libusb-0.1-4 2:0.1.12-27
 I: Retrieving libyaml-0-2 0.1.6-3
 I: Validating libyaml-0-2 0.1.6-3
-I: Retrieving lsb-base 9.20150826
-I: Validating lsb-base 9.20150826
-I: Retrieving lsb-release 9.20150826
-I: Validating lsb-release 9.20150826
+I: Retrieving lsb-base 9.20150917
+I: Validating lsb-base 9.20150917
+I: Retrieving lsb-release 9.20150917
+I: Validating lsb-release 9.20150917
 I: Retrieving liblua5.2-0 5.2.4-1
 I: Validating liblua5.2-0 5.2.4-1
 I: Retrieving dmsetup 2:1.02.104-1
@@ -207,26 +207,26 @@ I: Retrieving libprocps4 2:3.3.10-2
 I: Validating libprocps4 2:3.3.10-2
 I: Retrieving procps 2:3.3.10-2
 I: Validating procps 2:3.3.10-2
-I: Retrieving libpython2.7 2.7.10-4
-I: Validating libpython2.7 2.7.10-4
-I: Retrieving libpython2.7-minimal 2.7.10-4
-I: Validating libpython2.7-minimal 2.7.10-4
-I: Retrieving libpython2.7-stdlib 2.7.10-4
-I: Validating libpython2.7-stdlib 2.7.10-4
-I: Retrieving libpython3-stdlib 3.4.3-4
-I: Validating libpython3-stdlib 3.4.3-4
-I: Retrieving python3 3.4.3-4
-I: Validating python3 3.4.3-4
-I: Retrieving python3-minimal 3.4.3-4
-I: Validating python3-minimal 3.4.3-4
-I: Retrieving libpython3.4-minimal 3.4.3-8
-I: Validating libpython3.4-minimal 3.4.3-8
-I: Retrieving libpython3.4-stdlib 3.4.3-8
-I: Validating libpython3.4-stdlib 3.4.3-8
-I: Retrieving python3.4 3.4.3-8
-I: Validating python3.4 3.4.3-8
-I: Retrieving python3.4-minimal 3.4.3-8
-I: Validating python3.4-minimal 3.4.3-8
+I: Retrieving libpython2.7 2.7.10-5
+I: Validating libpython2.7 2.7.10-5
+I: Retrieving libpython2.7-minimal 2.7.10-5
+I: Validating libpython2.7-minimal 2.7.10-5
+I: Retrieving libpython2.7-stdlib 2.7.10-5
+I: Validating libpython2.7-stdlib 2.7.10-5
+I: Retrieving libpython3-stdlib 3.4.3-7
+I: Validating libpython3-stdlib 3.4.3-7
+I: Retrieving python3 3.4.3-7
+I: Validating python3 3.4.3-7
+I: Retrieving python3-minimal 3.4.3-7
+I: Validating python3-minimal 3.4.3-7
+I: Retrieving libpython3.4-minimal 3.4.3-10
+I: Validating libpython3.4-minimal 3.4.3-10
+I: Retrieving libpython3.4-stdlib 3.4.3-10
+I: Validating libpython3.4-stdlib 3.4.3-10
+I: Retrieving python3.4 3.4.3-10
+I: Validating python3.4 3.4.3-10
+I: Retrieving python3.4-minimal 3.4.3-10
+I: Validating python3.4-minimal 3.4.3-10
 I: Retrieving libreadline6 6.3-8+b3
 I: Validating libreadline6 6.3-8+b3
 I: Retrieving readline-common 6.3-8
@@ -245,16 +245,16 @@ I: Retrieving libsqlite3-0 3.8.11.1-1
 I: Validating libsqlite3-0 3.8.11.1-1
 I: Retrieving startpar 0.59-3
 I: Validating startpar 0.59-3
-I: Retrieving libsystemd0 225-1
-I: Validating libsystemd0 225-1
-I: Retrieving libudev1 225-1
-I: Validating libudev1 225-1
-I: Retrieving systemd 225-1
-I: Validating systemd 225-1
-I: Retrieving systemd-sysv 225-1
-I: Validating systemd-sysv 225-1
-I: Retrieving udev 225-1
-I: Validating udev 225-1
+I: Retrieving libsystemd0 227-2
+I: Validating libsystemd0 227-2
+I: Retrieving libudev1 227-2
+I: Validating libudev1 227-2
+I: Retrieving systemd 227-2
+I: Validating systemd 227-2
+I: Retrieving systemd-sysv 227-2
+I: Validating systemd-sysv 227-2
+I: Retrieving udev 227-2
+I: Validating udev 227-2
 I: Retrieving initscripts 2.88dsf-59.2
 I: Validating initscripts 2.88dsf-59.2
 I: Retrieving sysv-rc 2.88dsf-59.2
@@ -265,26 +265,26 @@ I: Retrieving tar 1.28-1
 I: Validating tar 1.28-1
 I: Retrieving libtcl8.6 8.6.4+dfsg-2
 I: Validating libtcl8.6 8.6.4+dfsg-2
-I: Retrieving tzdata 2015f-1
-I: Validating tzdata 2015f-1
+I: Retrieving tzdata 2015g-1
+I: Validating tzdata 2015g-1
 I: Retrieving libustr-1.0-1 1.0.4-5
 I: Validating libustr-1.0-1 1.0.4-5
-I: Retrieving bsdutils 1:2.26.2-9
-I: Validating bsdutils 1:2.26.2-9
-I: Retrieving libblkid1 2.26.2-9
-I: Validating libblkid1 2.26.2-9
-I: Retrieving libfdisk1 2.26.2-9
-I: Validating libfdisk1 2.26.2-9
-I: Retrieving libmount1 2.26.2-9
-I: Validating libmount1 2.26.2-9
-I: Retrieving libsmartcols1 2.26.2-9
-I: Validating libsmartcols1 2.26.2-9
-I: Retrieving libuuid1 2.26.2-9
-I: Validating libuuid1 2.26.2-9
-I: Retrieving mount 2.26.2-9
-I: Validating mount 2.26.2-9
-I: Retrieving util-linux 2.26.2-9
-I: Validating util-linux 2.26.2-9
+I: Retrieving bsdutils 1:2.27-3
+I: Validating bsdutils 1:2.27-3
+I: Retrieving libblkid1 2.27-3
+I: Validating libblkid1 2.27-3
+I: Retrieving libfdisk1 2.27-3
+I: Validating libfdisk1 2.27-3
+I: Retrieving libmount1 2.27-3
+I: Validating libmount1 2.27-3
+I: Retrieving libsmartcols1 2.27-3
+I: Validating libsmartcols1 2.27-3
+I: Retrieving libuuid1 2.27-3
+I: Validating libuuid1 2.27-3
+I: Retrieving mount 2.27-3
+I: Validating mount 2.27-3
+I: Retrieving util-linux 2.27-3
+I: Validating util-linux 2.27-3
 I: Retrieving vim-common 2:7.4.826-1
 I: Validating vim-common 2:7.4.826-1
 I: Retrieving vim-nox 2:7.4.826-1
@@ -508,6 +508,7 @@ I: Configuring diffutils...
 I: Configuring insserv...
 I: Configuring libcomerr2:amd64...
 I: Configuring findutils...
+I: Configuring libgcc1:amd64...
 I: Configuring libustr-1.0-1:amd64...
 I: Configuring libsmartcols1:amd64...
 I: Configuring libaudit1:amd64...
@@ -527,7 +528,6 @@ I: Configuring base-files...
 I: Configuring libselinux1:amd64...
 I: Configuring ncurses-bin...
 I: Configuring libsepol1:amd64...
-I: Configuring libgcc1:amd64...
 I: Configuring libncurses5:amd64...
 I: Configuring libattr1:amd64...
 I: Configuring libgcrypt20:amd64...
@@ -701,13 +701,13 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 + /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
-Get:1 http://httpredir.debian.org stretch InRelease [187 kB]
-Get:2 http://httpredir.debian.org stretch-updates InRelease [121 kB]
-Get:3 http://httpredir.debian.org stretch/main amd64 Packages [9553 kB]
-Get:4 http://security.debian.org stretch/updates InRelease [62.8 kB]
-Get:5 http://security.debian.org stretch/updates/main amd64 Packages [20 B]
+Get:1 http://security.debian.org stretch/updates InRelease [62.8 kB]
+Get:2 http://httpredir.debian.org stretch InRelease [186 kB]
+Get:3 http://security.debian.org stretch/updates/main amd64 Packages [20 B]
+Get:4 http://httpredir.debian.org stretch-updates InRelease [113 kB]
+Get:5 http://httpredir.debian.org stretch/main amd64 Packages [9594 kB]
 Get:6 http://httpredir.debian.org stretch-updates/main amd64 Packages [20 B]
-Fetched 9924 kB in 2s (4309 kB/s)
+Fetched 9957 kB in 1s (6213 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
