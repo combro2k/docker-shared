@@ -23,7 +23,7 @@ build=(
 declare -A urls
 urls=(
     ['ubuntu']='http://archive.ubuntu.com/ubuntu'
-    ['debian']='http://httpredir.debian.org/debian'
+    ['debian']='http://ftp2.de.debian.org/debian'
 )
 
 

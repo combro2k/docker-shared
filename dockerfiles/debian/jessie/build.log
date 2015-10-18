@@ -1,5 +1,5 @@
 + mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs
-+ debootstrap --components=main --variant=minbase --include=inetutils-ping,iproute,vim-nox,less,lsb-release,net-tools --force-check-gpg jessie /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs http://httpredir.debian.org/debian
++ debootstrap --components=main --variant=minbase --include=inetutils-ping,iproute,vim-nox,less,lsb-release,net-tools --force-check-gpg jessie /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs http://ftp2.de.debian.org/debian
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
@@ -10,7 +10,7 @@ I: Resolving dependencies of required packages...
 I: Resolving dependencies of base packages...
 I: Found additional required dependencies: acl adduser dmsetup insserv libaudit-common libaudit1 libbz2-1.0 libcap2 libcap2-bin libcryptsetup4 libdb5.3 libdebconfclient0 libdevmapper1.02.1 libgcrypt20 libgpg-error0 libkmod2 libncursesw5 libprocps3 libsemanage-common libsemanage1 libslang2 libsystemd0 libudev1 libustr-1.0-1 procps systemd systemd-sysv udev 
 I: Found additional base dependencies: debian-archive-keyring gnupg gpgv iproute2 libapt-pkg4.12 libexpat1 libffi6 libgdbm3 libgmp10 libgpm2 liblua5.2-0 libperl5.20 libpython-stdlib libpython2.7 libpython2.7-minimal libpython2.7-stdlib libreadline6 libruby2.1 libsqlite3-0 libssl1.0.0 libstdc++6 libtcl8.6 libusb-0.1-4 libyaml-0-2 mime-support netbase python python-minimal python2.7 python2.7-minimal readline-common vim-common vim-runtime 
-I: Checking component main on http://httpredir.debian.org/debian...
+I: Checking component main on http://ftp2.de.debian.org/debian...
 I: Retrieving acl 2.2.52-2
 I: Validating acl 2.2.52-2
 I: Retrieving libacl1 2.2.52-2
@@ -664,20 +664,20 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Get:1 http://security.debian.org jessie/updates InRelease [63.1 kB]
-Ign http://httpredir.debian.org jessie InRelease
-Get:2 http://httpredir.debian.org jessie-updates InRelease [128 kB]
+Ign http://ftp2.de.debian.org jessie InRelease
+Get:2 http://ftp2.de.debian.org jessie-updates InRelease [128 kB]
 Get:3 http://security.debian.org jessie/updates/main amd64 Packages [182 kB]
-Hit http://httpredir.debian.org jessie Release.gpg
-Get:4 http://httpredir.debian.org jessie-updates/main amd64 Packages [3614 B]
-Hit http://httpredir.debian.org jessie Release
-Get:5 http://httpredir.debian.org jessie/main amd64 Packages [9035 kB]
-Fetched 9412 kB in 1s (6324 kB/s)
+Hit http://ftp2.de.debian.org jessie Release.gpg
+Get:4 http://ftp2.de.debian.org jessie-updates/main amd64 Packages [3614 B]
+Hit http://ftp2.de.debian.org jessie Release
+Get:5 http://ftp2.de.debian.org jessie/main amd64 Packages [9035 kB]
+Fetched 9412 kB in 2s (4466 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-+ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie-updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_main_binary-amd64_Packages.gz
++ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_jessie_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_jessie_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_jessie_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_jessie-updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_jessie-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_main_binary-amd64_Packages.gz
 + mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial
 + curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini
 + chmod +x /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini

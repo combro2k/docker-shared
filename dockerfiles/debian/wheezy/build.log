@@ -1,5 +1,5 @@
 + mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs
-+ debootstrap --components=main --variant=minbase --include=inetutils-ping,iproute,vim-nox,less,lsb-release,net-tools --force-check-gpg wheezy /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs http://httpredir.debian.org/debian
++ debootstrap --components=main --variant=minbase --include=inetutils-ping,iproute,vim-nox,less,lsb-release,net-tools --force-check-gpg wheezy /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs http://ftp2.de.debian.org/debian
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
@@ -10,7 +10,7 @@ I: Resolving dependencies of required packages...
 I: Resolving dependencies of base packages...
 I: Found additional required dependencies: insserv libbz2-1.0 libdb5.1 libsemanage-common libsemanage1 libslang2 libustr-1.0-1 
 I: Found additional base dependencies: debian-archive-keyring gnupg gpgv libapt-pkg4.12 libexpat1 libffi5 libgdbm3 libgpm2 liblua5.1-0 libncursesw5 libperl5.14 libpython2.7 libreadline6 libruby1.9.1 libsqlite3-0 libssl1.0.0 libstdc++6 libusb-0.1-4 libyaml-0-2 mime-support netbase python python-minimal python2.7 python2.7-minimal readline-common tcl8.5 vim-common vim-runtime 
-I: Checking component main on http://httpredir.debian.org/debian...
+I: Checking component main on http://ftp2.de.debian.org/debian...
 I: Retrieving libacl1 2.2.51-8
 I: Validating libacl1 2.2.51-8
 I: Retrieving apt 0.9.7.9+deb7u7
@@ -531,16 +531,16 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 + /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
-Hit http://httpredir.debian.org wheezy Release.gpg
 Get:1 http://security.debian.org wheezy/updates Release.gpg [1554 B]
+Hit http://ftp2.de.debian.org wheezy Release.gpg
 Get:2 http://security.debian.org wheezy/updates Release [102 kB]
-Get:3 http://security.debian.org wheezy/updates/main amd64 Packages [404 kB]
-Get:4 http://httpredir.debian.org wheezy-updates Release.gpg [1554 B]
-Hit http://httpredir.debian.org wheezy Release
-Get:5 http://httpredir.debian.org wheezy-updates Release [136 kB]
-Get:6 http://httpredir.debian.org wheezy/main amd64 Packages [7637 kB]
-Get:7 http://httpredir.debian.org wheezy-updates/main amd64 Packages [5778 B]
-Fetched 8289 kB in 6s (1224 kB/s)
+Get:3 http://ftp2.de.debian.org wheezy-updates Release.gpg [1554 B]
+Hit http://ftp2.de.debian.org wheezy Release
+Get:4 http://ftp2.de.debian.org wheezy-updates Release [136 kB]
+Get:5 http://security.debian.org wheezy/updates/main amd64 Packages [404 kB]
+Get:6 http://ftp2.de.debian.org wheezy/main amd64 Packages [7637 kB]
+Get:7 http://ftp2.de.debian.org wheezy-updates/main amd64 Packages [5778 B]
+Fetched 8289 kB in 2s (3812 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -571,14 +571,14 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 4414 kB in 0s (9818 kB/s)
+Fetched 4414 kB in 0s (6773 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 10433 files and directories currently installed.)
 Preparing to replace libruby1.9.1 1.9.3.194-8.1+deb7u2 (using .../libruby1.9.1_1.9.3.194-8.1+deb7u5_amd64.deb) ...
 Unpacking replacement libruby1.9.1 ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 Setting up libruby1.9.1 (1.9.3.194-8.1+deb7u5) ...
-+ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_wheezy_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_wheezy_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_wheezy_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_wheezy-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_wheezy-updates_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_wheezy-updates_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release.gpg
++ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_wheezy_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_wheezy_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_wheezy_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_wheezy-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_wheezy-updates_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_wheezy-updates_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release.gpg
 + mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial
 + curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
 + chmod +x /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini

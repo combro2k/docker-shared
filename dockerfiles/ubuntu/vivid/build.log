@@ -685,7 +685,7 @@ Get:6 http://archive.ubuntu.com vivid-updates/main amd64 Packages [272 kB]
 Get:7 http://archive.ubuntu.com vivid-updates/universe amd64 Packages [145 kB]
 Get:8 http://archive.ubuntu.com vivid-security/main amd64 Packages [157 kB]
 Get:9 http://archive.ubuntu.com vivid-security/universe amd64 Packages [71.3 kB]
-Fetched 11.2 MB in 16s (686 kB/s)
+Fetched 11.2 MB in 2s (4838 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -740,7 +740,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 10.4 MB in 16s (635 kB/s)
+Fetched 10.4 MB in 2s (3959 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
 (Reading database ... 12516 files and directories currently installed.)
 Preparing to unpack .../bsdutils_1%3a2.25.2-4ubuntu3_amd64.deb ...
@@ -762,8 +762,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Sat Oct 17 10:11:31 UTC 2015.
-Universal Time is now:  Sat Oct 17 10:11:31 UTC 2015.
+Local time is now:      Sun Oct 18 11:43:42 UTC 2015.
+Universal Time is now:  Sun Oct 18 11:43:42 UTC 2015.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 (Reading database ... 12516 files and directories currently installed.)

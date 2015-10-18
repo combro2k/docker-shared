@@ -1,5 +1,5 @@
 + mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs
-+ debootstrap --components=main --variant=minbase --include=inetutils-ping,iproute,vim-nox,less,lsb-release,net-tools --force-check-gpg stretch /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs http://httpredir.debian.org/debian
++ debootstrap --components=main --variant=minbase --include=inetutils-ping,iproute,vim-nox,less,lsb-release,net-tools --force-check-gpg stretch /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs http://ftp2.de.debian.org/debian
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
@@ -10,7 +10,7 @@ I: Resolving dependencies of required packages...
 I: Resolving dependencies of base packages...
 I: Found additional required dependencies: adduser dmsetup insserv libapparmor1 libaudit-common libaudit1 libbz2-1.0 libcap2 libcap2-bin libcryptsetup4 libdb5.3 libdebconfclient0 libdevmapper1.02.1 libgcrypt20 libgpg-error0 libkmod2 libncursesw5 libprocps4 libseccomp2 libsemanage-common libsemanage1 libsystemd0 libudev1 libustr-1.0-1 procps systemd systemd-sysv udev 
 I: Found additional base dependencies: debian-archive-keyring dh-python distro-info-data gnupg gpgv iproute2 libapt-pkg4.16 libdpkg-perl libexpat1 libffi6 libgdbm3 libgmp10 libgpm2 liblua5.2-0 libmpdec2 libperl5.20 libpython2.7 libpython2.7-minimal libpython2.7-stdlib libpython3-stdlib libpython3.4-minimal libpython3.4-stdlib libreadline6 libruby2.1 libsqlite3-0 libssl1.0.0 libstdc++6 libtcl8.6 libusb-0.1-4 libyaml-0-2 mime-support netbase perl perl-modules python3 python3-minimal python3.4 python3.4-minimal readline-common vim-common vim-runtime 
-I: Checking component main on http://httpredir.debian.org/debian...
+I: Checking component main on http://ftp2.de.debian.org/debian...
 I: Retrieving libacl1 2.2.52-2
 I: Validating libacl1 2.2.52-2
 I: Retrieving adduser 3.113+nmu3
@@ -109,8 +109,8 @@ I: Retrieving hostname 3.16
 I: Validating hostname 3.16
 I: Retrieving inetutils-ping 2:1.9.4-1
 I: Validating inetutils-ping 2:1.9.4-1
-I: Retrieving init 1.23
-I: Validating init 1.23
+I: Retrieving init 1.24
+I: Validating init 1.24
 I: Retrieving insserv 1.14.0-5
 I: Validating insserv 1.14.0-5
 I: Retrieving iproute 1:4.1.1-1
@@ -702,18 +702,18 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Get:1 http://security.debian.org stretch/updates InRelease [62.8 kB]
-Get:2 http://httpredir.debian.org stretch InRelease [186 kB]
+Get:2 http://ftp2.de.debian.org stretch InRelease [186 kB]
 Get:3 http://security.debian.org stretch/updates/main amd64 Packages [20 B]
-Get:4 http://httpredir.debian.org stretch-updates InRelease [113 kB]
-Get:5 http://httpredir.debian.org stretch/main amd64 Packages [9594 kB]
-Get:6 http://httpredir.debian.org stretch-updates/main amd64 Packages [20 B]
-Fetched 9957 kB in 1s (6213 kB/s)
+Get:4 http://ftp2.de.debian.org stretch-updates InRelease [113 kB]
+Get:5 http://ftp2.de.debian.org stretch/main amd64 Packages [9597 kB]
+Get:6 http://ftp2.de.debian.org stretch-updates/main amd64 Packages [20 B]
+Fetched 9960 kB in 2s (3781 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-+ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_stretch_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_stretch_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_stretch-updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/httpredir.debian.org_debian_dists_stretch-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/security.debian.org_dists_stretch_updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/security.debian.org_dists_stretch_updates_main_binary-amd64_Packages.gz
++ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_stretch_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_stretch_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_stretch-updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp2.de.debian.org_debian_dists_stretch-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/security.debian.org_dists_stretch_updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/security.debian.org_dists_stretch_updates_main_binary-amd64_Packages.gz
 + mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/partial
 + curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/usr/bin/tini
 + chmod +x /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/stretch/rootfs/usr/bin/tini

@@ -732,7 +732,7 @@ Get:6 http://archive.ubuntu.com trusty-security/universe amd64 Packages [151 kB]
 Hit http://archive.ubuntu.com trusty Release
 Get:7 http://archive.ubuntu.com trusty/main amd64 Packages [1743 kB]
 Get:8 http://archive.ubuntu.com trusty/universe amd64 Packages [7589 kB]
-Fetched 11.3 MB in 10s (1026 kB/s)
+Fetched 11.3 MB in 2s (3921 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -840,7 +840,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 32.7 MB in 55s (588 kB/s)
+Fetched 32.7 MB in 58s (556 kB/s)
 (Reading database ... 12305 files and directories currently installed.)
 Preparing to unpack .../base-files_7.2ubuntu5.3_amd64.deb ...
 Unpacking base-files (7.2ubuntu5.3) over (7.2ubuntu5) ...
@@ -938,8 +938,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Sat Oct 17 10:02:25 UTC 2015.
-Universal Time is now:  Sat Oct 17 10:02:25 UTC 2015.
+Local time is now:      Sun Oct 18 11:35:14 UTC 2015.
+Universal Time is now:  Sun Oct 18 11:35:14 UTC 2015.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 (Reading database ... 12314 files and directories currently installed.)
