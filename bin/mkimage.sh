@@ -97,7 +97,7 @@ ENTRYPOINT ["/usr/bin/tini", "--"]
 EOF
 
 # if our generated image has a decent shell, let's set a default command
-for shell in /bin/bash /usr/bin/fish /usr/bin/zsh /bin/sh; do
+for shell in /usr/bin/zsh /bin/bash /usr/bin/fish /bin/sh; do
 	if [ -x "$rootfsDir/$shell" ]; then
 		( set -x; echo 'CMD ["'"$shell"'"]' >> "$dir/Dockerfile" )
 		break

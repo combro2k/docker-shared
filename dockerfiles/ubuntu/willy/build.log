@@ -1,3 +1,0 @@
-+ mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/willy/rootfs
-+ debootstrap --components=main,universe --variant=minbase --include=inetutils-ping,iproute2,net-tools,vim-nox,less --force-check-gpg willy /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/willy/rootfs http://archive.ubuntu.com/ubuntu
-E: No such script: /usr/share/debootstrap/scripts/willy

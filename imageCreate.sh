@@ -1,13 +1,11 @@
 #!/bin/bash
 set -e
 
-# Base settings
-variant="minbase"
 base="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 dest="${base}/dockerfiles"
 
 bin="${base}/bin"
-include="inetutils-ping,iproute,vim-nox,less,lsb-release,net-tools"
+include="inetutils-ping,iproute2,lsb-release"
 
 # Versions
 declare -A build
@@ -20,45 +18,73 @@ build=(
     ['stretch']='debian'
 )
 
+# Variant types
+variant=(
+    'minbase'
+)
+
 declare -A urls
 urls=(
-    ['ubuntu']='http://archive.ubuntu.com/ubuntu'
-    ['debian']='http://ftp2.de.debian.org/debian'
+    ['ubuntu']='http://de.archive.ubuntu.com/ubuntu'
+    ['debian']='http://ftp.nl.debian.org/debian'
 )
 
 
 function build()
 {
-    curdest="${dest}/${1}/${2}"
+    distro="${1}"
+    version="${2}"
+    type="${3}"
+
+    if [[ "${type}" == "buildd" ]]; then
+        curdest="${dest}/${type}/${distro}/${version}"
+    else
+        curdest="${dest}/${distro}/${version}"
+    fi
+
     build_log="${curdest}/build.log"
 
-    components="main"
-    [[ "${1}" == "ubuntu" ]] && components+=",universe"
+    if [[ "${distro}" == "ubuntu" ]]; then
+        components="main,beta,universe"
+    else
+        components="main,beta"
+    fi
 
     echo
     mkdir -p "${curdest}"
     sudo ${bin}/mkimage.sh -d "${curdest}" debootstrap \
         --components="${components}" \
-        --variant="${variant}" \
+        --variant="${type}" \
         --include="${include}" \
         --force-check-gpg \
-        "${2}" \
-        "${urls[${1}]}" 2>&1 | tee ${build_log}
+        "${version}" \
+        "${urls[${distro}]}" 2>&1 | tee ${build_log}
     echo
 
     return 0
 }
 
+if [ -z "${@}" ]; then
+    for version in ${!build[@]}; do
+        # Set variables
+        distro="${build[${version}]}"
 
-for version in ${!build[@]}
-do
-    # Set variables
-    distro="${build[${version}]}"
+        # Execute processes
+        for type in ${variant[@]}; do
+            build "${distro}" "${version}" "${type}"
+        done
+    done
+else
+    for version in ${@}; do
+        # Set variables
+        distro="${build[${version}]}"
 
-
-    # Execute processes
-    build "${distro}" "${version}"
-done
+        # Execute processes
+        for type in ${variant[@]}; do
+            build "${distro}" "${version}" "${type}"
+        done
+    done
+fi
 
 sudo chown -R "$(id -n -u ${USER}):$(id -n -g ${USER})" "${dest}"
 git add "${dest}"/
