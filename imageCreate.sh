@@ -5,7 +5,7 @@ base="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 dest="${base}/dockerfiles"
 
 bin="${base}/bin"
-include="inetutils-ping,iproute2,lsb-release"
+include="inetutils-ping,iproute,lsb-release"
 
 # Versions
 declare -A build
