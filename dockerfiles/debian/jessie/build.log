@@ -608,24 +608,25 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Ign http://ftp.nl.debian.org jessie InRelease
-Get:1 http://ftp.nl.debian.org jessie-updates InRelease [135 kB]
+Get:1 http://ftp.nl.debian.org jessie-updates InRelease [136 kB]
 Get:2 http://security.debian.org jessie/updates InRelease [63.1 kB]
 Hit http://ftp.nl.debian.org jessie Release.gpg
+Get:3 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [3619 B]
 Hit http://ftp.nl.debian.org jessie Release
-Get:3 http://security.debian.org jessie/updates/main amd64 Packages [190 kB]
-Get:4 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [3619 B]
+Get:4 http://security.debian.org jessie/updates/main amd64 Packages [193 kB]
 Get:5 http://ftp.nl.debian.org jessie/main amd64 Packages [9035 kB]
-Fetched 9427 kB in 1s (5896 kB/s)
+Fetched 9431 kB in 1s (5804 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 The following packages will be upgraded:
-  tzdata
-1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 184 kB of archives.
-After this operation, 29.7 kB disk space will be freed.
+  dpkg tzdata
+2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3175 kB of archives.
+After this operation, 27.6 kB disk space will be freed.
 Get:1 http://ftp.nl.debian.org/debian/ jessie-updates/main tzdata all 2015g-0+deb8u1 [184 kB]
+Get:2 http://security.debian.org/ jessie/updates/main dpkg amd64 1.17.26 [2991 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = "en",
@@ -646,8 +647,12 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 184 kB in 0s (2872 kB/s)
+Fetched 3175 kB in 0s (6649 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
+(Reading database ... 8418 files and directories currently installed.)
+Preparing to unpack .../dpkg_1.17.26_amd64.deb ...
+Unpacking dpkg (1.17.26) over (1.17.25) ...
+Setting up dpkg (1.17.26) ...
 (Reading database ... 8418 files and directories currently installed.)
 Preparing to unpack .../tzdata_2015g-0+deb8u1_all.deb ...
 Unpacking tzdata (2015g-0+deb8u1) over (2015f-0+deb8u1) ...
@@ -660,8 +665,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Nov 25 18:12:03 UTC 2015.
-Universal Time is now:  Wed Nov 25 18:12:03 UTC 2015.
+Local time is now:      Sat Nov 28 11:02:19 UTC 2015.
+Universal Time is now:  Sat Nov 28 11:02:19 UTC 2015.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 + rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_main_binary-amd64_Packages.gz

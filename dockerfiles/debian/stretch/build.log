@@ -613,10 +613,10 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 Get:1 http://ftp.nl.debian.org stretch InRelease [193 kB]
 Get:2 http://security.debian.org stretch/updates InRelease [62.8 kB]
 Get:3 http://ftp.nl.debian.org stretch-updates InRelease [113 kB]
-Get:4 http://ftp.nl.debian.org stretch/main amd64 Packages [9765 kB]
+Get:4 http://ftp.nl.debian.org stretch/main amd64 Packages [9773 kB]
 Get:5 http://security.debian.org stretch/updates/main amd64 Packages [20 B]
 Get:6 http://ftp.nl.debian.org stretch-updates/main amd64 Packages [20 B]
-Fetched 10.1 MB in 2s (4768 kB/s)
+Fetched 10.1 MB in 2s (4817 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...

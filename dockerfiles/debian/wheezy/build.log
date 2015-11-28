@@ -484,17 +484,18 @@ Get:4 http://security.debian.org wheezy/updates Release [102 kB]
 Get:5 http://ftp.nl.debian.org wheezy/main amd64 Packages [7637 kB]
 Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [407 kB]
 Get:7 http://ftp.nl.debian.org wheezy-updates/main amd64 Packages [5788 B]
-Fetched 8298 kB in 1s (4623 kB/s)
+Fetched 8299 kB in 1s (5724 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 The following packages will be upgraded:
-  tzdata
-1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 404 kB of archives.
-After this operation, 39.9 kB disk space will be freed.
+  dpkg tzdata
+2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3067 kB of archives.
+After this operation, 37.9 kB disk space will be freed.
 Get:1 http://ftp.nl.debian.org/debian/ wheezy-updates/main tzdata all 2015g-0+deb7u1 [404 kB]
+Get:2 http://security.debian.org/ wheezy/updates/main dpkg amd64 1.16.17 [2663 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = "en",
@@ -515,7 +516,13 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 404 kB in 0s (4163 kB/s)
+Fetched 3067 kB in 0s (4902 kB/s)
+Can not write log, openpty() failed (/dev/pts not mounted?)
+(Reading database ... 7596 files and directories currently installed.)
+Preparing to replace dpkg 1.16.16 (using .../dpkg_1.16.17_amd64.deb) ...
+Unpacking replacement dpkg ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Setting up dpkg (1.16.17) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7596 files and directories currently installed.)
 Preparing to replace tzdata 2015f-0+deb7u1 (using .../tzdata_2015g-0+deb7u1_all.deb) ...
@@ -530,8 +537,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Nov 25 18:23:28 UTC 2015.
-Universal Time is now:  Wed Nov 25 18:23:28 UTC 2015.
+Local time is now:      Sat Nov 28 11:13:39 UTC 2015.
+Universal Time is now:  Sat Nov 28 11:13:39 UTC 2015.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 + rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release.gpg
