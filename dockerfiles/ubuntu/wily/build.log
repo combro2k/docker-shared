@@ -614,22 +614,23 @@ Get:2 http://de.archive.ubuntu.com wily-updates InRelease [64.4 kB]
 Get:3 http://de.archive.ubuntu.com wily-security InRelease [64.4 kB]
 Get:4 http://de.archive.ubuntu.com wily/main amd64 Packages [1833 kB]
 Get:5 http://de.archive.ubuntu.com wily/universe amd64 Packages [8673 kB]
-Get:6 http://de.archive.ubuntu.com wily-updates/main amd64 Packages [78.2 kB]
-Get:7 http://de.archive.ubuntu.com wily-updates/universe amd64 Packages [36.6 kB]
-Get:8 http://de.archive.ubuntu.com wily-security/main amd64 Packages [53.8 kB]
-Get:9 http://de.archive.ubuntu.com wily-security/universe amd64 Packages [28.9 kB]
-Fetched 11.1 MB in 2s (3698 kB/s)
+Get:6 http://de.archive.ubuntu.com wily-updates/main amd64 Packages [136 kB]
+Get:7 http://de.archive.ubuntu.com wily-updates/universe amd64 Packages [57.6 kB]
+Get:8 http://de.archive.ubuntu.com wily-security/main amd64 Packages [88.1 kB]
+Get:9 http://de.archive.ubuntu.com wily-security/universe amd64 Packages [41.4 kB]
+Fetched 11.2 MB in 2s (3794 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 The following packages will be upgraded:
-  dpkg libdpkg-perl
-2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 2280 kB of archives.
-After this operation, 0 B of additional disk space will be used.
+  dpkg libdpkg-perl libssl1.0.0
+3 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3361 kB of archives.
+After this operation, 54.3 kB disk space will be freed.
 Get:1 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main dpkg amd64 1.18.2ubuntu5.1 [2086 kB]
 Get:2 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main libdpkg-perl all 1.18.2ubuntu5.1 [194 kB]
+Get:3 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main libssl1.0.0 amd64 1.0.2d-0ubuntu1.2 [1081 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = "en",
@@ -647,7 +648,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 2280 kB in 0s (2896 kB/s)
+Fetched 3361 kB in 1s (3148 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
 (Reading database ... 9724 files and directories currently installed.)
 Preparing to unpack .../dpkg_1.18.2ubuntu5.1_amd64.deb ...
@@ -656,7 +657,14 @@ Setting up dpkg (1.18.2ubuntu5.1) ...
 (Reading database ... 9724 files and directories currently installed.)
 Preparing to unpack .../libdpkg-perl_1.18.2ubuntu5.1_all.deb ...
 Unpacking libdpkg-perl (1.18.2ubuntu5.1) over (1.18.2ubuntu5) ...
+Preparing to unpack .../libssl1.0.0_1.0.2d-0ubuntu1.2_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.2d-0ubuntu1.2) over (1.0.2d-0ubuntu1) ...
 Setting up libdpkg-perl (1.18.2ubuntu5.1) ...
+Setting up libssl1.0.0:amd64 (1.0.2d-0ubuntu1.2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+Processing triggers for libc-bin (2.21-0ubuntu4) ...
 + rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_wily_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_wily_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_wily-security_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_wily-security_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_wily-security_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_wily_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_wily-updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_wily-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_wily-updates_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/partial
 + mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/var/lib/apt/lists/partial
 + curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/wily/rootfs/usr/bin/tini

@@ -482,20 +482,21 @@ Get:2 http://security.debian.org wheezy/updates Release.gpg [1554 B]
 Get:3 http://ftp.nl.debian.org wheezy-updates Release [143 kB]
 Get:4 http://security.debian.org wheezy/updates Release [102 kB]
 Get:5 http://ftp.nl.debian.org wheezy/main amd64 Packages [7637 kB]
-Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [407 kB]
+Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [414 kB]
 Get:7 http://ftp.nl.debian.org wheezy-updates/main amd64 Packages [5788 B]
-Fetched 8299 kB in 1s (5724 kB/s)
+Fetched 8305 kB in 1s (4915 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 The following packages will be upgraded:
-  dpkg tzdata
-2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 3067 kB of archives.
+  dpkg libssl1.0.0 tzdata
+3 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 4329 kB of archives.
 After this operation, 37.9 kB disk space will be freed.
 Get:1 http://ftp.nl.debian.org/debian/ wheezy-updates/main tzdata all 2015g-0+deb7u1 [404 kB]
 Get:2 http://security.debian.org/ wheezy/updates/main dpkg amd64 1.16.17 [2663 kB]
+Get:3 http://security.debian.org/ wheezy/updates/main libssl1.0.0 amd64 1.0.1e-2+deb7u18 [1262 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = "en",
@@ -516,7 +517,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 3067 kB in 0s (4902 kB/s)
+Fetched 4329 kB in 0s (5027 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7596 files and directories currently installed.)
 Preparing to replace dpkg 1.16.16 (using .../dpkg_1.16.17_amd64.deb) ...
@@ -525,6 +526,8 @@ Can not write log, openpty() failed (/dev/pts not mounted?)
 Setting up dpkg (1.16.17) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7596 files and directories currently installed.)
+Preparing to replace libssl1.0.0:amd64 1.0.1e-2+deb7u17 (using .../libssl1.0.0_1.0.1e-2+deb7u18_amd64.deb) ...
+Unpacking replacement libssl1.0.0:amd64 ...
 Preparing to replace tzdata 2015f-0+deb7u1 (using .../tzdata_2015g-0+deb7u1_all.deb) ...
 Unpacking replacement tzdata ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
@@ -537,10 +540,20 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Sat Nov 28 11:13:39 UTC 2015.
-Universal Time is now:  Sat Nov 28 11:13:39 UTC 2015.
+Local time is now:      Wed Dec 23 10:02:11 UTC 2015.
+Universal Time is now:  Wed Dec 23 10:02:11 UTC 2015.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
+Setting up libssl1.0.0:amd64 (1.0.1e-2+deb7u18) ...
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
 + rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release.gpg
 + mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial
 + curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
