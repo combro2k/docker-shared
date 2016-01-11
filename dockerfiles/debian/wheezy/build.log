@@ -1,5 +1,5 @@
-+ mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs
-+ debootstrap --components=main,beta --variant=minbase --include=inetutils-ping,iproute,lsb-release --force-check-gpg wheezy /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs http://ftp.nl.debian.org/debian
++ mkdir -p /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs
++ debootstrap --components=main,beta --variant=minbase --include=inetutils-ping,iproute,lsb-release --force-check-gpg wheezy /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs http://ftp.nl.debian.org/debian
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
@@ -446,45 +446,45 @@ I: Configuring python2.7...
 I: Configuring python...
 I: Configuring lsb-release...
 I: Base system installed successfully.
-+ echo exit 101 > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/sbin/policy-rc.d'
++ echo exit 101 > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/sbin/policy-rc.d'
 + rootfs_chroot dpkg-divert --local --rename --add /sbin/initctl
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs dpkg-divert --local --rename --add /sbin/initctl
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs dpkg-divert --local --rename --add /sbin/initctl
 Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
-+ cp -a /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/sbin/policy-rc.d /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/sbin/initctl
-+ sed -i 's/^exit.*/exit 0/' /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/sbin/initctl
++ cp -a /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/sbin/policy-rc.d /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/sbin/initctl
++ sed -i 's/^exit.*/exit 0/' /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/sbin/initctl
 + rootfs_chroot apt-get clean
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs apt-get clean
-+ echo force-unsafe-io > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/dpkg/dpkg.cfg.d/docker-apt-speedup'
-+ cat > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-clean'
-+ echo Acquire::Languages 'none' > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-no-languages'
-+ echo Acquire::GzipIndexes 'true' > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-gzip-indexes'
-+ echo Apt::AutoRemove::SuggestsImportant 'false' > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-autoremove-suggests'
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs apt-get clean
++ echo force-unsafe-io > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/dpkg/dpkg.cfg.d/docker-apt-speedup'
++ cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-clean'
++ echo Acquire::Languages 'none' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-no-languages'
++ echo Acquire::GzipIndexes 'true' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-gzip-indexes'
++ echo Apt::AutoRemove::SuggestsImportant 'false' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-autoremove-suggests'
 + sed -i '
 						p;
 						s/ wheezy / wheezy-updates /
-					' /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/sources.list
+					' /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/sources.list
 + echo 'deb http://security.debian.org wheezy/updates main'
-+ '[' -f /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/debian_version ']'
++ '[' -f /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/debian_version ']'
 + ltsSuite=
 + case "$(cat "$rootfsDir/etc/debian_version")" in
-++ cat /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/debian_version
+++ cat /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/debian_version
 + '[' '' ']'
 + rootfs_chroot sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Hit http://ftp.nl.debian.org wheezy Release.gpg
 Get:1 http://ftp.nl.debian.org wheezy-updates Release.gpg [1554 B]
 Hit http://ftp.nl.debian.org wheezy Release
-Get:2 http://security.debian.org wheezy/updates Release.gpg [1554 B]
-Get:3 http://ftp.nl.debian.org wheezy-updates Release [143 kB]
+Get:2 http://ftp.nl.debian.org wheezy-updates Release [143 kB]
+Get:3 http://security.debian.org wheezy/updates Release.gpg [1554 B]
 Get:4 http://security.debian.org wheezy/updates Release [102 kB]
 Get:5 http://ftp.nl.debian.org wheezy/main amd64 Packages [7637 kB]
-Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [414 kB]
+Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [419 kB]
 Get:7 http://ftp.nl.debian.org wheezy-updates/main amd64 Packages [5788 B]
-Fetched 8305 kB in 1s (4915 kB/s)
+Fetched 8311 kB in 2s (3957 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -492,11 +492,11 @@ Building dependency tree...
 The following packages will be upgraded:
   dpkg libssl1.0.0 tzdata
 3 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 4329 kB of archives.
+Need to get 4330 kB of archives.
 After this operation, 37.9 kB disk space will be freed.
 Get:1 http://ftp.nl.debian.org/debian/ wheezy-updates/main tzdata all 2015g-0+deb7u1 [404 kB]
 Get:2 http://security.debian.org/ wheezy/updates/main dpkg amd64 1.16.17 [2663 kB]
-Get:3 http://security.debian.org/ wheezy/updates/main libssl1.0.0 amd64 1.0.1e-2+deb7u18 [1262 kB]
+Get:3 http://security.debian.org/ wheezy/updates/main libssl1.0.0 amd64 1.0.1e-2+deb7u19 [1263 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = "en",
@@ -517,7 +517,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 4329 kB in 0s (5027 kB/s)
+Fetched 4330 kB in 0s (6823 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7596 files and directories currently installed.)
 Preparing to replace dpkg 1.16.16 (using .../dpkg_1.16.17_amd64.deb) ...
@@ -526,7 +526,7 @@ Can not write log, openpty() failed (/dev/pts not mounted?)
 Setting up dpkg (1.16.17) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7596 files and directories currently installed.)
-Preparing to replace libssl1.0.0:amd64 1.0.1e-2+deb7u17 (using .../libssl1.0.0_1.0.1e-2+deb7u18_amd64.deb) ...
+Preparing to replace libssl1.0.0:amd64 1.0.1e-2+deb7u17 (using .../libssl1.0.0_1.0.1e-2+deb7u19_amd64.deb) ...
 Unpacking replacement libssl1.0.0:amd64 ...
 Preparing to replace tzdata 2015f-0+deb7u1 (using .../tzdata_2015g-0+deb7u1_all.deb) ...
 Unpacking replacement tzdata ...
@@ -540,11 +540,11 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Dec 23 10:02:11 UTC 2015.
-Universal Time is now:  Wed Dec 23 10:02:11 UTC 2015.
+Local time is now:      Mon Jan 11 09:00:02 UTC 2016.
+Universal Time is now:  Mon Jan 11 09:00:02 UTC 2016.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
-Setting up libssl1.0.0:amd64 (1.0.1e-2+deb7u18) ...
+Setting up libssl1.0.0:amd64 (1.0.1e-2+deb7u19) ...
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
@@ -554,11 +554,11 @@ debconf: falling back to frontend: Readline
 debconf: unable to initialize frontend: Readline
 debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
 debconf: falling back to frontend: Teletype
-+ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release.gpg
-+ mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
-+ chmod +x /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
-+ tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs.tar.xz --directory /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs '--transform=s,^./,,' .
-+ cat > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/Dockerfile'
++ rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release.gpg /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release.gpg /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release.gpg
++ mkdir /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial
++ curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
++ chmod +x /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
++ tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs.tar.xz --directory /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs '--transform=s,^./,,' .
++ cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/Dockerfile'
 + echo 'CMD ["/bin/bash"]'
-+ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/wheezy/rootfs
++ rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs

@@ -1,5 +1,5 @@
-+ mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs
-+ debootstrap --components=main,beta,universe --variant=minbase --include=inetutils-ping,iproute,lsb-release --force-check-gpg trusty /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs http://de.archive.ubuntu.com/ubuntu
++ mkdir -p /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs
++ debootstrap --components=main,beta,universe --variant=minbase --include=inetutils-ping,iproute,lsb-release --force-check-gpg trusty /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs http://de.archive.ubuntu.com/ubuntu
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
@@ -620,42 +620,42 @@ I: Configuring lsb-release...
 I: Configuring dh-python...
 I: Configuring libc-bin...
 I: Base system installed successfully.
-+ echo exit 101 > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/usr/sbin/policy-rc.d'
++ echo exit 101 > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/usr/sbin/policy-rc.d'
 + rootfs_chroot dpkg-divert --local --rename --add /sbin/initctl
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs dpkg-divert --local --rename --add /sbin/initctl
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs dpkg-divert --local --rename --add /sbin/initctl
 Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
-+ cp -a /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/usr/sbin/policy-rc.d /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/sbin/initctl
-+ sed -i 's/^exit.*/exit 0/' /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/sbin/initctl
++ cp -a /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/usr/sbin/policy-rc.d /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/sbin/initctl
++ sed -i 's/^exit.*/exit 0/' /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/sbin/initctl
 + rootfs_chroot apt-get clean
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs apt-get clean
-+ echo force-unsafe-io > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/etc/dpkg/dpkg.cfg.d/docker-apt-speedup'
-+ cat > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/etc/apt/apt.conf.d/docker-clean'
-+ echo Acquire::Languages 'none' > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/etc/apt/apt.conf.d/docker-no-languages'
-+ echo Acquire::GzipIndexes 'true' > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/etc/apt/apt.conf.d/docker-gzip-indexes'
-+ echo Apt::AutoRemove::SuggestsImportant 'false' > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/etc/apt/apt.conf.d/docker-autoremove-suggests'
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs apt-get clean
++ echo force-unsafe-io > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/etc/dpkg/dpkg.cfg.d/docker-apt-speedup'
++ cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/etc/apt/apt.conf.d/docker-clean'
++ echo Acquire::Languages 'none' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/etc/apt/apt.conf.d/docker-no-languages'
++ echo Acquire::GzipIndexes 'true' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/etc/apt/apt.conf.d/docker-gzip-indexes'
++ echo Apt::AutoRemove::SuggestsImportant 'false' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/etc/apt/apt.conf.d/docker-autoremove-suggests'
 + sed -i '
 					p;
 					s/ trusty / trusty-updates /; p;
 					s/ trusty-updates / trusty-security /
-				' /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/etc/apt/sources.list
+				' /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/etc/apt/sources.list
 + rootfs_chroot sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Ign http://de.archive.ubuntu.com trusty InRelease
 Get:1 http://de.archive.ubuntu.com trusty-updates InRelease [64.4 kB]
 Get:2 http://de.archive.ubuntu.com trusty-security InRelease [64.4 kB]
 Hit http://de.archive.ubuntu.com trusty Release.gpg
-Get:3 http://de.archive.ubuntu.com trusty-updates/main amd64 Packages [851 kB]
-Get:4 http://de.archive.ubuntu.com trusty-updates/universe amd64 Packages [431 kB]
-Get:5 http://de.archive.ubuntu.com trusty-security/main amd64 Packages [495 kB]
-Get:6 http://de.archive.ubuntu.com trusty-security/universe amd64 Packages [158 kB]
+Get:3 http://de.archive.ubuntu.com trusty-updates/main amd64 Packages [857 kB]
+Get:4 http://de.archive.ubuntu.com trusty-updates/universe amd64 Packages [432 kB]
+Get:5 http://de.archive.ubuntu.com trusty-security/main amd64 Packages [501 kB]
+Get:6 http://de.archive.ubuntu.com trusty-security/universe amd64 Packages [159 kB]
 Hit http://de.archive.ubuntu.com trusty Release
 Get:7 http://de.archive.ubuntu.com trusty/main amd64 Packages [1743 kB]
 Get:8 http://de.archive.ubuntu.com trusty/universe amd64 Packages [7589 kB]
-Fetched 11.4 MB in 4s (2517 kB/s)
+Fetched 11.4 MB in 3s (3203 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -673,7 +673,7 @@ The following packages will be upgraded:
   util-linux
 64 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 Need to get 26.0 MB of archives.
-After this operation, 201 kB disk space will be freed.
+After this operation, 200 kB disk space will be freed.
 Get:1 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main base-files amd64 7.2ubuntu5.3 [60.9 kB]
 Get:2 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main bash amd64 4.3-7ubuntu1.5 [576 kB]
 Get:3 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main coreutils amd64 8.21-1ubuntu5.3 [1090 kB]
@@ -732,7 +732,7 @@ Get:55 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main initramfs-tools 
 Get:56 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main initramfs-tools-bin amd64 0.103ubuntu4.2 [8922 B]
 Get:57 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main cpio amd64 2.11+dfsg-1ubuntu1.1 [73.3 kB]
 Get:58 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main plymouth amd64 0.8.8-0ubuntu17.1 [98.6 kB]
-Get:59 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libpng12-0 amd64 1.2.50-1ubuntu2.14.04.1 [118 kB]
+Get:59 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libpng12-0 amd64 1.2.50-1ubuntu2.14.04.2 [118 kB]
 Get:60 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libplymouth2 amd64 0.8.8-0ubuntu17.1 [76.8 kB]
 Get:61 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main multiarch-support amd64 2.19-0ubuntu6.6 [4486 B]
 Get:62 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main dh-python all 1.20140128-1ubuntu8.2 [51.1 kB]
@@ -755,7 +755,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 26.0 MB in 11s (2295 kB/s)
+Fetched 26.0 MB in 12s (2159 kB/s)
 (Reading database ... 8417 files and directories currently installed.)
 Preparing to unpack .../base-files_7.2ubuntu5.3_amd64.deb ...
 Unpacking base-files (7.2ubuntu5.3) over (7.2ubuntu5) ...
@@ -855,8 +855,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Dec 23 09:58:44 UTC 2015.
-Universal Time is now:  Wed Dec 23 09:58:44 UTC 2015.
+Local time is now:      Mon Jan 11 08:56:32 UTC 2016.
+Universal Time is now:  Mon Jan 11 08:56:32 UTC 2016.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 (Reading database ... 8429 files and directories currently installed.)
@@ -979,8 +979,8 @@ Preparing to unpack .../cpio_2.11+dfsg-1ubuntu1.1_amd64.deb ...
 Unpacking cpio (2.11+dfsg-1ubuntu1.1) over (2.11+dfsg-1ubuntu1) ...
 Preparing to unpack .../plymouth_0.8.8-0ubuntu17.1_amd64.deb ...
 Unpacking plymouth (0.8.8-0ubuntu17.1) over (0.8.8-0ubuntu17) ...
-Preparing to unpack .../libpng12-0_1.2.50-1ubuntu2.14.04.1_amd64.deb ...
-Unpacking libpng12-0:amd64 (1.2.50-1ubuntu2.14.04.1) over (1.2.50-1ubuntu2) ...
+Preparing to unpack .../libpng12-0_1.2.50-1ubuntu2.14.04.2_amd64.deb ...
+Unpacking libpng12-0:amd64 (1.2.50-1ubuntu2.14.04.2) over (1.2.50-1ubuntu2) ...
 Preparing to unpack .../libplymouth2_0.8.8-0ubuntu17.1_amd64.deb ...
 Unpacking libplymouth2:amd64 (0.8.8-0ubuntu17.1) over (0.8.8-0ubuntu17) ...
 Preparing to unpack .../multiarch-support_2.19-0ubuntu6.6_amd64.deb ...
@@ -1034,7 +1034,7 @@ Setting up initramfs-tools-bin (0.103ubuntu4.2) ...
 Setting up cpio (2.11+dfsg-1ubuntu1.1) ...
 Setting up initramfs-tools (0.103ubuntu4.2) ...
 update-initramfs: deferring update (trigger activated)
-Setting up libpng12-0:amd64 (1.2.50-1ubuntu2.14.04.1) ...
+Setting up libpng12-0:amd64 (1.2.50-1ubuntu2.14.04.2) ...
 Setting up libplymouth2:amd64 (0.8.8-0ubuntu17.1) ...
 Setting up plymouth (0.8.8-0ubuntu17.1) ...
 update-initramfs: deferring update (trigger activated)
@@ -1044,11 +1044,11 @@ Setting up locales (2.13+git20120306-12.1) ...
 Setting up iproute (1:3.12.0-2ubuntu1) ...
 Processing triggers for libc-bin (2.19-0ubuntu6.6) ...
 Processing triggers for initramfs-tools (0.103ubuntu4.2) ...
-+ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty-security_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty-security_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty-security_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty-updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty-updates_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/partial
-+ mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/usr/bin/tini
-+ chmod +x /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs/usr/bin/tini
-+ tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs.tar.xz --directory /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs '--transform=s,^./,,' .
-+ cat > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/Dockerfile'
++ rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty_Release /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty_Release.gpg /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty-security_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty-security_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty-security_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty-updates_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_trusty-updates_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/partial
++ mkdir /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/var/lib/apt/lists/partial
++ curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/usr/bin/tini
++ chmod +x /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs/usr/bin/tini
++ tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs.tar.xz --directory /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs '--transform=s,^./,,' .
++ cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/Dockerfile'
 + echo 'CMD ["/bin/bash"]'
-+ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/trusty/rootfs
++ rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/trusty/rootfs

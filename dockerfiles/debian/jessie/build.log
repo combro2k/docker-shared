@@ -1,5 +1,5 @@
-+ mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs
-+ debootstrap --components=main,beta --variant=minbase --include=inetutils-ping,iproute,lsb-release --force-check-gpg jessie /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs http://ftp.nl.debian.org/debian
++ mkdir -p /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs
++ debootstrap --components=main,beta --variant=minbase --include=inetutils-ping,iproute,lsb-release --force-check-gpg jessie /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs http://ftp.nl.debian.org/debian
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
@@ -578,44 +578,44 @@ I: Configuring python...
 I: Configuring lsb-release...
 I: Configuring libc-bin...
 I: Base system installed successfully.
-+ echo exit 101 > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/usr/sbin/policy-rc.d'
++ echo exit 101 > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/usr/sbin/policy-rc.d'
 + rootfs_chroot dpkg-divert --local --rename --add /sbin/initctl
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs dpkg-divert --local --rename --add /sbin/initctl
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs dpkg-divert --local --rename --add /sbin/initctl
 Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
-+ cp -a /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/usr/sbin/policy-rc.d /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/sbin/initctl
-+ sed -i 's/^exit.*/exit 0/' /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/sbin/initctl
++ cp -a /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/usr/sbin/policy-rc.d /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/sbin/initctl
++ sed -i 's/^exit.*/exit 0/' /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/sbin/initctl
 + rootfs_chroot apt-get clean
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs apt-get clean
-+ echo force-unsafe-io > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/etc/dpkg/dpkg.cfg.d/docker-apt-speedup'
-+ cat > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/etc/apt/apt.conf.d/docker-clean'
-+ echo Acquire::Languages 'none' > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/etc/apt/apt.conf.d/docker-no-languages'
-+ echo Acquire::GzipIndexes 'true' > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/etc/apt/apt.conf.d/docker-gzip-indexes'
-+ echo Apt::AutoRemove::SuggestsImportant 'false' > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/etc/apt/apt.conf.d/docker-autoremove-suggests'
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs apt-get clean
++ echo force-unsafe-io > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/etc/dpkg/dpkg.cfg.d/docker-apt-speedup'
++ cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/etc/apt/apt.conf.d/docker-clean'
++ echo Acquire::Languages 'none' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/etc/apt/apt.conf.d/docker-no-languages'
++ echo Acquire::GzipIndexes 'true' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/etc/apt/apt.conf.d/docker-gzip-indexes'
++ echo Apt::AutoRemove::SuggestsImportant 'false' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/etc/apt/apt.conf.d/docker-autoremove-suggests'
 + sed -i '
 						p;
 						s/ jessie / jessie-updates /
-					' /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/etc/apt/sources.list
+					' /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/etc/apt/sources.list
 + echo 'deb http://security.debian.org jessie/updates main'
-+ '[' -f /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/etc/debian_version ']'
++ '[' -f /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/etc/debian_version ']'
 + ltsSuite=
 + case "$(cat "$rootfsDir/etc/debian_version")" in
-++ cat /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/etc/debian_version
+++ cat /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/etc/debian_version
 + '[' '' ']'
 + rootfs_chroot sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Ign http://ftp.nl.debian.org jessie InRelease
 Get:1 http://ftp.nl.debian.org jessie-updates InRelease [136 kB]
 Get:2 http://security.debian.org jessie/updates InRelease [63.1 kB]
 Hit http://ftp.nl.debian.org jessie Release.gpg
 Hit http://ftp.nl.debian.org jessie Release
-Get:3 http://security.debian.org jessie/updates/main amd64 Packages [217 kB]
+Get:3 http://security.debian.org jessie/updates/main amd64 Packages [232 kB]
 Get:4 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [3619 B]
 Get:5 http://ftp.nl.debian.org jessie/main amd64 Packages [9035 kB]
-Fetched 9456 kB in 1s (4781 kB/s)
+Fetched 9471 kB in 2s (4265 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -648,7 +648,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 4213 kB in 0s (8742 kB/s)
+Fetched 4213 kB in 0s (6471 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
 (Reading database ... 8418 files and directories currently installed.)
 Preparing to unpack .../dpkg_1.17.26_amd64.deb ...
@@ -668,8 +668,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Dec 23 09:51:24 UTC 2015.
-Universal Time is now:  Wed Dec 23 09:51:24 UTC 2015.
+Local time is now:      Mon Jan 11 08:48:59 UTC 2016.
+Universal Time is now:  Mon Jan 11 08:48:59 UTC 2016.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up libssl1.0.0:amd64 (1.0.1k-3+deb8u2) ...
@@ -683,11 +683,11 @@ debconf: unable to initialize frontend: Readline
 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
 debconf: falling back to frontend: Teletype
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
-+ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release.gpg /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_main_binary-amd64_Packages.gz
-+ mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini
-+ chmod +x /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini
-+ tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs.tar.xz --directory /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs '--transform=s,^./,,' .
-+ cat > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/Dockerfile'
++ rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release.gpg /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_main_binary-amd64_Packages.gz
++ mkdir /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial
++ curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini
++ chmod +x /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini
++ tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs.tar.xz --directory /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs '--transform=s,^./,,' .
++ cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/Dockerfile'
 + echo 'CMD ["/bin/bash"]'
-+ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/debian/jessie/rootfs
++ rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs

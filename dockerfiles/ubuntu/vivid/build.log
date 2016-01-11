@@ -1,5 +1,5 @@
-+ mkdir -p /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs
-+ debootstrap --components=main,beta,universe --variant=minbase --include=inetutils-ping,iproute,lsb-release --force-check-gpg vivid /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs http://de.archive.ubuntu.com/ubuntu
++ mkdir -p /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs
++ debootstrap --components=main,beta,universe --variant=minbase --include=inetutils-ping,iproute,lsb-release --force-check-gpg vivid /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs http://de.archive.ubuntu.com/ubuntu
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
@@ -563,40 +563,40 @@ I: Configuring lsb-release...
 I: Configuring dh-python...
 I: Configuring libc-bin...
 I: Base system installed successfully.
-+ echo exit 101 > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/sbin/policy-rc.d'
++ echo exit 101 > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/sbin/policy-rc.d'
 + rootfs_chroot dpkg-divert --local --rename --add /sbin/initctl
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs dpkg-divert --local --rename --add /sbin/initctl
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs dpkg-divert --local --rename --add /sbin/initctl
 Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
-+ cp -a /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/sbin/policy-rc.d /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/sbin/initctl
-+ sed -i 's/^exit.*/exit 0/' /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/sbin/initctl
++ cp -a /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/sbin/policy-rc.d /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/sbin/initctl
++ sed -i 's/^exit.*/exit 0/' /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/sbin/initctl
 + rootfs_chroot apt-get clean
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs apt-get clean
-+ echo force-unsafe-io > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/etc/dpkg/dpkg.cfg.d/docker-apt-speedup'
-+ cat > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/etc/apt/apt.conf.d/docker-clean'
-+ echo Acquire::Languages 'none' > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/etc/apt/apt.conf.d/docker-no-languages'
-+ echo Acquire::GzipIndexes 'true' > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/etc/apt/apt.conf.d/docker-gzip-indexes'
-+ echo Apt::AutoRemove::SuggestsImportant 'false' > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/etc/apt/apt.conf.d/docker-autoremove-suggests'
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs apt-get clean
++ echo force-unsafe-io > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/etc/dpkg/dpkg.cfg.d/docker-apt-speedup'
++ cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/etc/apt/apt.conf.d/docker-clean'
++ echo Acquire::Languages 'none' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/etc/apt/apt.conf.d/docker-no-languages'
++ echo Acquire::GzipIndexes 'true' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/etc/apt/apt.conf.d/docker-gzip-indexes'
++ echo Apt::AutoRemove::SuggestsImportant 'false' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/etc/apt/apt.conf.d/docker-autoremove-suggests'
 + sed -i '
 					p;
 					s/ vivid / vivid-updates /; p;
 					s/ vivid-updates / vivid-security /
-				' /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/etc/apt/sources.list
+				' /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/etc/apt/sources.list
 + rootfs_chroot sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Get:1 http://de.archive.ubuntu.com vivid InRelease [218 kB]
 Get:2 http://de.archive.ubuntu.com vivid-updates InRelease [64.4 kB]
 Get:3 http://de.archive.ubuntu.com vivid-security InRelease [64.4 kB]
 Get:4 http://de.archive.ubuntu.com vivid/main amd64 Packages [1766 kB]
 Get:5 http://de.archive.ubuntu.com vivid/universe amd64 Packages [8393 kB]
-Get:6 http://de.archive.ubuntu.com vivid-updates/main amd64 Packages [344 kB]
-Get:7 http://de.archive.ubuntu.com vivid-updates/universe amd64 Packages [171 kB]
-Get:8 http://de.archive.ubuntu.com vivid-security/main amd64 Packages [220 kB]
-Get:9 http://de.archive.ubuntu.com vivid-security/universe amd64 Packages [90.1 kB]
-Fetched 11.3 MB in 2s (4091 kB/s)
+Get:6 http://de.archive.ubuntu.com vivid-updates/main amd64 Packages [354 kB]
+Get:7 http://de.archive.ubuntu.com vivid-updates/universe amd64 Packages [176 kB]
+Get:8 http://de.archive.ubuntu.com vivid-security/main amd64 Packages [229 kB]
+Get:9 http://de.archive.ubuntu.com vivid-security/universe amd64 Packages [93.2 kB]
+Fetched 11.4 MB in 3s (3568 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -653,7 +653,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 14.1 MB in 6s (2191 kB/s)
+Fetched 14.1 MB in 6s (2221 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
 (Reading database ... 8386 files and directories currently installed.)
 Preparing to unpack .../bsdutils_1%3a2.25.2-4ubuntu3_amd64.deb ...
@@ -687,8 +687,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Dec 23 10:05:50 UTC 2015.
-Universal Time is now:  Wed Dec 23 10:05:50 UTC 2015.
+Local time is now:      Mon Jan 11 09:03:40 UTC 2016.
+Universal Time is now:  Mon Jan 11 09:03:40 UTC 2016.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 (Reading database ... 8389 files and directories currently installed.)
@@ -792,11 +792,11 @@ debconf: falling back to frontend: Teletype
 Setting up iproute2 (3.16.0-2ubuntu1.1) ...
 Setting up iproute (1:3.16.0-2ubuntu1.1) ...
 Processing triggers for libc-bin (2.21-0ubuntu4) ...
-+ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-security_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-security_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-security_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-updates_InRelease /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-updates_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/partial
-+ mkdir /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/bin/tini
-+ chmod +x /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/bin/tini
-+ tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs.tar.xz --directory /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs '--transform=s,^./,,' .
-+ cat > '/data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/Dockerfile'
++ rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-security_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-security_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-security_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-updates_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-updates_universe_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/partial
++ mkdir /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/partial
++ curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/bin/tini
++ chmod +x /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/bin/tini
++ tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs.tar.xz --directory /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs '--transform=s,^./,,' .
++ cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/Dockerfile'
 + echo 'CMD ["/bin/bash"]'
-+ rm -rf /data/home/martijnvanmaurik/build/docker/docker-shared/dockerfiles/ubuntu/vivid/rootfs
++ rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs
