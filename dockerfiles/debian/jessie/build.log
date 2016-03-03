@@ -611,16 +611,95 @@ Ign http://ftp.nl.debian.org jessie InRelease
 Get:1 http://ftp.nl.debian.org jessie-updates InRelease [136 kB]
 Get:2 http://security.debian.org jessie/updates InRelease [63.1 kB]
 Hit http://ftp.nl.debian.org jessie Release.gpg
-Hit http://ftp.nl.debian.org jessie Release
 Get:3 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [3619 B]
-Get:4 http://security.debian.org jessie/updates/main amd64 Packages [254 kB]
+Get:4 http://security.debian.org jessie/updates/main amd64 Packages [269 kB]
+Hit http://ftp.nl.debian.org jessie Release
 Get:5 http://ftp.nl.debian.org jessie/main amd64 Packages [9034 kB]
-Fetched 9491 kB in 1s (5190 kB/s)
+Fetched 9506 kB in 3s (2669 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+The following packages will be upgraded:
+  libc-bin libc6 libgcrypt20 libssl1.0.0 multiarch-support perl-base
+6 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 8784 kB of archives.
+After this operation, 27.6 kB disk space will be freed.
+Get:1 http://security.debian.org/ jessie/updates/main perl-base amd64 5.20.2-3+deb8u4 [1224 kB]
+Get:2 http://security.debian.org/ jessie/updates/main libc-bin amd64 2.19-18+deb8u3 [1285 kB]
+Get:3 http://security.debian.org/ jessie/updates/main libc6 amd64 2.19-18+deb8u3 [4666 kB]
+Get:4 http://security.debian.org/ jessie/updates/main libgcrypt20 amd64 1.6.3-2+deb8u1 [391 kB]
+Get:5 http://security.debian.org/ jessie/updates/main libssl1.0.0 amd64 1.0.1k-3+deb8u4 [1039 kB]
+Get:6 http://security.debian.org/ jessie/updates/main multiarch-support amd64 2.19-18+deb8u3 [179 kB]
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en",
+	LC_ALL = "en_US.utf8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 8784 kB in 1s (6756 kB/s)
+E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
+(Reading database ... 8421 files and directories currently installed.)
+Preparing to unpack .../perl-base_5.20.2-3+deb8u4_amd64.deb ...
+Unpacking perl-base (5.20.2-3+deb8u4) over (5.20.2-3+deb8u3) ...
+Setting up perl-base (5.20.2-3+deb8u4) ...
+(Reading database ... 8421 files and directories currently installed.)
+Preparing to unpack .../libc-bin_2.19-18+deb8u3_amd64.deb ...
+Unpacking libc-bin (2.19-18+deb8u3) over (2.19-18+deb8u2) ...
+Setting up libc-bin (2.19-18+deb8u3) ...
+(Reading database ... 8421 files and directories currently installed.)
+Preparing to unpack .../libc6_2.19-18+deb8u3_amd64.deb ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Unpacking libc6:amd64 (2.19-18+deb8u3) over (2.19-18+deb8u2) ...
+Setting up libc6:amd64 (2.19-18+deb8u3) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
+(Reading database ... 8421 files and directories currently installed.)
+Preparing to unpack .../libgcrypt20_1.6.3-2+deb8u1_amd64.deb ...
+Unpacking libgcrypt20:amd64 (1.6.3-2+deb8u1) over (1.6.3-2) ...
+Setting up libgcrypt20:amd64 (1.6.3-2+deb8u1) ...
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
+(Reading database ... 8421 files and directories currently installed.)
+Preparing to unpack .../libssl1.0.0_1.0.1k-3+deb8u4_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1k-3+deb8u4) over (1.0.1k-3+deb8u2) ...
+Preparing to unpack .../multiarch-support_2.19-18+deb8u3_amd64.deb ...
+Unpacking multiarch-support (2.19-18+deb8u3) over (2.19-18+deb8u2) ...
+Setting up multiarch-support (2.19-18+deb8u3) ...
+Setting up libssl1.0.0:amd64 (1.0.1k-3+deb8u4) ...
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
 + rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release.gpg /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_main_binary-amd64_Packages.gz
 + mkdir /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial
 + curl -sL https://github.com/krallin/tini/releases/download/v0.5.0/tini-static -o /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini

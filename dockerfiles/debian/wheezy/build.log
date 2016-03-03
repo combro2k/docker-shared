@@ -481,22 +481,26 @@ Hit http://ftp.nl.debian.org wheezy Release
 Get:2 http://security.debian.org wheezy/updates Release.gpg [1554 B]
 Get:3 http://ftp.nl.debian.org wheezy-updates Release [143 kB]
 Get:4 http://security.debian.org wheezy/updates Release [102 kB]
-Get:5 http://security.debian.org wheezy/updates/main amd64 Packages [425 kB]
+Get:5 http://security.debian.org wheezy/updates/main amd64 Packages [429 kB]
 Get:6 http://ftp.nl.debian.org wheezy/main amd64 Packages [7637 kB]
 Get:7 http://ftp.nl.debian.org wheezy-updates/main amd64 Packages [5788 B]
-Fetched 8317 kB in 2s (4081 kB/s)
+Fetched 8321 kB in 29s (285 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 The following packages will be upgraded:
-  dpkg libssl1.0.0 tzdata
-3 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 4330 kB of archives.
-After this operation, 37.9 kB disk space will be freed.
-Get:1 http://ftp.nl.debian.org/debian/ wheezy-updates/main tzdata all 2015g-0+deb7u1 [404 kB]
-Get:2 http://security.debian.org/ wheezy/updates/main dpkg amd64 1.16.17 [2663 kB]
-Get:3 http://security.debian.org/ wheezy/updates/main libssl1.0.0 amd64 1.0.1e-2+deb7u19 [1263 kB]
+  dpkg libc-bin libc6 libssl1.0.0 multiarch-support perl-base tzdata
+7 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 11.5 MB of archives.
+After this operation, 274 kB of additional disk space will be used.
+Get:1 http://security.debian.org/ wheezy/updates/main dpkg amd64 1.16.17 [2663 kB]
+Get:2 http://ftp.nl.debian.org/debian/ wheezy-updates/main tzdata all 2015g-0+deb7u1 [404 kB]
+Get:3 http://security.debian.org/ wheezy/updates/main perl-base amd64 5.14.2-21+deb7u3 [1522 kB]
+Get:4 http://security.debian.org/ wheezy/updates/main libc-bin amd64 2.13-38+deb7u10 [1274 kB]
+Get:5 http://security.debian.org/ wheezy/updates/main libc6 amd64 2.13-38+deb7u10 [4226 kB]
+Get:6 http://security.debian.org/ wheezy/updates/main libssl1.0.0 amd64 1.0.1e-2+deb7u20 [1263 kB]
+Get:7 http://security.debian.org/ wheezy/updates/main multiarch-support amd64 2.13-38+deb7u10 [152 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = "en",
@@ -517,7 +521,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 4330 kB in 0s (6158 kB/s)
+Fetched 11.5 MB in 2s (5371 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7596 files and directories currently installed.)
 Preparing to replace dpkg 1.16.16 (using .../dpkg_1.16.17_amd64.deb) ...
@@ -526,7 +530,37 @@ Can not write log, openpty() failed (/dev/pts not mounted?)
 Setting up dpkg (1.16.17) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7596 files and directories currently installed.)
-Preparing to replace libssl1.0.0:amd64 1.0.1e-2+deb7u17 (using .../libssl1.0.0_1.0.1e-2+deb7u19_amd64.deb) ...
+Preparing to replace perl-base 5.14.2-21+deb7u2 (using .../perl-base_5.14.2-21+deb7u3_amd64.deb) ...
+Unpacking replacement perl-base ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Setting up perl-base (5.14.2-21+deb7u3) ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+(Reading database ... 7596 files and directories currently installed.)
+Preparing to replace libc-bin 2.13-38+deb7u8 (using .../libc-bin_2.13-38+deb7u10_amd64.deb) ...
+Unpacking replacement libc-bin ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Setting up libc-bin (2.13-38+deb7u10) ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+(Reading database ... 7596 files and directories currently installed.)
+Preparing to replace libc6:amd64 2.13-38+deb7u8 (using .../libc6_2.13-38+deb7u10_amd64.deb) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Unpacking replacement libc6:amd64 ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Setting up libc6:amd64 (2.13-38+deb7u10) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Can not write log, openpty() failed (/dev/pts not mounted?)
+(Reading database ... 7596 files and directories currently installed.)
+Preparing to replace libssl1.0.0:amd64 1.0.1e-2+deb7u17 (using .../libssl1.0.0_1.0.1e-2+deb7u20_amd64.deb) ...
 Unpacking replacement libssl1.0.0:amd64 ...
 Preparing to replace tzdata 2015f-0+deb7u1 (using .../tzdata_2015g-0+deb7u1_all.deb) ...
 Unpacking replacement tzdata ...
@@ -540,11 +574,17 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Feb 10 14:03:22 UTC 2016.
-Universal Time is now:  Wed Feb 10 14:03:22 UTC 2016.
+Local time is now:      Thu Mar  3 08:49:02 UTC 2016.
+Universal Time is now:  Thu Mar  3 08:49:02 UTC 2016.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
-Setting up libssl1.0.0:amd64 (1.0.1e-2+deb7u19) ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+(Reading database ... 7599 files and directories currently installed.)
+Preparing to replace multiarch-support 2.13-38+deb7u8 (using .../multiarch-support_2.13-38+deb7u10_amd64.deb) ...
+Unpacking replacement multiarch-support ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Setting up multiarch-support (2.13-38+deb7u10) ...
+Setting up libssl1.0.0:amd64 (1.0.1e-2+deb7u20) ...
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
