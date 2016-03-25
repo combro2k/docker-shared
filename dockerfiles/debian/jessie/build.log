@@ -614,8 +614,8 @@ Get:2 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [5019 B]
 Hit http://ftp.nl.debian.org jessie Release
 Get:3 http://ftp.nl.debian.org jessie/main amd64 Packages [9034 kB]
 Get:4 http://security.debian.org jessie/updates InRelease [63.1 kB]
-Get:5 http://security.debian.org jessie/updates/main amd64 Packages [275 kB]
-Fetched 9520 kB in 2s (3882 kB/s)
+Get:5 http://security.debian.org jessie/updates/main amd64 Packages [277 kB]
+Fetched 9522 kB in 2s (3911 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -651,7 +651,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 8784 kB in 8s (1019 kB/s)
+Fetched 8784 kB in 9s (959 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
 (Reading database ... 8421 files and directories currently installed.)
 Preparing to unpack .../perl-base_5.20.2-3+deb8u4_amd64.deb ...

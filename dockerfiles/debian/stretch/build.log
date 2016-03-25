@@ -1,23 +1,19 @@
 + mkdir -p /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs
-+ debootstrap --components=main,beta --variant=minbase --include=inetutils-ping,iproute,lsb-release --force-check-gpg stretch /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs http://ftp.nl.debian.org/debian
++ debootstrap --components=main,beta --variant=minbase --include=inetutils-ping,iproute,lsb-release,python3 --force-check-gpg stretch /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs http://ftp.nl.debian.org/debian
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
 I: Valid Release signature (key id A1BD8E9D78F7FE5C3E65D8AF8B48AD6246925553)
 I: Validating Packages 
-I: Retrieving Packages 
-I: Validating Packages 
 I: Resolving dependencies of required packages...
 I: Resolving dependencies of base packages...
 I: Found additional required dependencies: adduser dmsetup init-system-helpers insserv libapparmor1 libaudit1 libaudit-common libbz2-1.0 libcap2 libcap2-bin libcryptsetup4 libdb5.3 libdebconfclient0 libdevmapper1.02.1 libgcrypt20 libgpg-error0 libkmod2 libncursesw5 libseccomp2 libsemanage1 libsemanage-common libsystemd0 libudev1 libustr-1.0-1 systemd systemd-sysv 
-I: Found additional base dependencies: debian-archive-keyring distro-info-data gnupg gpgv iproute2 libapt-pkg5.0 liblz4-1 libreadline6 libstdc++6 libusb-0.1-4 netbase readline-common 
+I: Found additional base dependencies: debian-archive-keyring dh-python distro-info-data gnupg gpgv iproute2 libapt-pkg5.0 libexpat1 libffi6 liblz4-1 libmpdec2 libpython3.5-minimal libpython3.5-stdlib libpython3-stdlib libreadline6 libsqlite3-0 libssl1.0.2 libstdc++6 libusb-0.1-4 mime-support netbase python3.5 python3.5-minimal python3-minimal readline-common 
 I: Checking component main on http://ftp.nl.debian.org/debian...
 I: Validating libacl1 2.2.52-3
 I: Validating adduser 3.114
 I: Validating libapparmor1 2.10-3+b1
-I: Retrieving apt 1.2.7
 I: Validating apt 1.2.7
-I: Retrieving libapt-pkg5.0 1.2.7
 I: Validating libapt-pkg5.0 1.2.7
 I: Validating libattr1 1:2.4.47-2
 I: Validating libaudit-common 1:2.4.5-1
@@ -35,6 +31,8 @@ I: Validating debconf 1.5.59
 I: Validating debconf-i18n 1.5.59
 I: Validating debian-archive-keyring 2014.3
 I: Validating debianutils 4.7
+I: Retrieving dh-python 2.20151103
+I: Validating dh-python 2.20151103
 I: Validating diffutils 1:3.3-3
 I: Validating distro-info-data 0.28
 I: Validating dpkg 1.18.4
@@ -42,19 +40,21 @@ I: Validating e2fslibs 1.42.13-1
 I: Validating e2fsprogs 1.42.13-1
 I: Validating libcomerr2 1.42.13-1
 I: Validating libss2 1.42.13-1
+I: Retrieving libexpat1 2.1.1-1
+I: Validating libexpat1 2.1.1-1
 I: Validating findutils 4.6.0+git+20160126-2
 I: Validating gcc-4.8-base 4.8.5-4
 I: Validating gcc-4.9-base 4.9.3-12
-I: Validating gcc-5-base 5.3.1-11
-I: Validating libgcc1 1:5.3.1-11
-I: Validating libstdc++6 5.3.1-11
+I: Validating gcc-5-base 5.3.1-12
+I: Validating libgcc1 1:5.3.1-12
+I: Validating libstdc++6 5.3.1-12
 I: Validating libc-bin 2.22-3
 I: Validating libc6 2.22-3
 I: Validating multiarch-support 2.22-3
 I: Validating gnupg 1.4.20-4
 I: Validating gpgv 1.4.20-4
 I: Validating grep 2.22-1
-I: Validating gzip 1.6-4
+I: Validating gzip 1.6-5
 I: Validating hostname 3.17
 I: Validating inetutils-ping 2:1.9.4-1+b1
 I: Validating init 1.29
@@ -65,6 +65,8 @@ I: Validating iproute2 4.3.0-1+b1
 I: Validating libkmod2 22-1
 I: Validating libcap2 1:2.24-12
 I: Validating libcap2-bin 1:2.24-12
+I: Retrieving libffi6 3.2.1-4
+I: Validating libffi6 3.2.1-4
 I: Validating libgcrypt20 1.6.5-2
 I: Validating libgpg-error0 1.21-2
 I: Validating liblocale-gettext-perl 1.07-1+b1
@@ -79,28 +81,50 @@ I: Validating libtext-wrapi18n-perl 0.06-7.1
 I: Validating libusb-0.1-4 2:0.1.12-28
 I: Validating lsb-base 9.20160110
 I: Validating lsb-release 9.20160110
-I: Validating dmsetup 2:1.02.116-1+b1
-I: Validating libdevmapper1.02.1 2:1.02.116-1+b1
+I: Validating dmsetup 2:1.02.120-1
+I: Validating libdevmapper1.02.1 2:1.02.120-1
 I: Validating liblz4-1 0.0~r131-2
 I: Validating mawk 1.3.3-17
+I: Retrieving mime-support 3.59
+I: Validating mime-support 3.59
+I: Retrieving libmpdec2 2.4.1-1
+I: Validating libmpdec2 2.4.1-1
 I: Validating libncurses5 6.0+20160213-1
 I: Validating libncursesw5 6.0+20160213-1
 I: Validating libtinfo5 6.0+20160213-1
 I: Validating ncurses-base 6.0+20160213-1
 I: Validating ncurses-bin 6.0+20160213-1
 I: Validating netbase 5.3
+I: Retrieving libssl1.0.2 1.0.2g-1
+I: Validating libssl1.0.2 1.0.2g-1
 I: Validating libpam-modules 1.1.8-3.2
 I: Validating libpam-modules-bin 1.1.8-3.2
 I: Validating libpam-runtime 1.1.8-3.2
 I: Validating libpam0g 1.1.8-3.2
 I: Validating libpcre3 2:8.38-3
 I: Validating perl-base 5.22.1-9
+I: Retrieving libpython3-stdlib 3.5.1-2
+I: Validating libpython3-stdlib 3.5.1-2
+I: Retrieving python3 3.5.1-2
+I: Validating python3 3.5.1-2
+I: Retrieving python3-minimal 3.5.1-2
+I: Validating python3-minimal 3.5.1-2
+I: Retrieving libpython3.5-minimal 3.5.1-5
+I: Validating libpython3.5-minimal 3.5.1-5
+I: Retrieving libpython3.5-stdlib 3.5.1-5
+I: Validating libpython3.5-stdlib 3.5.1-5
+I: Retrieving python3.5 3.5.1-5
+I: Validating python3.5 3.5.1-5
+I: Retrieving python3.5-minimal 3.5.1-5
+I: Validating python3.5-minimal 3.5.1-5
 I: Validating libreadline6 6.3-8+b4
 I: Validating readline-common 6.3-8
 I: Validating sed 4.2.2-7.1
 I: Validating sensible-utils 0.0.9
 I: Validating login 1:4.2-3.1
 I: Validating passwd 1:4.2-3.1
+I: Retrieving libsqlite3-0 3.11.1-1
+I: Validating libsqlite3-0 3.11.1-1
 I: Validating startpar 0.59-3
 I: Validating libsystemd0 229-2
 I: Validating libudev1 229-2
@@ -407,6 +431,7 @@ I: Unpacking the base system...
 I: Unpacking apt...
 I: Unpacking libapt-pkg5.0:amd64...
 I: Unpacking debian-archive-keyring...
+I: Unpacking dh-python...
 I: Unpacking distro-info-data...
 I: Unpacking libstdc++6:amd64...
 I: Unpacking gnupg...
@@ -414,36 +439,94 @@ I: Unpacking gpgv...
 I: Unpacking inetutils-ping...
 I: Unpacking iproute...
 I: Unpacking iproute2...
+I: Unpacking libffi6:amd64...
 I: Unpacking libusb-0.1-4:amd64...
 I: Unpacking lsb-release...
 I: Unpacking liblz4-1:amd64...
+I: Unpacking mime-support...
+I: Unpacking libmpdec2:amd64...
 I: Unpacking netbase...
+I: Unpacking libpython3-stdlib:amd64...
+I: Unpacking python3...
+I: Unpacking libpython3.5-stdlib:amd64...
+I: Unpacking python3.5...
 I: Unpacking libreadline6:amd64...
 I: Unpacking readline-common...
+I: Unpacking libsqlite3-0:amd64...
 I: Configuring the base system...
 I: Configuring readline-common...
 I: Configuring liblz4-1:amd64...
+I: Configuring mime-support...
 I: Configuring gpgv...
 I: Configuring distro-info-data...
 I: Configuring iproute2...
 I: Configuring debian-archive-keyring...
+I: Configuring libsqlite3-0:amd64...
 I: Configuring libstdc++6:amd64...
+I: Configuring libffi6:amd64...
 I: Configuring libusb-0.1-4:amd64...
+I: Configuring libmpdec2:amd64...
 I: Configuring libreadline6:amd64...
 I: Configuring netbase...
 I: Configuring libapt-pkg5.0:amd64...
 I: Configuring inetutils-ping...
 I: Configuring iproute...
+I: Configuring libpython3.5-stdlib:amd64...
 I: Configuring gnupg...
 I: Configuring apt...
+I: Configuring python3.5...
+I: Configuring libpython3-stdlib:amd64...
+I: Configuring python3...
+I: Configuring lsb-release...
+I: Configuring dh-python...
 I: Configuring libc-bin...
-W: Failure while configuring base packages.  This will be re-attempted up to five times.
-W: See /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/debootstrap/debootstrap.log for details (possibly the package lsb-release is at fault)
-W: Failure while configuring base packages.  This will be re-attempted up to five times.
-W: See /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/debootstrap/debootstrap.log for details (possibly the package lsb-release is at fault)
-W: Failure while configuring base packages.  This will be re-attempted up to five times.
-W: See /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/debootstrap/debootstrap.log for details (possibly the package lsb-release is at fault)
-W: Failure while configuring base packages.  This will be re-attempted up to five times.
-W: See /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/debootstrap/debootstrap.log for details (possibly the package lsb-release is at fault)
-W: Failure while configuring base packages.  This will be re-attempted up to five times.
-W: See /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/debootstrap/debootstrap.log for details (possibly the package lsb-release is at fault)
+I: Base system installed successfully.
++ echo exit 101 > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/usr/sbin/policy-rc.d'
++ rootfs_chroot dpkg-divert --local --rename --add /sbin/initctl
++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs dpkg-divert --local --rename --add /sbin/initctl
+Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
++ cp -a /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/usr/sbin/policy-rc.d /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/sbin/initctl
++ sed -i 's/^exit.*/exit 0/' /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/sbin/initctl
++ rootfs_chroot apt-get clean
++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs apt-get clean
++ echo force-unsafe-io > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/etc/dpkg/dpkg.cfg.d/docker-apt-speedup'
++ cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/etc/apt/apt.conf.d/docker-clean'
++ echo Acquire::Languages 'none' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/etc/apt/apt.conf.d/docker-no-languages'
++ echo Acquire::GzipIndexes 'true' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/etc/apt/apt.conf.d/docker-gzip-indexes'
++ echo Apt::AutoRemove::SuggestsImportant 'false' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/etc/apt/apt.conf.d/docker-autoremove-suggests'
++ sed -i '
+						p;
+						s/ stretch / stretch-updates /
+					' /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/etc/apt/sources.list
++ echo 'deb http://security.debian.org stretch/updates main'
++ '[' -f /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/etc/debian_version ']'
++ ltsSuite=
++ case "$(cat "$rootfsDir/etc/debian_version")" in
+++ cat /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/etc/debian_version
++ '[' '' ']'
++ rootfs_chroot sh -xc 'apt-get update && apt-get dist-upgrade -y'
++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
++ apt-get update
+Get:1 http://ftp.nl.debian.org/debian stretch InRelease [215 kB]
+Get:2 http://security.debian.org stretch/updates InRelease [62.8 kB]
+Get:3 http://ftp.nl.debian.org/debian stretch-updates InRelease [113 kB]
+Get:4 http://security.debian.org stretch/updates/main amd64 Packages [20 B]
+Get:5 http://ftp.nl.debian.org/debian stretch-updates/main amd64 Packages [20 B]
+Fetched 391 kB in 0s (1741 kB/s)
+Reading package lists...
++ apt-get dist-upgrade -y
+Reading package lists...
+Building dependency tree...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
++ rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_stretch_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_stretch_main_binary-amd64_Packages /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_stretch-updates_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_stretch-updates_main_binary-amd64_Packages.lz4 /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/security.debian.org_dists_stretch_updates_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/security.debian.org_dists_stretch_updates_main_binary-amd64_Packages.lz4
++ mkdir /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/partial
++ curl -sL https://github.com/krallin/tini/releases/download/v0.9.0/tini-static -o /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/usr/bin/tini
++ chmod +x /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs/usr/bin/tini
++ tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs.tar.xz --directory /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs '--transform=s,^./,,' .
++ cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/Dockerfile'
++ echo 'CMD ["/bin/bash"]'
++ rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/stretch/rootfs

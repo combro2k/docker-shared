@@ -10,6 +10,7 @@ include="inetutils-ping,iproute,lsb-release"
 # Versions
 declare -A build
 build=(
+    ['precise']='ubuntu'
     ['trusty']='ubuntu'
     ['vivid']='ubuntu'
     ['wily']='ubuntu'
@@ -44,8 +45,12 @@ function build()
 
     build_log="${curdest}/build.log"
 
+    include="inetutils-ping,iproute,lsb-release"
     if [[ "${distro}" == "ubuntu" ]]; then
         components="main,beta,universe"
+    elif [[ "${version}" == "stretch" ]]; then
+        components="main,beta"
+	include="${include},python3"
     else
         components="main,beta"
     fi
