@@ -47,7 +47,7 @@ function build()
 
     include="inetutils-ping,iproute,lsb-release"
     if [[ "${distro}" == "ubuntu" ]]; then
-        components="main,beta,universe"
+        components="main,beta,universe,backports"
     elif [[ "${version}" == "stretch" ]]; then
         components="main,beta"
 	include="${include},python3"

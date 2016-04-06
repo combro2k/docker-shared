@@ -609,13 +609,13 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + apt-get update
 Ign http://ftp.nl.debian.org jessie InRelease
 Get:1 http://ftp.nl.debian.org jessie-updates InRelease [142 kB]
+Get:2 http://security.debian.org jessie/updates InRelease [63.1 kB]
 Hit http://ftp.nl.debian.org jessie Release.gpg
-Get:2 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [4982 B]
+Get:3 http://security.debian.org jessie/updates/main amd64 Packages [290 kB]
+Get:4 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [4982 B]
 Hit http://ftp.nl.debian.org jessie Release
-Get:3 http://ftp.nl.debian.org jessie/main amd64 Packages [9034 kB]
-Get:4 http://security.debian.org jessie/updates InRelease [63.1 kB]
-Get:5 http://security.debian.org jessie/updates/main amd64 Packages [290 kB]
-Fetched 9535 kB in 2s (4307 kB/s)
+Get:5 http://ftp.nl.debian.org jessie/main amd64 Packages [9034 kB]
+Fetched 9535 kB in 1s (5949 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...

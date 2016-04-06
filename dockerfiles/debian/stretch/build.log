@@ -624,7 +624,7 @@ Get:2 http://security.debian.org stretch/updates InRelease [62.8 kB]
 Get:3 http://ftp.nl.debian.org/debian stretch-updates InRelease [113 kB]
 Get:4 http://security.debian.org stretch/updates/main amd64 Packages [20 B]
 Get:5 http://ftp.nl.debian.org/debian stretch-updates/main amd64 Packages [20 B]
-Fetched 391 kB in 0s (1768 kB/s)
+Fetched 391 kB in 0s (1888 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...

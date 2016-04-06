@@ -4,7 +4,6 @@ I: Retrieving Release
 I: Retrieving Release.gpg 
 I: Checking Release signature
 I: Valid Release signature (key id ED6D65271AACF0FF15D123036FB2A1C265FFB764)
-I: Retrieving Packages 
 I: Validating Packages 
 I: Resolving dependencies of required packages...
 I: Resolving dependencies of base packages...
@@ -484,7 +483,7 @@ Get:4 http://security.debian.org wheezy/updates Release.gpg [1554 B]
 Get:5 http://security.debian.org wheezy/updates Release [102 kB]
 Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [438 kB]
 Get:7 http://ftp.nl.debian.org wheezy-updates/main amd64 Packages [7475 B]
-Fetched 8338 kB in 1s (4505 kB/s)
+Fetched 8338 kB in 2s (3415 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -517,7 +516,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 5652 kB in 5s (989 kB/s)
+Fetched 5652 kB in 10s (542 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7608 files and directories currently installed.)
 Preparing to replace libc-bin 2.13-38+deb7u9 (using .../libc-bin_2.13-38+deb7u10_amd64.deb) ...

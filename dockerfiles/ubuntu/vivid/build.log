@@ -1,5 +1,5 @@
 + mkdir -p /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs
-+ debootstrap --components=main,beta,universe --variant=minbase --include=inetutils-ping,iproute,lsb-release --force-check-gpg vivid /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs http://de.archive.ubuntu.com/ubuntu
++ debootstrap --components=main,beta,universe,backports --variant=minbase --include=inetutils-ping,iproute,lsb-release --force-check-gpg vivid /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs http://de.archive.ubuntu.com/ubuntu
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
@@ -596,7 +596,7 @@ Get:6 http://de.archive.ubuntu.com vivid-updates/main amd64 Packages [368 kB]
 Get:7 http://de.archive.ubuntu.com vivid-updates/universe amd64 Packages [179 kB]
 Get:8 http://de.archive.ubuntu.com vivid-security/main amd64 Packages [247 kB]
 Get:9 http://de.archive.ubuntu.com vivid-security/universe amd64 Packages [97.3 kB]
-Fetched 11.4 MB in 4s (2728 kB/s)
+Fetched 11.4 MB in 4s (2448 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -654,7 +654,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 15.3 MB in 7s (1978 kB/s)
+Fetched 15.3 MB in 7s (2051 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
 (Reading database ... 8386 files and directories currently installed.)
 Preparing to unpack .../bsdutils_1%3a2.25.2-4ubuntu3_amd64.deb ...
@@ -692,8 +692,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Apr  6 11:39:58 UTC 2016.
-Universal Time is now:  Wed Apr  6 11:39:58 UTC 2016.
+Local time is now:      Wed Apr  6 16:22:40 UTC 2016.
+Universal Time is now:  Wed Apr  6 16:22:40 UTC 2016.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 (Reading database ... 8389 files and directories currently installed.)
