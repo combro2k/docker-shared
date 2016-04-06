@@ -590,20 +590,20 @@ Ign http://de.archive.ubuntu.com precise InRelease
 Get:1 http://de.archive.ubuntu.com precise-updates InRelease [55.7 kB]
 Get:2 http://de.archive.ubuntu.com precise-security InRelease [55.7 kB]
 Hit http://de.archive.ubuntu.com precise Release.gpg
-Get:3 http://de.archive.ubuntu.com precise-updates/main amd64 Packages [1273 kB]
+Get:3 http://de.archive.ubuntu.com precise-updates/main amd64 Packages [1274 kB]
 Get:4 http://de.archive.ubuntu.com precise-updates/universe amd64 Packages [351 kB]
 Get:5 http://de.archive.ubuntu.com precise-updates/main i386 Packages [1351 kB]
 Get:6 http://de.archive.ubuntu.com precise-updates/universe i386 Packages [362 kB]
 Hit http://de.archive.ubuntu.com precise Release
-Get:7 http://de.archive.ubuntu.com precise-security/main amd64 Packages [772 kB]
+Get:7 http://de.archive.ubuntu.com precise-security/main amd64 Packages [774 kB]
 Get:8 http://de.archive.ubuntu.com precise-security/universe amd64 Packages [166 kB]
-Get:9 http://de.archive.ubuntu.com precise-security/main i386 Packages [848 kB]
+Get:9 http://de.archive.ubuntu.com precise-security/main i386 Packages [850 kB]
 Get:10 http://de.archive.ubuntu.com precise-security/universe i386 Packages [175 kB]
 Get:11 http://de.archive.ubuntu.com precise/main amd64 Packages [1640 kB]
 Get:12 http://de.archive.ubuntu.com precise/universe amd64 Packages [6167 kB]
 Get:13 http://de.archive.ubuntu.com precise/main i386 Packages [1641 kB]
 Get:14 http://de.archive.ubuntu.com precise/universe i386 Packages [6180 kB]
-Fetched 21.0 MB in 4s (4701 kB/s)
+Fetched 21.0 MB in 4s (4862 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -621,8 +621,8 @@ The following packages will be upgraded:
   python2.7-minimal sysv-rc sysvinit-utils tzdata ubuntu-keyring udev upstart
   util-linux
 68 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 29.7 MB of archives.
-After this operation, 119 kB disk space will be freed.
+Need to get 29.8 MB of archives.
+After this operation, 74.8 kB disk space will be freed.
 Get:1 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main base-files amd64 6.5ubuntu6.8 [68.2 kB]
 Get:2 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main bash amd64 4.2-2ubuntu2.6 [641 kB]
 Get:3 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main dpkg amd64 1.16.1.2ubuntu7.7 [1830 kB]
@@ -644,13 +644,13 @@ Get:18 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libpciaccess0 a
 Get:19 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libdrm-intel1 amd64 2.4.52-1~precise2 [65.6 kB]
 Get:20 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libdrm-nouveau1a amd64 2.4.52-1~precise2 [14.0 kB]
 Get:21 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libdrm-radeon1 amd64 2.4.52-1~precise2 [27.8 kB]
-Get:22 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libpcre3 amd64 8.12-4ubuntu0.1 [149 kB]
+Get:22 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libpcre3 amd64 8.12-4ubuntu0.2 [149 kB]
 Get:23 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libglib2.0-0 amd64 2.32.4-0ubuntu1 [1200 kB]
 Get:24 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libudev0 amd64 175-0ubuntu9.10 [27.8 kB]
 Get:25 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main busybox-initramfs amd64 1:1.18.5-1ubuntu4.1 [183 kB]
 Get:26 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main cpio amd64 2.11-7ubuntu3.2 [116 kB]
 Get:27 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main lsb-base all 4.0-0ubuntu20.3 [10.5 kB]
-Get:28 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main tzdata all 2016b-0ubuntu0.12.04 [419 kB]
+Get:28 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main tzdata all 2016c-0ubuntu0.12.04 [440 kB]
 Get:29 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main util-linux amd64 2.20.1-1ubuntu3.1 [596 kB]
 Get:30 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main procps amd64 1:3.2.8-11ubuntu6.4 [233 kB]
 Get:31 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main udev amd64 175-0ubuntu9.10 [324 kB]
@@ -708,7 +708,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 29.7 MB in 11s (2670 kB/s)
+Fetched 29.8 MB in 9s (3304 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 8208 files and directories currently installed.)
 Preparing to replace base-files 6.5ubuntu6 (using .../base-files_6.5ubuntu6.8_amd64.deb) ...
@@ -797,7 +797,7 @@ Preparing to replace libdrm-nouveau1a 2.4.32-1ubuntu1 (using .../libdrm-nouveau1
 Unpacking replacement libdrm-nouveau1a ...
 Preparing to replace libdrm-radeon1 2.4.32-1ubuntu1 (using .../libdrm-radeon1_2.4.52-1~precise2_amd64.deb) ...
 Unpacking replacement libdrm-radeon1 ...
-Preparing to replace libpcre3 8.12-4 (using .../libpcre3_8.12-4ubuntu0.1_amd64.deb) ...
+Preparing to replace libpcre3 8.12-4 (using .../libpcre3_8.12-4ubuntu0.2_amd64.deb) ...
 Unpacking replacement libpcre3 ...
 Preparing to replace libglib2.0-0 2.32.1-0ubuntu2 (using .../libglib2.0-0_2.32.4-0ubuntu1_amd64.deb) ...
 Unpacking replacement libglib2.0-0 ...
@@ -813,10 +813,10 @@ Can not write log, openpty() failed (/dev/pts not mounted?)
 Setting up lsb-base (4.0-0ubuntu20.3) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 8212 files and directories currently installed.)
-Preparing to replace tzdata 2012b-1 (using .../tzdata_2016b-0ubuntu0.12.04_all.deb) ...
+Preparing to replace tzdata 2012b-1 (using .../tzdata_2016c-0ubuntu0.12.04_all.deb) ...
 Unpacking replacement tzdata ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
-Setting up tzdata (2016b-0ubuntu0.12.04) ...
+Setting up tzdata (2016c-0ubuntu0.12.04) ...
 debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
 debconf: falling back to frontend: Readline
@@ -825,8 +825,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Fri Mar 25 15:23:30 UTC 2016.
-Universal Time is now:  Fri Mar 25 15:23:30 UTC 2016.
+Local time is now:      Wed Apr  6 11:20:50 UTC 2016.
+Universal Time is now:  Wed Apr  6 11:20:50 UTC 2016.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Can not write log, openpty() failed (/dev/pts not mounted?)
@@ -1113,7 +1113,7 @@ Can not write log, openpty() failed (/dev/pts not mounted?)
 Preparing to replace lsb-release 4.0-0ubuntu20 (using .../lsb-release_4.0-0ubuntu20.3_all.deb) ...
 Unpacking replacement lsb-release ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
-Setting up libpcre3 (8.12-4ubuntu0.1) ...
+Setting up libpcre3 (8.12-4ubuntu0.2) ...
 Setting up libglib2.0-0 (2.32.4-0ubuntu1) ...
 No schema files found: doing nothing.
 Setting up procps (1:3.2.8-11ubuntu6.4) ...
@@ -1147,4 +1147,3 @@ Processing triggers for initramfs-tools ...
 + cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/precise/Dockerfile'
 + echo 'CMD ["/bin/bash"]'
 + rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/precise/rootfs
-rm: cannot remove ‘/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/precise/rootfs/run/shm’: Device or resource busy

@@ -17,18 +17,18 @@ I: Retrieving libacl1 2.2.52-2
 I: Validating libacl1 2.2.52-2
 I: Retrieving adduser 3.113+nmu3
 I: Validating adduser 3.113+nmu3
-I: Retrieving apt 1.0.9.8.2
-I: Validating apt 1.0.9.8.2
-I: Retrieving libapt-pkg4.12 1.0.9.8.2
-I: Validating libapt-pkg4.12 1.0.9.8.2
+I: Retrieving apt 1.0.9.8.3
+I: Validating apt 1.0.9.8.3
+I: Retrieving libapt-pkg4.12 1.0.9.8.3
+I: Validating libapt-pkg4.12 1.0.9.8.3
 I: Retrieving libattr1 1:2.4.47-2
 I: Validating libattr1 1:2.4.47-2
 I: Retrieving libaudit-common 1:2.4-1
 I: Validating libaudit-common 1:2.4-1
 I: Retrieving libaudit1 1:2.4-1+b1
 I: Validating libaudit1 1:2.4-1+b1
-I: Retrieving base-files 8+deb8u3
-I: Validating base-files 8+deb8u3
+I: Retrieving base-files 8+deb8u4
+I: Validating base-files 8+deb8u4
 I: Retrieving base-passwd 3.5.37
 I: Validating base-passwd 3.5.37
 I: Retrieving bash 4.3-11+b1
@@ -77,16 +77,16 @@ I: Retrieving libgcc1 1:4.9.2-10
 I: Validating libgcc1 1:4.9.2-10
 I: Retrieving libstdc++6 4.9.2-10
 I: Validating libstdc++6 4.9.2-10
-I: Retrieving libc-bin 2.19-18+deb8u2
-I: Validating libc-bin 2.19-18+deb8u2
-I: Retrieving libc6 2.19-18+deb8u2
-I: Validating libc6 2.19-18+deb8u2
-I: Retrieving multiarch-support 2.19-18+deb8u2
-I: Validating multiarch-support 2.19-18+deb8u2
-I: Retrieving gnupg 1.4.18-7
-I: Validating gnupg 1.4.18-7
-I: Retrieving gpgv 1.4.18-7
-I: Validating gpgv 1.4.18-7
+I: Retrieving libc-bin 2.19-18+deb8u4
+I: Validating libc-bin 2.19-18+deb8u4
+I: Retrieving libc6 2.19-18+deb8u4
+I: Validating libc6 2.19-18+deb8u4
+I: Retrieving multiarch-support 2.19-18+deb8u4
+I: Validating multiarch-support 2.19-18+deb8u4
+I: Retrieving gnupg 1.4.18-7+deb8u1
+I: Validating gnupg 1.4.18-7+deb8u1
+I: Retrieving gpgv 1.4.18-7+deb8u1
+I: Validating gpgv 1.4.18-7+deb8u1
 I: Retrieving grep 2.20-4.1
 I: Validating grep 2.20-4.1
 I: Retrieving gzip 1.6-4
@@ -111,8 +111,8 @@ I: Retrieving libcap2-bin 1:2.24-8
 I: Validating libcap2-bin 1:2.24-8
 I: Retrieving libffi6 3.1-2+b2
 I: Validating libffi6 3.1-2+b2
-I: Retrieving libgcrypt20 1.6.3-2
-I: Validating libgcrypt20 1.6.3-2
+I: Retrieving libgcrypt20 1.6.3-2+deb8u1
+I: Validating libgcrypt20 1.6.3-2+deb8u1
 I: Retrieving libgpg-error0 1.17-3
 I: Validating libgpg-error0 1.17-3
 I: Retrieving liblocale-gettext-perl 1.05-8+b1
@@ -157,20 +157,20 @@ I: Retrieving ncurses-bin 5.9+20140913-1+b1
 I: Validating ncurses-bin 5.9+20140913-1+b1
 I: Retrieving netbase 5.3
 I: Validating netbase 5.3
-I: Retrieving libssl1.0.0 1.0.1k-3+deb8u2
-I: Validating libssl1.0.0 1.0.1k-3+deb8u2
-I: Retrieving libpam-modules 1.1.8-3.1+deb8u1
-I: Validating libpam-modules 1.1.8-3.1+deb8u1
-I: Retrieving libpam-modules-bin 1.1.8-3.1+deb8u1
-I: Validating libpam-modules-bin 1.1.8-3.1+deb8u1
+I: Retrieving libssl1.0.0 1.0.1k-3+deb8u4
+I: Validating libssl1.0.0 1.0.1k-3+deb8u4
+I: Retrieving libpam-modules 1.1.8-3.1+deb8u1+b1
+I: Validating libpam-modules 1.1.8-3.1+deb8u1+b1
+I: Retrieving libpam-modules-bin 1.1.8-3.1+deb8u1+b1
+I: Validating libpam-modules-bin 1.1.8-3.1+deb8u1+b1
 I: Retrieving libpam-runtime 1.1.8-3.1+deb8u1
 I: Validating libpam-runtime 1.1.8-3.1+deb8u1
-I: Retrieving libpam0g 1.1.8-3.1+deb8u1
-I: Validating libpam0g 1.1.8-3.1+deb8u1
-I: Retrieving libpcre3 2:8.35-3.3+deb8u2
-I: Validating libpcre3 2:8.35-3.3+deb8u2
-I: Retrieving perl-base 5.20.2-3+deb8u3
-I: Validating perl-base 5.20.2-3+deb8u3
+I: Retrieving libpam0g 1.1.8-3.1+deb8u1+b1
+I: Validating libpam0g 1.1.8-3.1+deb8u1+b1
+I: Retrieving libpcre3 2:8.35-3.3+deb8u4
+I: Validating libpcre3 2:8.35-3.3+deb8u4
+I: Retrieving perl-base 5.20.2-3+deb8u4
+I: Validating perl-base 5.20.2-3+deb8u4
 I: Retrieving libprocps3 2:3.3.9-9
 I: Validating libprocps3 2:3.3.9-9
 I: Retrieving procps 2:3.3.9-9
@@ -207,16 +207,16 @@ I: Retrieving libsqlite3-0 3.8.7.1-1+deb8u1
 I: Validating libsqlite3-0 3.8.7.1-1+deb8u1
 I: Retrieving startpar 0.59-3
 I: Validating startpar 0.59-3
-I: Retrieving libsystemd0 215-17+deb8u3
-I: Validating libsystemd0 215-17+deb8u3
-I: Retrieving libudev1 215-17+deb8u3
-I: Validating libudev1 215-17+deb8u3
-I: Retrieving systemd 215-17+deb8u3
-I: Validating systemd 215-17+deb8u3
-I: Retrieving systemd-sysv 215-17+deb8u3
-I: Validating systemd-sysv 215-17+deb8u3
-I: Retrieving udev 215-17+deb8u3
-I: Validating udev 215-17+deb8u3
+I: Retrieving libsystemd0 215-17+deb8u4
+I: Validating libsystemd0 215-17+deb8u4
+I: Retrieving libudev1 215-17+deb8u4
+I: Validating libudev1 215-17+deb8u4
+I: Retrieving systemd 215-17+deb8u4
+I: Validating systemd 215-17+deb8u4
+I: Retrieving systemd-sysv 215-17+deb8u4
+I: Validating systemd-sysv 215-17+deb8u4
+I: Retrieving udev 215-17+deb8u4
+I: Validating udev 215-17+deb8u4
 I: Retrieving initscripts 2.88dsf-59
 I: Validating initscripts 2.88dsf-59
 I: Retrieving sysv-rc 2.88dsf-59
@@ -225,8 +225,8 @@ I: Retrieving sysvinit-utils 2.88dsf-59
 I: Validating sysvinit-utils 2.88dsf-59
 I: Retrieving tar 1.27.1-2+b1
 I: Validating tar 1.27.1-2+b1
-I: Retrieving tzdata 2015g-0+deb8u1
-I: Validating tzdata 2015g-0+deb8u1
+I: Retrieving tzdata 2016c-0+deb8u1
+I: Validating tzdata 2016c-0+deb8u1
 I: Retrieving libustr-1.0-1 1.0.4-3+b2
 I: Validating libustr-1.0-1 1.0.4-3+b2
 I: Retrieving bsdutils 1:2.25.2-6
@@ -444,6 +444,7 @@ I: Configuring gcc-4.9-base:amd64...
 I: Configuring libaudit-common...
 I: Configuring libc6:amd64...
 I: Configuring startpar...
+I: Configuring libc-bin...
 I: Configuring diffutils...
 I: Configuring insserv...
 I: Configuring findutils...
@@ -480,7 +481,6 @@ I: Configuring zlib1g:amd64...
 I: Configuring libcap2:amd64...
 I: Configuring libsystemd0:amd64...
 I: Configuring libdevmapper1.02.1:amd64...
-I: Configuring libc-bin...
 I: Configuring libsemanage1:amd64...
 I: Configuring sysvinit-utils...
 I: Configuring libacl1:amd64...
@@ -610,96 +610,17 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 Ign http://ftp.nl.debian.org jessie InRelease
 Get:1 http://ftp.nl.debian.org jessie-updates InRelease [142 kB]
 Hit http://ftp.nl.debian.org jessie Release.gpg
-Get:2 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [5019 B]
+Get:2 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [4982 B]
 Hit http://ftp.nl.debian.org jessie Release
 Get:3 http://ftp.nl.debian.org jessie/main amd64 Packages [9034 kB]
 Get:4 http://security.debian.org jessie/updates InRelease [63.1 kB]
-Get:5 http://security.debian.org jessie/updates/main amd64 Packages [277 kB]
-Fetched 9522 kB in 2s (3911 kB/s)
+Get:5 http://security.debian.org jessie/updates/main amd64 Packages [290 kB]
+Fetched 9535 kB in 2s (4307 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
-The following packages will be upgraded:
-  libc-bin libc6 libgcrypt20 libssl1.0.0 multiarch-support perl-base
-6 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 8784 kB of archives.
-After this operation, 27.6 kB disk space will be freed.
-Get:1 http://security.debian.org/ jessie/updates/main perl-base amd64 5.20.2-3+deb8u4 [1224 kB]
-Get:2 http://security.debian.org/ jessie/updates/main libc-bin amd64 2.19-18+deb8u3 [1285 kB]
-Get:3 http://security.debian.org/ jessie/updates/main libc6 amd64 2.19-18+deb8u3 [4666 kB]
-Get:4 http://security.debian.org/ jessie/updates/main libgcrypt20 amd64 1.6.3-2+deb8u1 [391 kB]
-Get:5 http://security.debian.org/ jessie/updates/main libssl1.0.0 amd64 1.0.1k-3+deb8u4 [1039 kB]
-Get:6 http://security.debian.org/ jessie/updates/main multiarch-support amd64 2.19-18+deb8u3 [179 kB]
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = "en",
-	LC_ALL = "en_US.utf8",
-	LC_TIME = "nl_NL.UTF-8",
-	LC_MONETARY = "nl_NL.UTF-8",
-	LC_ADDRESS = "nl_NL.UTF-8",
-	LC_TELEPHONE = "nl_NL.UTF-8",
-	LC_NAME = "nl_NL.UTF-8",
-	LC_MEASUREMENT = "nl_NL.UTF-8",
-	LC_IDENTIFICATION = "nl_NL.UTF-8",
-	LC_NUMERIC = "nl_NL.UTF-8",
-	LC_PAPER = "nl_NL.UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to the standard locale ("C").
-locale: Cannot set LC_CTYPE to default locale: No such file or directory
-locale: Cannot set LC_MESSAGES to default locale: No such file or directory
-locale: Cannot set LC_ALL to default locale: No such file or directory
-debconf: delaying package configuration, since apt-utils is not installed
-Fetched 8784 kB in 9s (959 kB/s)
-E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
-(Reading database ... 8421 files and directories currently installed.)
-Preparing to unpack .../perl-base_5.20.2-3+deb8u4_amd64.deb ...
-Unpacking perl-base (5.20.2-3+deb8u4) over (5.20.2-3+deb8u3) ...
-Setting up perl-base (5.20.2-3+deb8u4) ...
-(Reading database ... 8421 files and directories currently installed.)
-Preparing to unpack .../libc-bin_2.19-18+deb8u3_amd64.deb ...
-Unpacking libc-bin (2.19-18+deb8u3) over (2.19-18+deb8u2) ...
-Setting up libc-bin (2.19-18+deb8u3) ...
-(Reading database ... 8421 files and directories currently installed.)
-Preparing to unpack .../libc6_2.19-18+deb8u3_amd64.deb ...
-debconf: unable to initialize frontend: Dialog
-debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
-debconf: falling back to frontend: Teletype
-Unpacking libc6:amd64 (2.19-18+deb8u3) over (2.19-18+deb8u2) ...
-Setting up libc6:amd64 (2.19-18+deb8u3) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
-debconf: falling back to frontend: Teletype
-Processing triggers for libc-bin (2.19-18+deb8u3) ...
-(Reading database ... 8421 files and directories currently installed.)
-Preparing to unpack .../libgcrypt20_1.6.3-2+deb8u1_amd64.deb ...
-Unpacking libgcrypt20:amd64 (1.6.3-2+deb8u1) over (1.6.3-2) ...
-Setting up libgcrypt20:amd64 (1.6.3-2+deb8u1) ...
-Processing triggers for libc-bin (2.19-18+deb8u3) ...
-(Reading database ... 8421 files and directories currently installed.)
-Preparing to unpack .../libssl1.0.0_1.0.1k-3+deb8u4_amd64.deb ...
-Unpacking libssl1.0.0:amd64 (1.0.1k-3+deb8u4) over (1.0.1k-3+deb8u2) ...
-Preparing to unpack .../multiarch-support_2.19-18+deb8u3_amd64.deb ...
-Unpacking multiarch-support (2.19-18+deb8u3) over (2.19-18+deb8u2) ...
-Setting up multiarch-support (2.19-18+deb8u3) ...
-Setting up libssl1.0.0:amd64 (1.0.1k-3+deb8u4) ...
-locale: Cannot set LC_CTYPE to default locale: No such file or directory
-locale: Cannot set LC_MESSAGES to default locale: No such file or directory
-locale: Cannot set LC_ALL to default locale: No such file or directory
-debconf: unable to initialize frontend: Dialog
-debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
-debconf: falling back to frontend: Teletype
-Processing triggers for libc-bin (2.19-18+deb8u3) ...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 + rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release.gpg /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_InRelease /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_main_binary-amd64_Packages.gz
 + mkdir /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial
 + curl -sL https://github.com/krallin/tini/releases/download/v0.9.0/tini-static -o /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini

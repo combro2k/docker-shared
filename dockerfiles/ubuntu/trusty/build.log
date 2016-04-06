@@ -648,14 +648,14 @@ Ign http://de.archive.ubuntu.com trusty InRelease
 Get:1 http://de.archive.ubuntu.com trusty-updates InRelease [65.9 kB]
 Get:2 http://de.archive.ubuntu.com trusty-security InRelease [65.9 kB]
 Hit http://de.archive.ubuntu.com trusty Release.gpg
-Get:3 http://de.archive.ubuntu.com trusty-updates/main amd64 Packages [931 kB]
-Get:4 http://de.archive.ubuntu.com trusty-updates/universe amd64 Packages [460 kB]
-Get:5 http://de.archive.ubuntu.com trusty-security/main amd64 Packages [557 kB]
-Get:6 http://de.archive.ubuntu.com trusty-security/universe amd64 Packages [163 kB]
+Get:3 http://de.archive.ubuntu.com trusty-updates/main amd64 Packages [946 kB]
+Get:4 http://de.archive.ubuntu.com trusty-updates/universe amd64 Packages [462 kB]
+Get:5 http://de.archive.ubuntu.com trusty-security/main amd64 Packages [567 kB]
+Get:6 http://de.archive.ubuntu.com trusty-security/universe amd64 Packages [164 kB]
 Hit http://de.archive.ubuntu.com trusty Release
 Get:7 http://de.archive.ubuntu.com trusty/main amd64 Packages [1743 kB]
 Get:8 http://de.archive.ubuntu.com trusty/universe amd64 Packages [7589 kB]
-Fetched 11.6 MB in 3s (3139 kB/s)
+Fetched 11.6 MB in 4s (2739 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -674,12 +674,12 @@ The following packages will be upgraded:
   util-linux
 69 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 Need to get 27.5 MB of archives.
-After this operation, 155 kB disk space will be freed.
+After this operation, 152 kB disk space will be freed.
 Get:1 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main base-files amd64 7.2ubuntu5.4 [67.6 kB]
 Get:2 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main bash amd64 4.3-7ubuntu1.5 [576 kB]
 Get:3 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main coreutils amd64 8.21-1ubuntu5.4 [1091 kB]
 Get:4 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main dpkg amd64 1.17.5ubuntu5.5 [1953 kB]
-Get:5 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libpcre3 amd64 1:8.31-2ubuntu2.1 [144 kB]
+Get:5 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libpcre3 amd64 1:8.31-2ubuntu2.2 [144 kB]
 Get:6 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libselinux1 amd64 2.2.2-1ubuntu0.1 [58.7 kB]
 Get:7 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main sysv-rc all 2.88dsf-41ubuntu6.3 [36.6 kB]
 Get:8 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main sysvinit-utils amd64 2.88dsf-41ubuntu6.3 [52.9 kB]
@@ -694,7 +694,7 @@ Get:16 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libjson-c2 amd64
 Get:17 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libuuid1 amd64 2.20.1-5.1ubuntu20.7 [10.9 kB]
 Get:18 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libblkid1 amd64 2.20.1-5.1ubuntu20.7 [62.6 kB]
 Get:19 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libcgmanager0 amd64 0.24-0ubuntu7.5 [28.9 kB]
-Get:20 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main tzdata all 2016b-0ubuntu0.14.04 [166 kB]
+Get:20 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main tzdata all 2016c-0ubuntu0.14.04 [166 kB]
 Get:21 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main util-linux amd64 2.20.1-5.1ubuntu20.7 [458 kB]
 Get:22 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libprocps3 amd64 1:3.3.9-1ubuntu2.2 [31.4 kB]
 Get:23 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main procps amd64 1:3.3.9-1ubuntu2.2 [209 kB]
@@ -761,7 +761,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 27.5 MB in 11s (2297 kB/s)
+Fetched 27.5 MB in 13s (2077 kB/s)
 (Reading database ... 8417 files and directories currently installed.)
 Preparing to unpack .../base-files_7.2ubuntu5.4_amd64.deb ...
 Unpacking base-files (7.2ubuntu5.4) over (7.2ubuntu5) ...
@@ -786,8 +786,8 @@ Preparing to unpack .../dpkg_1.17.5ubuntu5.5_amd64.deb ...
 Unpacking dpkg (1.17.5ubuntu5.5) over (1.17.5ubuntu5) ...
 Setting up dpkg (1.17.5ubuntu5.5) ...
 (Reading database ... 8417 files and directories currently installed.)
-Preparing to unpack .../libpcre3_1%3a8.31-2ubuntu2.1_amd64.deb ...
-Unpacking libpcre3:amd64 (1:8.31-2ubuntu2.1) over (1:8.31-2ubuntu2) ...
+Preparing to unpack .../libpcre3_1%3a8.31-2ubuntu2.2_amd64.deb ...
+Unpacking libpcre3:amd64 (1:8.31-2ubuntu2.2) over (1:8.31-2ubuntu2) ...
 Preparing to unpack .../libc6_2.19-0ubuntu6.7_amd64.deb ...
 debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
@@ -809,7 +809,7 @@ debconf: falling back to frontend: Readline
 debconf: unable to initialize frontend: Readline
 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/perl/5.18.2 /usr/local/share/perl/5.18.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.18 /usr/share/perl/5.18 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
 debconf: falling back to frontend: Teletype
-Setting up libpcre3:amd64 (1:8.31-2ubuntu2.1) ...
+Setting up libpcre3:amd64 (1:8.31-2ubuntu2.2) ...
 Processing triggers for libc-bin (2.19-0ubuntu6) ...
 (Reading database ... 8417 files and directories currently installed.)
 Preparing to unpack .../libselinux1_2.2.2-1ubuntu0.1_amd64.deb ...
@@ -875,9 +875,9 @@ Processing triggers for libc-bin (2.19-0ubuntu6) ...
 (Reading database ... 8417 files and directories currently installed.)
 Preparing to unpack .../libcgmanager0_0.24-0ubuntu7.5_amd64.deb ...
 Unpacking libcgmanager0:amd64 (0.24-0ubuntu7.5) over (0.24-0ubuntu5) ...
-Preparing to unpack .../tzdata_2016b-0ubuntu0.14.04_all.deb ...
-Unpacking tzdata (2016b-0ubuntu0.14.04) over (2014b-1) ...
-Setting up tzdata (2016b-0ubuntu0.14.04) ...
+Preparing to unpack .../tzdata_2016c-0ubuntu0.14.04_all.deb ...
+Unpacking tzdata (2016c-0ubuntu0.14.04) over (2014b-1) ...
+Setting up tzdata (2016c-0ubuntu0.14.04) ...
 debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
 debconf: falling back to frontend: Readline
@@ -886,8 +886,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Fri Mar 25 15:31:36 UTC 2016.
-Universal Time is now:  Fri Mar 25 15:31:36 UTC 2016.
+Local time is now:      Wed Apr  6 11:32:06 UTC 2016.
+Universal Time is now:  Wed Apr  6 11:32:06 UTC 2016.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 (Reading database ... 8439 files and directories currently installed.)
