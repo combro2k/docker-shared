@@ -611,11 +611,11 @@ Ign http://ftp.nl.debian.org jessie InRelease
 Get:1 http://ftp.nl.debian.org jessie-updates InRelease [142 kB]
 Get:2 http://security.debian.org jessie/updates InRelease [63.1 kB]
 Hit http://ftp.nl.debian.org jessie Release.gpg
-Get:3 http://security.debian.org jessie/updates/main amd64 Packages [290 kB]
-Get:4 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [4982 B]
 Hit http://ftp.nl.debian.org jessie Release
+Get:3 http://security.debian.org jessie/updates/main amd64 Packages [294 kB]
+Get:4 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [7407 B]
 Get:5 http://ftp.nl.debian.org jessie/main amd64 Packages [9034 kB]
-Fetched 9535 kB in 1s (5949 kB/s)
+Fetched 9540 kB in 2s (4410 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...

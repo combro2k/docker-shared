@@ -615,10 +615,10 @@ Get:3 http://de.archive.ubuntu.com wily-security InRelease [65.9 kB]
 Get:4 http://de.archive.ubuntu.com wily/main amd64 Packages [1833 kB]
 Get:5 http://de.archive.ubuntu.com wily/universe amd64 Packages [8673 kB]
 Get:6 http://de.archive.ubuntu.com wily-updates/main amd64 Packages [262 kB]
-Get:7 http://de.archive.ubuntu.com wily-updates/universe amd64 Packages [115 kB]
+Get:7 http://de.archive.ubuntu.com wily-updates/universe amd64 Packages [117 kB]
 Get:8 http://de.archive.ubuntu.com wily-security/main amd64 Packages [182 kB]
-Get:9 http://de.archive.ubuntu.com wily-security/universe amd64 Packages [61.2 kB]
-Fetched 11.5 MB in 3s (3750 kB/s)
+Get:9 http://de.archive.ubuntu.com wily-security/universe amd64 Packages [63.8 kB]
+Fetched 11.5 MB in 2s (4074 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -672,7 +672,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 21.4 MB in 7s (2881 kB/s)
+Fetched 21.4 MB in 7s (2956 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
 (Reading database ... 9724 files and directories currently installed.)
 Preparing to unpack .../dpkg_1.18.2ubuntu5.1_amd64.deb ...
@@ -790,8 +790,8 @@ debconf: (No usable dialog-like program is installed, so the dialog based fronte
 debconf: falling back to frontend: Readline
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Apr  6 16:27:44 UTC 2016.
-Universal Time is now:  Wed Apr  6 16:27:44 UTC 2016.
+Local time is now:      Sun Apr 17 19:22:56 UTC 2016.
+Universal Time is now:  Sun Apr 17 19:22:56 UTC 2016.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 (Reading database ... 9733 files and directories currently installed.)
