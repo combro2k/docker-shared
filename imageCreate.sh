@@ -5,7 +5,7 @@ base="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 dest="${base}/dockerfiles"
 
 bin="${base}/bin"
-include="inetutils-ping,iproute,lsb-release"
+include="inetutils-ping,iproute,lsb-release,procps"
 
 # Versions
 declare -A build
@@ -45,7 +45,7 @@ function build()
 
     build_log="${curdest}/build.log"
 
-    include="inetutils-ping,iproute,lsb-release"
+    include="inetutils-ping,iproute,lsb-release,procps"
     if [[ "${distro}" == "ubuntu" ]]; then
         components="main,beta,universe,backports"
     elif [[ "${version}" == "stretch" ]]; then

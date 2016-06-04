@@ -1,5 +1,5 @@
 + mkdir -p /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs
-+ debootstrap --components=main,beta,universe,backports --variant=minbase --include=inetutils-ping,iproute,lsb-release --force-check-gpg vivid /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs http://de.archive.ubuntu.com/ubuntu
++ debootstrap --components=main,beta,universe,backports --variant=minbase --include=inetutils-ping,iproute,lsb-release,procps --force-check-gpg vivid /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/vivid/rootfs http://de.archive.ubuntu.com/ubuntu
 I: Retrieving Release 
 I: Retrieving Release.gpg 
 I: Checking Release signature
@@ -8,6 +8,7 @@ I: Retrieving Packages
 I: Validating Packages 
 I: Retrieving Packages 
 I: Validating Packages 
+I: Found packages in base already in required: procps 
 I: Resolving dependencies of required packages...
 I: Resolving dependencies of base packages...
 I: Found additional base dependencies: dh-python gcc-4.9-base gnupg gpgv iproute2 libapt-pkg4.12 libexpat1 libffi6 libmpdec2 libpython3.4-minimal libpython3.4-stdlib libpython3-stdlib libreadline6 libsqlite3-0 libssl1.0.0 libstdc++6 libusb-0.1-4 mime-support netbase python3 python3.4 python3.4-minimal python3-minimal readline-common ubuntu-keyring 
@@ -592,11 +593,11 @@ Get:2 http://de.archive.ubuntu.com vivid-updates InRelease [65.9 kB]
 Get:3 http://de.archive.ubuntu.com vivid-security InRelease [65.9 kB]
 Get:4 http://de.archive.ubuntu.com vivid/main amd64 Packages [1766 kB]
 Get:5 http://de.archive.ubuntu.com vivid/universe amd64 Packages [8393 kB]
-Get:6 http://de.archive.ubuntu.com vivid-updates/main amd64 Packages [368 kB]
+Get:6 http://de.archive.ubuntu.com vivid-updates/main amd64 Packages [370 kB]
 Get:7 http://de.archive.ubuntu.com vivid-updates/universe amd64 Packages [179 kB]
-Get:8 http://de.archive.ubuntu.com vivid-security/main amd64 Packages [247 kB]
+Get:8 http://de.archive.ubuntu.com vivid-security/main amd64 Packages [250 kB]
 Get:9 http://de.archive.ubuntu.com vivid-security/universe amd64 Packages [97.3 kB]
-Fetched 11.4 MB in 3s (3409 kB/s)
+Fetched 11.4 MB in 3s (3678 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -654,7 +655,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 15.3 MB in 6s (2293 kB/s)
+Fetched 15.3 MB in 7s (2092 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
 (Reading database ... 8386 files and directories currently installed.)
 Preparing to unpack .../bsdutils_1%3a2.25.2-4ubuntu3_amd64.deb ...
@@ -692,8 +693,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Sun Apr 17 19:18:16 UTC 2016.
-Universal Time is now:  Sun Apr 17 19:18:16 UTC 2016.
+Local time is now:      Sat Jun  4 11:50:13 UTC 2016.
+Universal Time is now:  Sat Jun  4 11:50:13 UTC 2016.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 (Reading database ... 8389 files and directories currently installed.)
