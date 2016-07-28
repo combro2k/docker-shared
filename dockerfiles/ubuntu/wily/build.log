@@ -1,7 +1,6 @@
 + mkdir -p /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/wily/rootfs
 + debootstrap --components=main,beta,universe,backports --variant=minbase --include=inetutils-ping,iproute,lsb-release,procps --force-check-gpg wily /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/wily/rootfs http://de.archive.ubuntu.com/ubuntu
-I: Retrieving Release 
-I: Retrieving Release.gpg 
+I: Retrieving InRelease 
 I: Checking Release signature
 I: Valid Release signature (key id 790BC7277767219C42C86F933B4FE6ACC0B21F32)
 I: Retrieving Packages 
@@ -610,29 +609,29 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 + /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/ubuntu/wily/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
-Get:1 http://de.archive.ubuntu.com wily InRelease [218 kB]
-Get:2 http://de.archive.ubuntu.com wily-updates InRelease [65.9 kB]
-Get:3 http://de.archive.ubuntu.com wily-security InRelease [65.9 kB]
-Get:4 http://de.archive.ubuntu.com wily/main amd64 Packages [1833 kB]
-Get:5 http://de.archive.ubuntu.com wily/universe amd64 Packages [8673 kB]
-Get:6 http://de.archive.ubuntu.com wily-updates/main amd64 Packages [286 kB]
-Get:7 http://de.archive.ubuntu.com wily-updates/universe amd64 Packages [124 kB]
-Get:8 http://de.archive.ubuntu.com wily-security/main amd64 Packages [202 kB]
-Get:9 http://de.archive.ubuntu.com wily-security/universe amd64 Packages [66.1 kB]
-Fetched 11.5 MB in 3s (3002 kB/s)
+Hit http://de.archive.ubuntu.com wily InRelease
+Get:1 http://de.archive.ubuntu.com wily-updates InRelease [65.9 kB]
+Get:2 http://de.archive.ubuntu.com wily-security InRelease [65.9 kB]
+Get:3 http://de.archive.ubuntu.com wily/main amd64 Packages [1833 kB]
+Get:4 http://de.archive.ubuntu.com wily/universe amd64 Packages [8673 kB]
+Get:5 http://de.archive.ubuntu.com wily-updates/main amd64 Packages [314 kB]
+Get:6 http://de.archive.ubuntu.com wily-updates/universe amd64 Packages [131 kB]
+Get:7 http://de.archive.ubuntu.com wily-security/main amd64 Packages [228 kB]
+Get:8 http://de.archive.ubuntu.com wily-security/universe amd64 Packages [70.7 kB]
+Fetched 11.4 MB in 2s (3916 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 The following packages will be upgraded:
-  apt dpkg init initscripts libapt-pkg4.16 libc-bin libc6 libdpkg-perl
-  libexpat1 libgcrypt20 libpam-modules libpam-modules-bin libpam-runtime
-  libpam0g libpcre3 libssl1.0.0 libsystemd0 libudev1 multiarch-support perl
-  perl-base perl-modules systemd systemd-sysv sysv-rc sysvinit-utils tzdata
-  udev
-28 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+  apt dh-python dpkg init initscripts libapt-pkg4.16 libc-bin libc6
+  libdpkg-perl libexpat1 libgcrypt20 libpam-modules libpam-modules-bin
+  libpam-runtime libpam0g libpcre3 libssl1.0.0 libsystemd0 libudev1
+  multiarch-support perl perl-base perl-modules systemd systemd-sysv sysv-rc
+  sysvinit-utils tzdata udev
+29 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 Need to get 23.1 MB of archives.
-After this operation, 1330 kB of additional disk space will be used.
+After this operation, 1331 kB of additional disk space will be used.
 Get:1 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main dpkg amd64 1.18.2ubuntu5.1 [2086 kB]
 Get:2 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main init amd64 1.23ubuntu4 [3968 B]
 Get:3 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main perl amd64 5.20.2-6ubuntu0.2 [2635 kB]
@@ -657,28 +656,24 @@ Get:21 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main initscripts amd64 
 Get:22 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main libgcrypt20 amd64 1.6.3-2ubuntu1.1 [336 kB]
 Get:23 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main libpam-runtime all 1.1.8-3.1ubuntu3.2 [37.8 kB]
 Get:24 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main multiarch-support amd64 2.21-0ubuntu4.3 [7184 B]
-Get:25 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main tzdata all 2016d-0ubuntu0.15.10 [166 kB]
+Get:25 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main tzdata all 2016f-0ubuntu0.15.10 [166 kB]
 Get:26 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main libdpkg-perl all 1.18.2ubuntu5.1 [194 kB]
-Get:27 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main libexpat1 amd64 2.1.0-7ubuntu0.15.10.1 [71.5 kB]
-Get:28 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main libssl1.0.0 amd64 1.0.2d-0ubuntu1.5 [1080 kB]
+Get:27 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main dh-python all 2.20150826ubuntu1.1 [69.0 kB]
+Get:28 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main libexpat1 amd64 2.1.0-7ubuntu0.15.10.2 [71.7 kB]
+Get:29 http://de.archive.ubuntu.com/ubuntu/ wily-updates/main libssl1.0.0 amd64 1.0.2d-0ubuntu1.5 [1080 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
-	LANGUAGE = "en",
+	LANGUAGE = "",
 	LC_ALL = "en_US.utf8",
 	LC_TIME = "nl_NL.UTF-8",
 	LC_MONETARY = "nl_NL.UTF-8",
-	LC_ADDRESS = "nl_NL.UTF-8",
-	LC_TELEPHONE = "nl_NL.UTF-8",
-	LC_NAME = "nl_NL.UTF-8",
 	LC_MEASUREMENT = "nl_NL.UTF-8",
-	LC_IDENTIFICATION = "nl_NL.UTF-8",
 	LC_NUMERIC = "nl_NL.UTF-8",
-	LC_PAPER = "nl_NL.UTF-8",
 	LANG = "en_US.UTF-8"
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 23.1 MB in 9s (2333 kB/s)
+Fetched 23.1 MB in 8s (2739 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
 (Reading database ... 9724 files and directories currently installed.)
 Preparing to unpack .../dpkg_1.18.2ubuntu5.1_amd64.deb ...
@@ -802,29 +797,32 @@ Preparing to unpack .../multiarch-support_2.21-0ubuntu4.3_amd64.deb ...
 Unpacking multiarch-support (2.21-0ubuntu4.3) over (2.21-0ubuntu4) ...
 Setting up multiarch-support (2.21-0ubuntu4.3) ...
 (Reading database ... 9723 files and directories currently installed.)
-Preparing to unpack .../tzdata_2016d-0ubuntu0.15.10_all.deb ...
-Unpacking tzdata (2016d-0ubuntu0.15.10) over (2015g-1) ...
-Setting up tzdata (2016d-0ubuntu0.15.10) ...
+Preparing to unpack .../tzdata_2016f-0ubuntu0.15.10_all.deb ...
+Unpacking tzdata (2016f-0ubuntu0.15.10) over (2015g-1) ...
+Setting up tzdata (2016f-0ubuntu0.15.10) ...
 debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
 debconf: falling back to frontend: Readline
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Sat Jun  4 11:55:07 UTC 2016.
-Universal Time is now:  Sat Jun  4 11:55:07 UTC 2016.
+Local time is now:      Wed Jul 27 14:30:02 UTC 2016.
+Universal Time is now:  Wed Jul 27 14:30:02 UTC 2016.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 (Reading database ... 9738 files and directories currently installed.)
 Preparing to unpack .../libdpkg-perl_1.18.2ubuntu5.1_all.deb ...
 Unpacking libdpkg-perl (1.18.2ubuntu5.1) over (1.18.2ubuntu5) ...
-Preparing to unpack .../libexpat1_2.1.0-7ubuntu0.15.10.1_amd64.deb ...
-Unpacking libexpat1:amd64 (2.1.0-7ubuntu0.15.10.1) over (2.1.0-7) ...
+Preparing to unpack .../dh-python_2.20150826ubuntu1.1_all.deb ...
+Unpacking dh-python (2.20150826ubuntu1.1) over (2.20150826ubuntu1) ...
+Preparing to unpack .../libexpat1_2.1.0-7ubuntu0.15.10.2_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-7ubuntu0.15.10.2) over (2.1.0-7) ...
 Preparing to unpack .../libssl1.0.0_1.0.2d-0ubuntu1.5_amd64.deb ...
 Unpacking libssl1.0.0:amd64 (1.0.2d-0ubuntu1.5) over (1.0.2d-0ubuntu1) ...
 Setting up perl-modules (5.20.2-6ubuntu0.2) ...
 Setting up perl (5.20.2-6ubuntu0.2) ...
 Setting up libdpkg-perl (1.18.2ubuntu5.1) ...
-Setting up libexpat1:amd64 (2.1.0-7ubuntu0.15.10.1) ...
+Setting up dh-python (2.20150826ubuntu1.1) ...
+Setting up libexpat1:amd64 (2.1.0-7ubuntu0.15.10.2) ...
 Setting up libssl1.0.0:amd64 (1.0.2d-0ubuntu1.5) ...
 debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
