@@ -492,43 +492,52 @@ Get:2 http://ftp.nl.debian.org wheezy-updates Release [151 kB]
 Get:3 http://ftp.nl.debian.org wheezy/main amd64 Packages [7634 kB]
 Get:4 http://security.debian.org wheezy/updates Release.gpg [1554 B]
 Get:5 http://security.debian.org wheezy/updates Release [39.0 kB]
-Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [530 kB]
+Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [542 kB]
 Get:7 http://ftp.nl.debian.org wheezy-updates/main amd64 Packages [7481 B]
-Fetched 8365 kB in 2s (4109 kB/s)
+Fetched 8377 kB in 1s (4608 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 The following packages will be upgraded:
-  libc-bin libc6 libexpat1 libsqlite3-0 libssl1.0.0 multiarch-support
-  python2.7 python2.7-minimal
-8 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 12.1 MB of archives.
-After this operation, 23.6 kB disk space will be freed.
-Get:1 http://security.debian.org/ wheezy/updates/main libc-bin amd64 2.13-38+deb7u11 [1275 kB]
-Get:2 http://security.debian.org/ wheezy/updates/main libc6 amd64 2.13-38+deb7u11 [4352 kB]
-Get:3 http://security.debian.org/ wheezy/updates/main libssl1.0.0 amd64 1.0.1e-2+deb7u21 [1263 kB]
-Get:4 http://security.debian.org/ wheezy/updates/main libexpat1 amd64 2.1.0-1+deb7u4 [139 kB]
-Get:5 http://security.debian.org/ wheezy/updates/main libsqlite3-0 amd64 3.7.13-1+deb7u3 [455 kB]
-Get:6 http://security.debian.org/ wheezy/updates/main multiarch-support amd64 2.13-38+deb7u11 [152 kB]
-Get:7 http://security.debian.org/ wheezy/updates/main python2.7 amd64 2.7.3-6+deb7u3 [2717 kB]
-Get:8 http://security.debian.org/ wheezy/updates/main python2.7-minimal amd64 2.7.3-6+deb7u3 [1759 kB]
+  gnupg gpgv libc-bin libc6 libexpat1 libsqlite3-0 libssl1.0.0
+  multiarch-support perl-base python2.7 python2.7-minimal
+11 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 15.8 MB of archives.
+After this operation, 17.4 kB disk space will be freed.
+Get:1 http://security.debian.org/ wheezy/updates/main perl-base amd64 5.14.2-21+deb7u4 [1522 kB]
+Get:2 http://security.debian.org/ wheezy/updates/main libc-bin amd64 2.13-38+deb7u11 [1275 kB]
+Get:3 http://security.debian.org/ wheezy/updates/main libc6 amd64 2.13-38+deb7u11 [4352 kB]
+Get:4 http://security.debian.org/ wheezy/updates/main libssl1.0.0 amd64 1.0.1e-2+deb7u21 [1263 kB]
+Get:5 http://security.debian.org/ wheezy/updates/main libexpat1 amd64 2.1.0-1+deb7u4 [139 kB]
+Get:6 http://security.debian.org/ wheezy/updates/main libsqlite3-0 amd64 3.7.13-1+deb7u3 [455 kB]
+Get:7 http://security.debian.org/ wheezy/updates/main gpgv amd64 1.4.12-7+deb7u8 [229 kB]
+Get:8 http://security.debian.org/ wheezy/updates/main gnupg amd64 1.4.12-7+deb7u8 [1957 kB]
+Get:9 http://security.debian.org/ wheezy/updates/main multiarch-support amd64 2.13-38+deb7u11 [152 kB]
+Get:10 http://security.debian.org/ wheezy/updates/main python2.7 amd64 2.7.3-6+deb7u3 [2717 kB]
+Get:11 http://security.debian.org/ wheezy/updates/main python2.7-minimal amd64 2.7.3-6+deb7u3 [1759 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
-	LANGUAGE = "",
+	LANGUAGE = "en_US:nl",
 	LC_ALL = "en_US.utf8",
 	LC_TIME = "nl_NL.UTF-8",
 	LC_MONETARY = "nl_NL.UTF-8",
 	LC_MEASUREMENT = "nl_NL.UTF-8",
 	LC_NUMERIC = "nl_NL.UTF-8",
-	LANG = "en_US.UTF-8"
+	LANG = "nl_NL.UTF-8"
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 12.1 MB in 19s (635 kB/s)
+Fetched 15.8 MB in 21s (745 kB/s)
+Can not write log, openpty() failed (/dev/pts not mounted?)
+(Reading database ... 7677 files and directories currently installed.)
+Preparing to replace perl-base 5.14.2-21+deb7u3 (using .../perl-base_5.14.2-21+deb7u4_amd64.deb) ...
+Unpacking replacement perl-base ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Setting up perl-base (5.14.2-21+deb7u4) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
 Preparing to replace libc-bin 2.13-38+deb7u10 (using .../libc-bin_2.13-38+deb7u11_amd64.deb) ...
@@ -561,6 +570,18 @@ Preparing to replace libexpat1:amd64 2.1.0-1+deb7u2 (using .../libexpat1_2.1.0-1
 Unpacking replacement libexpat1:amd64 ...
 Preparing to replace libsqlite3-0:amd64 3.7.13-1+deb7u2 (using .../libsqlite3-0_3.7.13-1+deb7u3_amd64.deb) ...
 Unpacking replacement libsqlite3-0:amd64 ...
+Preparing to replace gpgv 1.4.12-7+deb7u7 (using .../gpgv_1.4.12-7+deb7u8_amd64.deb) ...
+Unpacking replacement gpgv ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Setting up gpgv (1.4.12-7+deb7u8) ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+(Reading database ... 7677 files and directories currently installed.)
+Preparing to replace gnupg 1.4.12-7+deb7u7 (using .../gnupg_1.4.12-7+deb7u8_amd64.deb) ...
+Unpacking replacement gnupg ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Setting up gnupg (1.4.12-7+deb7u8) ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+(Reading database ... 7677 files and directories currently installed.)
 Preparing to replace multiarch-support 2.13-38+deb7u10 (using .../multiarch-support_2.13-38+deb7u11_amd64.deb) ...
 Unpacking replacement multiarch-support ...
 Can not write log, openpty() failed (/dev/pts not mounted?)

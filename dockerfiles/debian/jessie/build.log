@@ -614,46 +614,62 @@ Get:1 http://ftp.nl.debian.org jessie-updates InRelease [142 kB]
 Hit http://ftp.nl.debian.org jessie Release.gpg
 Get:2 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [17.6 kB]
 Hit http://ftp.nl.debian.org jessie Release
-Get:3 http://ftp.nl.debian.org jessie/main amd64 Packages [9032 kB]
-Get:4 http://security.debian.org jessie/updates InRelease [63.1 kB]
-Get:5 http://security.debian.org jessie/updates/main amd64 Packages [371 kB]
-Fetched 9626 kB in 2s (3907 kB/s)
+Get:3 http://security.debian.org jessie/updates InRelease [63.1 kB]
+Get:4 http://ftp.nl.debian.org jessie/main amd64 Packages [9032 kB]
+Get:5 http://security.debian.org jessie/updates/main amd64 Packages [389 kB]
+Fetched 9644 kB in 2s (4140 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 The following packages will be upgraded:
-  libexpat1 perl-base tzdata
-3 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 1494 kB of archives.
+  gnupg gpgv libexpat1 libgcrypt20 perl-base tzdata
+6 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3244 kB of archives.
 After this operation, 7168 B of additional disk space will be used.
 Get:1 http://ftp.nl.debian.org/debian/ jessie-updates/main tzdata all 2016f-0+deb8u1 [185 kB]
 Get:2 http://security.debian.org/ jessie/updates/main perl-base amd64 5.20.2-3+deb8u6 [1229 kB]
-Get:3 http://security.debian.org/ jessie/updates/main libexpat1 amd64 2.1.0-6+deb8u3 [80.0 kB]
+Get:3 http://security.debian.org/ jessie/updates/main libgcrypt20 amd64 1.6.3-2+deb8u2 [393 kB]
+Get:4 http://security.debian.org/ jessie/updates/main libexpat1 amd64 2.1.0-6+deb8u3 [80.0 kB]
+Get:5 http://security.debian.org/ jessie/updates/main gpgv amd64 1.4.18-7+deb8u2 [209 kB]
+Get:6 http://security.debian.org/ jessie/updates/main gnupg amd64 1.4.18-7+deb8u2 [1149 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
-	LANGUAGE = "",
+	LANGUAGE = "en_US:nl",
 	LC_ALL = "en_US.utf8",
 	LC_TIME = "nl_NL.UTF-8",
 	LC_MONETARY = "nl_NL.UTF-8",
 	LC_MEASUREMENT = "nl_NL.UTF-8",
 	LC_NUMERIC = "nl_NL.UTF-8",
-	LANG = "en_US.UTF-8"
+	LANG = "nl_NL.UTF-8"
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 1494 kB in 1s (795 kB/s)
+Fetched 3244 kB in 3s (820 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
 (Reading database ... 8438 files and directories currently installed.)
 Preparing to unpack .../perl-base_5.20.2-3+deb8u6_amd64.deb ...
 Unpacking perl-base (5.20.2-3+deb8u6) over (5.20.2-3+deb8u5) ...
 Setting up perl-base (5.20.2-3+deb8u6) ...
 (Reading database ... 8438 files and directories currently installed.)
+Preparing to unpack .../libgcrypt20_1.6.3-2+deb8u2_amd64.deb ...
+Unpacking libgcrypt20:amd64 (1.6.3-2+deb8u2) over (1.6.3-2+deb8u1) ...
+Setting up libgcrypt20:amd64 (1.6.3-2+deb8u2) ...
+Processing triggers for libc-bin (2.19-18+deb8u4) ...
+(Reading database ... 8438 files and directories currently installed.)
 Preparing to unpack .../libexpat1_2.1.0-6+deb8u3_amd64.deb ...
 Unpacking libexpat1:amd64 (2.1.0-6+deb8u3) over (2.1.0-6+deb8u2) ...
+Preparing to unpack .../gpgv_1.4.18-7+deb8u2_amd64.deb ...
+Unpacking gpgv (1.4.18-7+deb8u2) over (1.4.18-7+deb8u1) ...
+Setting up gpgv (1.4.18-7+deb8u2) ...
+(Reading database ... 8438 files and directories currently installed.)
+Preparing to unpack .../gnupg_1.4.18-7+deb8u2_amd64.deb ...
+Unpacking gnupg (1.4.18-7+deb8u2) over (1.4.18-7+deb8u1) ...
+Setting up gnupg (1.4.18-7+deb8u2) ...
+(Reading database ... 8438 files and directories currently installed.)
 Preparing to unpack .../tzdata_2016f-0+deb8u1_all.deb ...
 Unpacking tzdata (2016f-0+deb8u1) over (2016d-0+deb8u1) ...
 Setting up tzdata (2016f-0+deb8u1) ...
@@ -665,8 +681,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Jul 27 14:01:46 UTC 2016.
-Universal Time is now:  Wed Jul 27 14:01:46 UTC 2016.
+Local time is now:      Fri Sep 16 08:18:17 UTC 2016.
+Universal Time is now:  Fri Sep 16 08:18:17 UTC 2016.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up libexpat1:amd64 (2.1.0-6+deb8u3) ...

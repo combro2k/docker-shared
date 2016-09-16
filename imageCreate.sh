@@ -63,7 +63,7 @@ function build()
         --include="${include}" \
         --force-check-gpg \
         "${version}" \
-        "${urls[${distro}]}" 2>&1 | tee ${build_log}
+        "${urls[${distro}]}" 2>&1 | tee ${build_log} || return 1
     echo
 
     return 0
@@ -76,7 +76,7 @@ if [ -z "${@}" ]; then
 
         # Execute processes
         for type in ${variant[@]}; do
-            build "${distro}" "${version}" "${type}"
+            build "${distro}" "${version}" "${type}" || exit 1
         done
     done
 else
@@ -86,7 +86,7 @@ else
 
         # Execute processes
         for type in ${variant[@]}; do
-            build "${distro}" "${version}" "${type}"
+            build "${distro}" "${version}" "${type}" || exit 1
         done
     done
 fi
