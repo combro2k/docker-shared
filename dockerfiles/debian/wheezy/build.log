@@ -1,185 +1,98 @@
-+ mkdir -p /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs
-+ debootstrap --components=main,beta --variant=minbase --include=inetutils-ping,iproute,lsb-release,procps --force-check-gpg wheezy /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs http://ftp.nl.debian.org/debian
++ mkdir -p /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs
++ debootstrap --components=main,beta --variant=minbase --include=inetutils-ping,iproute,lsb-release,procps --force-check-gpg wheezy /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs http://ftp.nl.debian.org/debian
 I: Retrieving InRelease 
-I: Failed to retrieve InRelease
 I: Retrieving Release 
-I: Retrieving Release.gpg 
 I: Checking Release signature
 I: Valid Release signature (key id ED6D65271AACF0FF15D123036FB2A1C265FFB764)
-I: Retrieving Packages 
 I: Validating Packages 
 I: Resolving dependencies of required packages...
 I: Resolving dependencies of base packages...
-I: Found additional required dependencies: insserv libbz2-1.0 libdb5.1 libsemanage1 libsemanage-common libslang2 libustr-1.0-1 
-I: Found additional base dependencies: debian-archive-keyring gnupg gpgv libapt-pkg4.12 libexpat1 libncursesw5 libprocps0 libreadline6 libsqlite3-0 libssl1.0.0 libstdc++6 libusb-0.1-4 mime-support netbase python python2.7 python2.7-minimal python-minimal readline-common 
+I: Found additional required dependencies: insserv libbz2-1.0 libdb5.1 libsemanage-common libsemanage1 libslang2 libustr-1.0-1 
+I: Found additional base dependencies: debian-archive-keyring gnupg gpgv libapt-pkg4.12 libexpat1 libncursesw5 libprocps0 libreadline6 libsqlite3-0 libssl1.0.0 libstdc++6 libusb-0.1-4 mime-support netbase python python-minimal python2.7 python2.7-minimal readline-common 
 I: Checking component main on http://ftp.nl.debian.org/debian...
-I: Retrieving libacl1 2.2.51-8
 I: Validating libacl1 2.2.51-8
-I: Retrieving apt 0.9.7.9+deb7u7
 I: Validating apt 0.9.7.9+deb7u7
-I: Retrieving libapt-pkg4.12 0.9.7.9+deb7u7
 I: Validating libapt-pkg4.12 0.9.7.9+deb7u7
-I: Retrieving libattr1 1:2.4.46-8
 I: Validating libattr1 1:2.4.46-8
-I: Retrieving base-files 7.1wheezy11
 I: Validating base-files 7.1wheezy11
-I: Retrieving base-passwd 3.5.26
 I: Validating base-passwd 3.5.26
-I: Retrieving bash 4.2+dfsg-0.1+deb7u3
 I: Validating bash 4.2+dfsg-0.1+deb7u3
-I: Retrieving libbz2-1.0 1.0.6-4
 I: Validating libbz2-1.0 1.0.6-4
-I: Retrieving coreutils 8.13-3.5
 I: Validating coreutils 8.13-3.5
-I: Retrieving dash 0.5.7-3
 I: Validating dash 0.5.7-3
-I: Retrieving libdb5.1 5.1.29-5
 I: Validating libdb5.1 5.1.29-5
-I: Retrieving debconf 1.5.49
 I: Validating debconf 1.5.49
-I: Retrieving debconf-i18n 1.5.49
 I: Validating debconf-i18n 1.5.49
-I: Retrieving debian-archive-keyring 2014.3~deb7u1
 I: Validating debian-archive-keyring 2014.3~deb7u1
-I: Retrieving debianutils 4.3.2
 I: Validating debianutils 4.3.2
-I: Retrieving diffutils 1:3.2-6
 I: Validating diffutils 1:3.2-6
-I: Retrieving dpkg 1.16.18
 I: Validating dpkg 1.16.18
-I: Retrieving e2fslibs 1.42.5-1.1+deb7u1
 I: Validating e2fslibs 1.42.5-1.1+deb7u1
-I: Retrieving e2fsprogs 1.42.5-1.1+deb7u1
 I: Validating e2fsprogs 1.42.5-1.1+deb7u1
-I: Retrieving libcomerr2 1.42.5-1.1+deb7u1
 I: Validating libcomerr2 1.42.5-1.1+deb7u1
-I: Retrieving libss2 1.42.5-1.1+deb7u1
 I: Validating libss2 1.42.5-1.1+deb7u1
-I: Retrieving libc-bin 2.13-38+deb7u10
 I: Validating libc-bin 2.13-38+deb7u10
-I: Retrieving libc6 2.13-38+deb7u10
 I: Validating libc6 2.13-38+deb7u10
-I: Retrieving multiarch-support 2.13-38+deb7u10
 I: Validating multiarch-support 2.13-38+deb7u10
-I: Retrieving libexpat1 2.1.0-1+deb7u2
 I: Validating libexpat1 2.1.0-1+deb7u2
-I: Retrieving findutils 4.4.2-4
 I: Validating findutils 4.4.2-4
-I: Retrieving gcc-4.7-base 4.7.2-5
 I: Validating gcc-4.7-base 4.7.2-5
-I: Retrieving libgcc1 1:4.7.2-5
 I: Validating libgcc1 1:4.7.2-5
-I: Retrieving libstdc++6 4.7.2-5
 I: Validating libstdc++6 4.7.2-5
-I: Retrieving gnupg 1.4.12-7+deb7u7
 I: Validating gnupg 1.4.12-7+deb7u7
-I: Retrieving gpgv 1.4.12-7+deb7u7
 I: Validating gpgv 1.4.12-7+deb7u7
-I: Retrieving grep 2.12-2
 I: Validating grep 2.12-2
-I: Retrieving gzip 1.5-1.1
 I: Validating gzip 1.5-1.1
-I: Retrieving hostname 3.11
 I: Validating hostname 3.11
-I: Retrieving inetutils-ping 2:1.9-2
 I: Validating inetutils-ping 2:1.9-2
-I: Retrieving insserv 1.14.0-5
 I: Validating insserv 1.14.0-5
-I: Retrieving iproute 20120521-3+b3
 I: Validating iproute 20120521-3+b3
-I: Retrieving liblocale-gettext-perl 1.05-7+b1
 I: Validating liblocale-gettext-perl 1.05-7+b1
-I: Retrieving libselinux1 2.1.9-5
 I: Validating libselinux1 2.1.9-5
-I: Retrieving libsemanage-common 2.1.6-6
 I: Validating libsemanage-common 2.1.6-6
-I: Retrieving libsemanage1 2.1.6-6
 I: Validating libsemanage1 2.1.6-6
-I: Retrieving libsepol1 2.1.4-3
 I: Validating libsepol1 2.1.4-3
-I: Retrieving libtext-charwidth-perl 0.04-7+b1
 I: Validating libtext-charwidth-perl 0.04-7+b1
-I: Retrieving libtext-iconv-perl 1.7-5
 I: Validating libtext-iconv-perl 1.7-5
-I: Retrieving libtext-wrapi18n-perl 0.06-7
 I: Validating libtext-wrapi18n-perl 0.06-7
-I: Retrieving libusb-0.1-4 2:0.1.12-20+nmu1
 I: Validating libusb-0.1-4 2:0.1.12-20+nmu1
-I: Retrieving lsb-base 4.1+Debian8+deb7u1
 I: Validating lsb-base 4.1+Debian8+deb7u1
-I: Retrieving lsb-release 4.1+Debian8+deb7u1
 I: Validating lsb-release 4.1+Debian8+deb7u1
-I: Retrieving mawk 1.3.3-17
 I: Validating mawk 1.3.3-17
-I: Retrieving mime-support 3.52-1+deb7u1
 I: Validating mime-support 3.52-1+deb7u1
-I: Retrieving libncurses5 5.9-10
 I: Validating libncurses5 5.9-10
-I: Retrieving libncursesw5 5.9-10
 I: Validating libncursesw5 5.9-10
-I: Retrieving libtinfo5 5.9-10
 I: Validating libtinfo5 5.9-10
-I: Retrieving ncurses-base 5.9-10
 I: Validating ncurses-base 5.9-10
-I: Retrieving ncurses-bin 5.9-10
 I: Validating ncurses-bin 5.9-10
-I: Retrieving netbase 5.0
 I: Validating netbase 5.0
-I: Retrieving libssl1.0.0 1.0.1e-2+deb7u20
 I: Validating libssl1.0.0 1.0.1e-2+deb7u20
-I: Retrieving libpam-modules 1.1.3-7.1
 I: Validating libpam-modules 1.1.3-7.1
-I: Retrieving libpam-modules-bin 1.1.3-7.1
 I: Validating libpam-modules-bin 1.1.3-7.1
-I: Retrieving libpam-runtime 1.1.3-7.1
 I: Validating libpam-runtime 1.1.3-7.1
-I: Retrieving libpam0g 1.1.3-7.1
 I: Validating libpam0g 1.1.3-7.1
-I: Retrieving perl-base 5.14.2-21+deb7u3
 I: Validating perl-base 5.14.2-21+deb7u3
-I: Retrieving libprocps0 1:3.3.3-3
 I: Validating libprocps0 1:3.3.3-3
-I: Retrieving procps 1:3.3.3-3
 I: Validating procps 1:3.3.3-3
-I: Retrieving python 2.7.3-4+deb7u1
 I: Validating python 2.7.3-4+deb7u1
-I: Retrieving python-minimal 2.7.3-4+deb7u1
 I: Validating python-minimal 2.7.3-4+deb7u1
-I: Retrieving python2.7 2.7.3-6+deb7u2
 I: Validating python2.7 2.7.3-6+deb7u2
-I: Retrieving python2.7-minimal 2.7.3-6+deb7u2
 I: Validating python2.7-minimal 2.7.3-6+deb7u2
-I: Retrieving libreadline6 6.2+dfsg-0.1
 I: Validating libreadline6 6.2+dfsg-0.1
-I: Retrieving readline-common 6.2+dfsg-0.1
 I: Validating readline-common 6.2+dfsg-0.1
-I: Retrieving sed 4.2.1-10
 I: Validating sed 4.2.1-10
-I: Retrieving sensible-utils 0.0.7
 I: Validating sensible-utils 0.0.7
-I: Retrieving login 1:4.1.5.1-1
 I: Validating login 1:4.1.5.1-1
-I: Retrieving passwd 1:4.1.5.1-1
 I: Validating passwd 1:4.1.5.1-1
-I: Retrieving libslang2 2.2.4-15
 I: Validating libslang2 2.2.4-15
-I: Retrieving libsqlite3-0 3.7.13-1+deb7u2
 I: Validating libsqlite3-0 3.7.13-1+deb7u2
-I: Retrieving initscripts 2.88dsf-41+deb7u1
 I: Validating initscripts 2.88dsf-41+deb7u1
-I: Retrieving sysv-rc 2.88dsf-41+deb7u1
 I: Validating sysv-rc 2.88dsf-41+deb7u1
-I: Retrieving sysvinit 2.88dsf-41+deb7u1
 I: Validating sysvinit 2.88dsf-41+deb7u1
-I: Retrieving sysvinit-utils 2.88dsf-41+deb7u1
 I: Validating sysvinit-utils 2.88dsf-41+deb7u1
-I: Retrieving tar 1.26+dfsg-0.1
 I: Validating tar 1.26+dfsg-0.1
-I: Retrieving tzdata 2016d-0+deb7u1
 I: Validating tzdata 2016d-0+deb7u1
-I: Retrieving libustr-1.0-1 1.0.4-3
 I: Validating libustr-1.0-1 1.0.4-3
-I: Retrieving bsdutils 1:2.20.1-5.3
 I: Validating bsdutils 1:2.20.1-5.3
 I: Retrieving libblkid1 2.20.1-5.3
 I: Validating libblkid1 2.20.1-5.3
@@ -197,7 +110,7 @@ I: Retrieving xz-utils 5.1.1alpha+20120614-2
 I: Validating xz-utils 5.1.1alpha+20120614-2
 I: Retrieving zlib1g 1:1.2.7.dfsg-13
 I: Validating zlib1g 1:1.2.7.dfsg-13
-I: Chosen extractor for .deb packages: dpkg-deb
+I: Chosen extractor for .deb packages: ar
 I: Extracting libacl1...
 I: Extracting libattr1...
 I: Extracting base-files...
@@ -456,73 +369,75 @@ I: Configuring python2.7...
 I: Configuring python...
 I: Configuring lsb-release...
 I: Base system installed successfully.
-+ echo exit 101 > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/sbin/policy-rc.d'
++ echo exit 101 > '/home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/sbin/policy-rc.d'
 + rootfs_chroot dpkg-divert --local --rename --add /sbin/initctl
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs dpkg-divert --local --rename --add /sbin/initctl
++ /usr/bin/chroot /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs dpkg-divert --local --rename --add /sbin/initctl
 Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
-+ cp -a /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/sbin/policy-rc.d /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/sbin/initctl
-+ sed -i 's/^exit.*/exit 0/' /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/sbin/initctl
++ cp -a /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/sbin/policy-rc.d /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/sbin/initctl
++ sed -i 's/^exit.*/exit 0/' /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/sbin/initctl
 + rootfs_chroot apt-get clean
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs apt-get clean
-+ echo force-unsafe-io > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/dpkg/dpkg.cfg.d/docker-apt-speedup'
-+ cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-clean'
-+ echo Acquire::Languages 'none' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-no-languages'
-+ echo Acquire::GzipIndexes 'true' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-gzip-indexes'
-+ echo Apt::AutoRemove::SuggestsImportant 'false' > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-autoremove-suggests'
++ /usr/bin/chroot /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs apt-get clean
++ echo force-unsafe-io > '/home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/dpkg/dpkg.cfg.d/docker-apt-speedup'
++ cat > '/home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-clean'
++ echo Acquire::Languages 'none' > '/home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-no-languages'
++ echo Acquire::GzipIndexes 'true' > '/home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-gzip-indexes'
++ echo Apt::AutoRemove::SuggestsImportant 'false' > '/home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/apt.conf.d/docker-autoremove-suggests'
 + sed -i '
 						p;
 						s/ wheezy / wheezy-updates /
-					' /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/sources.list
+					' /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/apt/sources.list
 + echo 'deb http://security.debian.org wheezy/updates main'
-+ '[' -f /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/debian_version ']'
++ '[' -f /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/debian_version ']'
 + ltsSuite=
 + case "$(cat "$rootfsDir/etc/debian_version")" in
-++ cat /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/debian_version
+++ cat /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/etc/debian_version
 + '[' '' ']'
 + rootfs_chroot sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-+ /usr/sbin/chroot /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
++ /usr/bin/chroot /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Hit http://ftp.nl.debian.org wheezy Release.gpg
 Get:1 http://ftp.nl.debian.org wheezy-updates Release.gpg [1554 B]
 Hit http://ftp.nl.debian.org wheezy Release
 Get:2 http://ftp.nl.debian.org wheezy-updates Release [155 kB]
-Get:3 http://ftp.nl.debian.org wheezy/main amd64 Packages [7634 kB]
-Get:4 http://security.debian.org wheezy/updates Release.gpg [1554 B]
+Get:3 http://security.debian.org wheezy/updates Release.gpg [1554 B]
+Get:4 http://ftp.nl.debian.org wheezy/main amd64 Packages [7634 kB]
 Get:5 http://security.debian.org wheezy/updates Release [39.0 kB]
-Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [558 kB]
+Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [603 kB]
 Get:7 http://ftp.nl.debian.org wheezy-updates/main amd64 Packages [7481 B]
-Fetched 8397 kB in 1s (4910 kB/s)
+Fetched 8442 kB in 10s (790 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 The following packages will be upgraded:
-  bash gnupg gpgv libc-bin libc6 libexpat1 libsqlite3-0 libssl1.0.0
-  multiarch-support perl-base python2.7 python2.7-minimal tar tzdata
-14 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 18.8 MB of archives.
-After this operation, 12.3 kB disk space will be freed.
+  bash gnupg gpgv libc-bin libc6 libexpat1 libsqlite3-0 libssl1.0.0 login
+  multiarch-support passwd perl-base python2.7 python2.7-minimal tar tzdata
+16 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 21.1 MB of archives.
+After this operation, 1034 kB of additional disk space will be used.
 Get:1 http://security.debian.org/ wheezy/updates/main bash amd64 4.2+dfsg-0.1+deb7u4 [1499 kB]
-Get:2 http://security.debian.org/ wheezy/updates/main perl-base amd64 5.14.2-21+deb7u4 [1522 kB]
-Get:3 http://security.debian.org/ wheezy/updates/main tar amd64 1.26+dfsg-0.1+deb7u1 [984 kB]
-Get:4 http://security.debian.org/ wheezy/updates/main libc-bin amd64 2.13-38+deb7u11 [1275 kB]
-Get:5 http://security.debian.org/ wheezy/updates/main libc6 amd64 2.13-38+deb7u11 [4352 kB]
-Get:6 http://security.debian.org/ wheezy/updates/main libssl1.0.0 amd64 1.0.1t-1+deb7u1 [1283 kB]
-Get:7 http://security.debian.org/ wheezy/updates/main libexpat1 amd64 2.1.0-1+deb7u4 [139 kB]
-Get:8 http://security.debian.org/ wheezy/updates/main libsqlite3-0 amd64 3.7.13-1+deb7u3 [455 kB]
-Get:9 http://security.debian.org/ wheezy/updates/main gpgv amd64 1.4.12-7+deb7u8 [229 kB]
-Get:10 http://security.debian.org/ wheezy/updates/main gnupg amd64 1.4.12-7+deb7u8 [1957 kB]
-Get:11 http://security.debian.org/ wheezy/updates/main tzdata all 2016h-0+deb7u1 [455 kB]
-Get:12 http://security.debian.org/ wheezy/updates/main multiarch-support amd64 2.13-38+deb7u11 [152 kB]
-Get:13 http://security.debian.org/ wheezy/updates/main python2.7 amd64 2.7.3-6+deb7u3 [2717 kB]
-Get:14 http://security.debian.org/ wheezy/updates/main python2.7-minimal amd64 2.7.3-6+deb7u3 [1759 kB]
+Get:2 http://security.debian.org/ wheezy/updates/main login amd64 1:4.1.5.1-1+deb7u1 [984 kB]
+Get:3 http://security.debian.org/ wheezy/updates/main perl-base amd64 5.14.2-21+deb7u4 [1522 kB]
+Get:4 http://security.debian.org/ wheezy/updates/main tar amd64 1.26+dfsg-0.1+deb7u1 [984 kB]
+Get:5 http://security.debian.org/ wheezy/updates/main libc-bin amd64 2.13-38+deb7u11 [1275 kB]
+Get:6 http://security.debian.org/ wheezy/updates/main libc6 amd64 2.13-38+deb7u11 [4352 kB]
+Get:7 http://security.debian.org/ wheezy/updates/main libssl1.0.0 amd64 1.0.1t-1+deb7u2 [1278 kB]
+Get:8 http://security.debian.org/ wheezy/updates/main libexpat1 amd64 2.1.0-1+deb7u4 [139 kB]
+Get:9 http://security.debian.org/ wheezy/updates/main libsqlite3-0 amd64 3.7.13-1+deb7u3 [455 kB]
+Get:10 http://security.debian.org/ wheezy/updates/main gpgv amd64 1.4.12-7+deb7u8 [229 kB]
+Get:11 http://security.debian.org/ wheezy/updates/main gnupg amd64 1.4.12-7+deb7u8 [1957 kB]
+Get:12 http://security.debian.org/ wheezy/updates/main passwd amd64 1:4.1.5.1-1+deb7u1 [1262 kB]
+Get:13 http://security.debian.org/ wheezy/updates/main tzdata all 2016j-0+deb7u1 [496 kB]
+Get:14 http://security.debian.org/ wheezy/updates/main multiarch-support amd64 2.13-38+deb7u11 [152 kB]
+Get:15 http://security.debian.org/ wheezy/updates/main python2.7 amd64 2.7.3-6+deb7u3 [2717 kB]
+Get:16 http://security.debian.org/ wheezy/updates/main python2.7-minimal amd64 2.7.3-6+deb7u3 [1759 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
-	LANGUAGE = "en_US:nl",
-	LC_ALL = "en_US.utf8",
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
 	LC_TIME = "nl_NL.UTF-8",
 	LC_MONETARY = "nl_NL.UTF-8",
 	LC_ADDRESS = "nl_NL.UTF-8",
@@ -539,16 +454,20 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 18.8 MB in 29s (627 kB/s)
+Fetched 21.1 MB in 29s (724 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
 Preparing to replace bash 4.2+dfsg-0.1+deb7u3 (using .../bash_4.2+dfsg-0.1+deb7u4_amd64.deb) ...
-/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.utf8)
 Unpacking replacement bash ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 Setting up bash (4.2+dfsg-0.1+deb7u4) ...
-/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.utf8)
 update-alternatives: using /usr/share/man/man7/bash-builtins.7.gz to provide /usr/share/man/man7/builtins.7.gz (builtins.7.gz) in auto mode
+Can not write log, openpty() failed (/dev/pts not mounted?)
+(Reading database ... 7677 files and directories currently installed.)
+Preparing to replace login 1:4.1.5.1-1 (using .../login_1%3a4.1.5.1-1+deb7u1_amd64.deb) ...
+Unpacking replacement login ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Setting up login (1:4.1.5.1-1+deb7u1) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
 Preparing to replace perl-base 5.14.2-21+deb7u3 (using .../perl-base_5.14.2-21+deb7u4_amd64.deb) ...
@@ -588,7 +507,7 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
-Preparing to replace libssl1.0.0:amd64 1.0.1e-2+deb7u20 (using .../libssl1.0.0_1.0.1t-1+deb7u1_amd64.deb) ...
+Preparing to replace libssl1.0.0:amd64 1.0.1e-2+deb7u20 (using .../libssl1.0.0_1.0.1t-1+deb7u2_amd64.deb) ...
 Unpacking replacement libssl1.0.0:amd64 ...
 Preparing to replace libexpat1:amd64 2.1.0-1+deb7u2 (using .../libexpat1_2.1.0-1+deb7u4_amd64.deb) ...
 Unpacking replacement libexpat1:amd64 ...
@@ -606,10 +525,17 @@ Can not write log, openpty() failed (/dev/pts not mounted?)
 Setting up gnupg (1.4.12-7+deb7u8) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
-Preparing to replace tzdata 2016d-0+deb7u1 (using .../tzdata_2016h-0+deb7u1_all.deb) ...
+Preparing to replace passwd 1:4.1.5.1-1 (using .../passwd_1%3a4.1.5.1-1+deb7u1_amd64.deb) ...
+Unpacking replacement passwd ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Setting up passwd (1:4.1.5.1-1+deb7u1) ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+(Reading database ... 7677 files and directories currently installed.)
+Preparing to replace tzdata 2016d-0+deb7u1 (using .../tzdata_2016j-0+deb7u1_all.deb) ...
 Unpacking replacement tzdata ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
-Setting up tzdata (2016h-0+deb7u1) ...
+Setting up tzdata (2016j-0+deb7u1) ...
+locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
 debconf: falling back to frontend: Readline
@@ -618,24 +544,24 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Fri Nov  4 14:26:27 UTC 2016.
-Universal Time is now:  Fri Nov  4 14:26:27 UTC 2016.
+Local time is now:      Thu Mar  9 08:46:37 UTC 2017.
+Universal Time is now:  Thu Mar  9 08:46:37 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Can not write log, openpty() failed (/dev/pts not mounted?)
-(Reading database ... 7680 files and directories currently installed.)
+(Reading database ... 7689 files and directories currently installed.)
 Preparing to replace multiarch-support 2.13-38+deb7u10 (using .../multiarch-support_2.13-38+deb7u11_amd64.deb) ...
 Unpacking replacement multiarch-support ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 Setting up multiarch-support (2.13-38+deb7u11) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
-(Reading database ... 7680 files and directories currently installed.)
+(Reading database ... 7689 files and directories currently installed.)
 Preparing to replace python2.7 2.7.3-6+deb7u2 (using .../python2.7_2.7.3-6+deb7u3_amd64.deb) ...
 Unpacking replacement python2.7 ...
 Preparing to replace python2.7-minimal 2.7.3-6+deb7u2 (using .../python2.7-minimal_2.7.3-6+deb7u3_amd64.deb) ...
 Unpacking replacement python2.7-minimal ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
-Setting up libssl1.0.0:amd64 (1.0.1t-1+deb7u1) ...
+Setting up libssl1.0.0:amd64 (1.0.1t-1+deb7u2) ...
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
@@ -649,11 +575,11 @@ Setting up libexpat1:amd64 (2.1.0-1+deb7u4) ...
 Setting up libsqlite3-0:amd64 (3.7.13-1+deb7u3) ...
 Setting up python2.7-minimal (2.7.3-6+deb7u3) ...
 Setting up python2.7 (2.7.3-6+deb7u3) ...
-+ rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release.gpg /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release.gpg /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/lock /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_main_binary-amd64_Packages.gz /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release.gpg
-+ mkdir /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/download/v0.9.0/tini-static -o /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
-+ chmod +x /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
-+ tar --numeric-owner --create --auto-compress --file /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs.tar.xz --directory /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs '--transform=s,^./,,' .
-+ cat > '/data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/Dockerfile'
++ rm -rf /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release.gpg /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release.gpg /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/lock /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release.gpg
++ mkdir /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial
++ curl -sL https://github.com/krallin/tini/releases/download/v0.14.0/tini-static -o /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
++ chmod +x /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
++ tar --numeric-owner --create --auto-compress --file /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs.tar.xz --directory /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs '--transform=s,^./,,' .
++ cat > '/home/mma/project/docker-shared/dockerfiles/debian/wheezy/Dockerfile'
 + echo 'CMD ["/bin/bash"]'
-+ rm -rf /data/home/martijnvanmaurik/project-prive/docker-shared/dockerfiles/debian/wheezy/rootfs
++ rm -rf /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs
