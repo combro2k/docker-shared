@@ -2,6 +2,7 @@
 + debootstrap --components=main,beta --variant=minbase --include=inetutils-ping,iproute,lsb-release,procps --force-check-gpg jessie /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs http://ftp.nl.debian.org/debian
 I: Retrieving InRelease 
 I: Retrieving Release 
+I: Retrieving Release.gpg 
 I: Checking Release signature
 I: Valid Release signature (key id 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1)
 I: Retrieving Packages 
@@ -609,25 +610,26 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + apt-get update
 Ign http://ftp.nl.debian.org jessie InRelease
 Get:1 http://ftp.nl.debian.org jessie-updates InRelease [145 kB]
+Get:2 http://security.debian.org jessie/updates InRelease [63.1 kB]
 Hit http://ftp.nl.debian.org jessie Release.gpg
-Get:2 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [17.6 kB]
 Hit http://ftp.nl.debian.org jessie Release
-Get:3 http://security.debian.org jessie/updates InRelease [63.1 kB]
-Get:4 http://ftp.nl.debian.org jessie/main amd64 Packages [9049 kB]
-Get:5 http://security.debian.org jessie/updates/main amd64 Packages [448 kB]
-Fetched 9723 kB in 7s (1261 kB/s)
+Get:3 http://security.debian.org jessie/updates/main amd64 Packages [453 kB]
+Get:4 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [17.6 kB]
+Get:5 http://ftp.nl.debian.org jessie/main amd64 Packages [9049 kB]
+Fetched 9728 kB in 8s (1180 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 The following packages will be upgraded:
-  libssl1.0.0 login passwd
-3 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 2738 kB of archives.
-After this operation, 911 kB disk space will be freed.
-Get:1 http://security.debian.org/ jessie/updates/main login amd64 1:4.2-3+deb8u3 [721 kB]
-Get:2 http://security.debian.org/ jessie/updates/main libssl1.0.0 amd64 1.0.1t-1+deb8u6 [1047 kB]
-Get:3 http://security.debian.org/ jessie/updates/main passwd amd64 1:4.2-3+deb8u3 [970 kB]
+  libssl1.0.0 login passwd tzdata
+4 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 2970 kB of archives.
+After this operation, 750 kB disk space will be freed.
+Get:1 http://ftp.nl.debian.org/debian/ jessie-updates/main tzdata all 2017a-0+deb8u1 [232 kB]
+Get:2 http://security.debian.org/ jessie/updates/main login amd64 1:4.2-3+deb8u3 [721 kB]
+Get:3 http://security.debian.org/ jessie/updates/main libssl1.0.0 amd64 1.0.1t-1+deb8u6 [1047 kB]
+Get:4 http://security.debian.org/ jessie/updates/main passwd amd64 1:4.2-3+deb8u3 [970 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
@@ -648,8 +650,8 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 2738 kB in 7s (343 kB/s)
-E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
+Fetched 2970 kB in 6s (425 kB/s)
+E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
 (Reading database ... 8449 files and directories currently installed.)
 Preparing to unpack .../login_1%3a4.2-3+deb8u3_amd64.deb ...
 Unpacking login (1:4.2-3+deb8u3) over (1:4.2-3+deb8u1) ...
@@ -660,6 +662,23 @@ Unpacking libssl1.0.0:amd64 (1.0.1t-1+deb8u6) over (1.0.1t-1+deb8u5) ...
 Preparing to unpack .../passwd_1%3a4.2-3+deb8u3_amd64.deb ...
 Unpacking passwd (1:4.2-3+deb8u3) over (1:4.2-3+deb8u1) ...
 Setting up passwd (1:4.2-3+deb8u3) ...
+(Reading database ... 8449 files and directories currently installed.)
+Preparing to unpack .../tzdata_2017a-0+deb8u1_all.deb ...
+Unpacking tzdata (2017a-0+deb8u1) over (2016j-0+deb8u1) ...
+Setting up tzdata (2017a-0+deb8u1) ...
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+
+Current default time zone: 'Etc/UTC'
+Local time is now:      Mon Mar 27 09:57:58 UTC 2017.
+Universal Time is now:  Mon Mar 27 09:57:58 UTC 2017.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
 Setting up libssl1.0.0:amd64 (1.0.1t-1+deb8u6) ...
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
