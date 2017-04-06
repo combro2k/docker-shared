@@ -14,6 +14,7 @@ build=(
     ['trusty']='ubuntu'
     ['vivid']='ubuntu'
     ['wily']='ubuntu'
+    ['xenial']='ubuntu'
     ['wheezy']='debian'
     ['jessie']='debian'
     ['stretch']='debian'
