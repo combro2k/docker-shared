@@ -485,15 +485,15 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + /usr/bin/chroot /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Hit http://ftp.nl.debian.org wheezy Release.gpg
-Get:1 http://ftp.nl.debian.org wheezy-updates Release.gpg [1554 B]
-Get:2 http://security.debian.org wheezy/updates Release.gpg [1554 B]
+Get:1 http://security.debian.org wheezy/updates Release.gpg [1554 B]
+Get:2 http://ftp.nl.debian.org wheezy-updates Release.gpg [1554 B]
 Get:3 http://security.debian.org wheezy/updates Release [39.0 kB]
 Hit http://ftp.nl.debian.org wheezy Release
-Get:4 http://ftp.nl.debian.org wheezy-updates Release [155 kB]
-Get:5 http://security.debian.org wheezy/updates/main amd64 Packages [612 kB]
+Get:4 http://security.debian.org wheezy/updates/main amd64 Packages [613 kB]
+Get:5 http://ftp.nl.debian.org wheezy-updates Release [155 kB]
 Get:6 http://ftp.nl.debian.org wheezy/main amd64 Packages [7634 kB]
 Get:7 http://ftp.nl.debian.org wheezy-updates/main amd64 Packages [7481 B]
-Fetched 8451 kB in 7s (1141 kB/s)
+Fetched 8452 kB in 8s (1032 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -540,7 +540,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 21.0 MB in 9s (2308 kB/s)
+Fetched 21.0 MB in 27s (777 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
 Preparing to replace bash 4.2+dfsg-0.1+deb7u3 (using .../bash_4.2+dfsg-0.1+deb7u4_amd64.deb) ...
@@ -630,8 +630,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Mon Mar 27 10:25:43 UTC 2017.
-Universal Time is now:  Mon Mar 27 10:25:43 UTC 2017.
+Local time is now:      Thu Apr  6 08:56:44 UTC 2017.
+Universal Time is now:  Thu Apr  6 08:56:44 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Can not write log, openpty() failed (/dev/pts not mounted?)

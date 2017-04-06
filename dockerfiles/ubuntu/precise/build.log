@@ -2,9 +2,12 @@
 + debootstrap --components=main,beta,universe,backports --variant=minbase --include=inetutils-ping,iproute,lsb-release,procps --force-check-gpg precise /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs http://de.archive.ubuntu.com/ubuntu
 I: Retrieving InRelease 
 I: Retrieving Release 
+I: Retrieving Release.gpg 
 I: Checking Release signature
 I: Valid Release signature (key id 630239CC130E1A7FD81A27B140976EAF437D05B5)
+I: Retrieving Packages 
 I: Validating Packages 
+I: Retrieving Packages 
 I: Validating Packages 
 I: Found packages in base already in required: iproute procps 
 I: Resolving dependencies of required packages...
@@ -12,116 +15,227 @@ I: Resolving dependencies of base packages...
 I: Found additional base dependencies: gnupg gpgv libapt-pkg4.12 libexpat1 libreadline6 libsqlite3-0 libstdc++6 libusb-0.1-4 mime-support netbase python python2.7 readline-common ubuntu-keyring 
 I: Checking component main on http://de.archive.ubuntu.com/ubuntu...
 I: Checking component universe on http://de.archive.ubuntu.com/ubuntu...
+I: Retrieving adduser 3.113ubuntu2
 I: Validating adduser 3.113ubuntu2
+I: Retrieving apt 0.8.16~exp12ubuntu10
 I: Validating apt 0.8.16~exp12ubuntu10
+I: Retrieving base-files 6.5ubuntu6
 I: Validating base-files 6.5ubuntu6
+I: Retrieving base-passwd 3.5.24
 I: Validating base-passwd 3.5.24
+I: Retrieving bash 4.2-2ubuntu2
 I: Validating bash 4.2-2ubuntu2
+I: Retrieving bsdutils 1:2.20.1-1ubuntu3
 I: Validating bsdutils 1:2.20.1-1ubuntu3
+I: Retrieving busybox-initramfs 1:1.18.5-1ubuntu4
 I: Validating busybox-initramfs 1:1.18.5-1ubuntu4
+I: Retrieving coreutils 8.13-3ubuntu3
 I: Validating coreutils 8.13-3ubuntu3
+I: Retrieving cpio 2.11-7ubuntu3
 I: Validating cpio 2.11-7ubuntu3
+I: Retrieving dash 0.5.7-2ubuntu2
 I: Validating dash 0.5.7-2ubuntu2
+I: Retrieving debconf 1.5.42ubuntu1
 I: Validating debconf 1.5.42ubuntu1
+I: Retrieving debianutils 4.2.1ubuntu2
 I: Validating debianutils 4.2.1ubuntu2
+I: Retrieving diffutils 1:3.2-1ubuntu1
 I: Validating diffutils 1:3.2-1ubuntu1
+I: Retrieving dpkg 1.16.1.2ubuntu7
 I: Validating dpkg 1.16.1.2ubuntu7
+I: Retrieving e2fslibs 1.42-1ubuntu2
 I: Validating e2fslibs 1.42-1ubuntu2
+I: Retrieving e2fsprogs 1.42-1ubuntu2
 I: Validating e2fsprogs 1.42-1ubuntu2
+I: Retrieving findutils 4.4.2-4ubuntu1
 I: Validating findutils 4.4.2-4ubuntu1
+I: Retrieving gcc-4.6-base 4.6.3-1ubuntu5
 I: Validating gcc-4.6-base 4.6.3-1ubuntu5
+I: Retrieving gnupg 1.4.11-3ubuntu2
 I: Validating gnupg 1.4.11-3ubuntu2
+I: Retrieving gpgv 1.4.11-3ubuntu2
 I: Validating gpgv 1.4.11-3ubuntu2
+I: Retrieving grep 2.10-1
 I: Validating grep 2.10-1
+I: Retrieving gzip 1.4-1ubuntu2
 I: Validating gzip 1.4-1ubuntu2
+I: Retrieving hostname 3.06ubuntu1
 I: Validating hostname 3.06ubuntu1
+I: Retrieving ifupdown 0.7~beta2ubuntu8
 I: Validating ifupdown 0.7~beta2ubuntu8
+I: Retrieving initramfs-tools 0.99ubuntu13
 I: Validating initramfs-tools 0.99ubuntu13
+I: Retrieving initramfs-tools-bin 0.99ubuntu13
 I: Validating initramfs-tools-bin 0.99ubuntu13
+I: Retrieving initscripts 2.88dsf-13.10ubuntu11
 I: Validating initscripts 2.88dsf-13.10ubuntu11
+I: Retrieving insserv 1.14.0-2.1ubuntu2
 I: Validating insserv 1.14.0-2.1ubuntu2
+I: Retrieving iproute 20111117-1ubuntu2
 I: Validating iproute 20111117-1ubuntu2
+I: Retrieving klibc-utils 1.5.25-1ubuntu2
 I: Validating klibc-utils 1.5.25-1ubuntu2
+I: Retrieving libacl1 2.2.51-5ubuntu1
 I: Validating libacl1 2.2.51-5ubuntu1
+I: Retrieving libapt-pkg4.12 0.8.16~exp12ubuntu10
 I: Validating libapt-pkg4.12 0.8.16~exp12ubuntu10
+I: Retrieving libattr1 1:2.4.46-5ubuntu1
 I: Validating libattr1 1:2.4.46-5ubuntu1
+I: Retrieving libblkid1 2.20.1-1ubuntu3
 I: Validating libblkid1 2.20.1-1ubuntu3
+I: Retrieving libbz2-1.0 1.0.6-1
 I: Validating libbz2-1.0 1.0.6-1
+I: Retrieving libc-bin 2.15-0ubuntu10
 I: Validating libc-bin 2.15-0ubuntu10
+I: Retrieving libc6 2.15-0ubuntu10
 I: Validating libc6 2.15-0ubuntu10
+I: Retrieving libcomerr2 1.42-1ubuntu2
 I: Validating libcomerr2 1.42-1ubuntu2
+I: Retrieving libdb5.1 5.1.25-11build1
 I: Validating libdb5.1 5.1.25-11build1
+I: Retrieving libdbus-1-3 1.4.18-1ubuntu1
 I: Validating libdbus-1-3 1.4.18-1ubuntu1
+I: Retrieving libdrm-intel1 2.4.32-1ubuntu1
 I: Validating libdrm-intel1 2.4.32-1ubuntu1
+I: Retrieving libdrm-nouveau1a 2.4.32-1ubuntu1
 I: Validating libdrm-nouveau1a 2.4.32-1ubuntu1
+I: Retrieving libdrm-radeon1 2.4.32-1ubuntu1
 I: Validating libdrm-radeon1 2.4.32-1ubuntu1
+I: Retrieving libdrm2 2.4.32-1ubuntu1
 I: Validating libdrm2 2.4.32-1ubuntu1
+I: Retrieving libelf1 0.152-1ubuntu3
 I: Validating libelf1 0.152-1ubuntu3
+I: Retrieving libexpat1 2.0.1-7.2ubuntu1
 I: Validating libexpat1 2.0.1-7.2ubuntu1
+I: Retrieving libffi6 3.0.11~rc1-5
 I: Validating libffi6 3.0.11~rc1-5
+I: Retrieving libgcc1 1:4.6.3-1ubuntu5
 I: Validating libgcc1 1:4.6.3-1ubuntu5
+I: Retrieving libglib2.0-0 2.32.1-0ubuntu2
 I: Validating libglib2.0-0 2.32.1-0ubuntu2
+I: Retrieving libklibc 1.5.25-1ubuntu2
 I: Validating libklibc 1.5.25-1ubuntu2
+I: Retrieving liblzma5 5.1.1alpha+20110809-3
 I: Validating liblzma5 5.1.1alpha+20110809-3
+I: Retrieving libmount1 2.20.1-1ubuntu3
 I: Validating libmount1 2.20.1-1ubuntu3
+I: Retrieving libncurses5 5.9-4
 I: Validating libncurses5 5.9-4
+I: Retrieving libncursesw5 5.9-4
 I: Validating libncursesw5 5.9-4
+I: Retrieving libnih-dbus1 1.0.3-4ubuntu9
 I: Validating libnih-dbus1 1.0.3-4ubuntu9
+I: Retrieving libnih1 1.0.3-4ubuntu9
 I: Validating libnih1 1.0.3-4ubuntu9
+I: Retrieving libpam-modules 1.1.3-7ubuntu2
 I: Validating libpam-modules 1.1.3-7ubuntu2
+I: Retrieving libpam-modules-bin 1.1.3-7ubuntu2
 I: Validating libpam-modules-bin 1.1.3-7ubuntu2
+I: Retrieving libpam-runtime 1.1.3-7ubuntu2
 I: Validating libpam-runtime 1.1.3-7ubuntu2
+I: Retrieving libpam0g 1.1.3-7ubuntu2
 I: Validating libpam0g 1.1.3-7ubuntu2
+I: Retrieving libpciaccess0 0.12.902-1
 I: Validating libpciaccess0 0.12.902-1
+I: Retrieving libpcre3 8.12-4
 I: Validating libpcre3 8.12-4
+I: Retrieving libplymouth2 0.8.2-2ubuntu30
 I: Validating libplymouth2 0.8.2-2ubuntu30
+I: Retrieving libpng12-0 1.2.46-3ubuntu4
 I: Validating libpng12-0 1.2.46-3ubuntu4
+I: Retrieving libreadline6 6.2-8
 I: Validating libreadline6 6.2-8
+I: Retrieving libselinux1 2.1.0-4.1ubuntu1
 I: Validating libselinux1 2.1.0-4.1ubuntu1
+I: Retrieving libslang2 2.2.4-3ubuntu1
 I: Validating libslang2 2.2.4-3ubuntu1
+I: Retrieving libsqlite3-0 3.7.9-2ubuntu1
 I: Validating libsqlite3-0 3.7.9-2ubuntu1
+I: Retrieving libss2 1.42-1ubuntu2
 I: Validating libss2 1.42-1ubuntu2
+I: Retrieving libssl1.0.0 1.0.1-4ubuntu3
 I: Validating libssl1.0.0 1.0.1-4ubuntu3
+I: Retrieving libstdc++6 4.6.3-1ubuntu5
 I: Validating libstdc++6 4.6.3-1ubuntu5
+I: Retrieving libtinfo5 5.9-4
 I: Validating libtinfo5 5.9-4
+I: Retrieving libudev0 175-0ubuntu9
 I: Validating libudev0 175-0ubuntu9
+I: Retrieving libusb-0.1-4 2:0.1.12-20
 I: Validating libusb-0.1-4 2:0.1.12-20
+I: Retrieving libuuid1 2.20.1-1ubuntu3
 I: Validating libuuid1 2.20.1-1ubuntu3
+I: Retrieving locales 2.13+git20120306-3
 I: Validating locales 2.13+git20120306-3
+I: Retrieving login 1:4.1.4.2+svn3283-3ubuntu5
 I: Validating login 1:4.1.4.2+svn3283-3ubuntu5
+I: Retrieving lsb-base 4.0-0ubuntu20
 I: Validating lsb-base 4.0-0ubuntu20
+I: Retrieving lsb-release 4.0-0ubuntu20
 I: Validating lsb-release 4.0-0ubuntu20
+I: Retrieving makedev 2.3.1-89ubuntu2
 I: Validating makedev 2.3.1-89ubuntu2
+I: Retrieving mawk 1.3.3-17
 I: Validating mawk 1.3.3-17
+I: Retrieving mime-support 3.51-1ubuntu1
 I: Validating mime-support 3.51-1ubuntu1
+I: Retrieving module-init-tools 3.16-1ubuntu2
 I: Validating module-init-tools 3.16-1ubuntu2
+I: Retrieving mount 2.20.1-1ubuntu3
 I: Validating mount 2.20.1-1ubuntu3
+I: Retrieving mountall 2.36
 I: Validating mountall 2.36
+I: Retrieving multiarch-support 2.15-0ubuntu10
 I: Validating multiarch-support 2.15-0ubuntu10
+I: Retrieving ncurses-base 5.9-4
 I: Validating ncurses-base 5.9-4
+I: Retrieving ncurses-bin 5.9-4
 I: Validating ncurses-bin 5.9-4
+I: Retrieving netbase 4.47ubuntu1
 I: Validating netbase 4.47ubuntu1
+I: Retrieving passwd 1:4.1.4.2+svn3283-3ubuntu5
 I: Validating passwd 1:4.1.4.2+svn3283-3ubuntu5
+I: Retrieving perl-base 5.14.2-6ubuntu2
 I: Validating perl-base 5.14.2-6ubuntu2
+I: Retrieving plymouth 0.8.2-2ubuntu30
 I: Validating plymouth 0.8.2-2ubuntu30
+I: Retrieving procps 1:3.2.8-11ubuntu6
 I: Validating procps 1:3.2.8-11ubuntu6
+I: Retrieving python 2.7.3-0ubuntu2
 I: Validating python 2.7.3-0ubuntu2
+I: Retrieving python-minimal 2.7.3-0ubuntu2
 I: Validating python-minimal 2.7.3-0ubuntu2
+I: Retrieving python2.7 2.7.3-0ubuntu3
 I: Validating python2.7 2.7.3-0ubuntu3
+I: Retrieving python2.7-minimal 2.7.3-0ubuntu3
 I: Validating python2.7-minimal 2.7.3-0ubuntu3
+I: Retrieving readline-common 6.2-8
 I: Validating readline-common 6.2-8
+I: Retrieving sed 4.2.1-9
 I: Validating sed 4.2.1-9
+I: Retrieving sensible-utils 0.0.6ubuntu2
 I: Validating sensible-utils 0.0.6ubuntu2
+I: Retrieving sysv-rc 2.88dsf-13.10ubuntu11
 I: Validating sysv-rc 2.88dsf-13.10ubuntu11
+I: Retrieving sysvinit-utils 2.88dsf-13.10ubuntu11
 I: Validating sysvinit-utils 2.88dsf-13.10ubuntu11
+I: Retrieving tar 1.26-4ubuntu1
 I: Validating tar 1.26-4ubuntu1
+I: Retrieving tzdata 2012b-1
 I: Validating tzdata 2012b-1
+I: Retrieving ubuntu-keyring 2011.11.21
 I: Validating ubuntu-keyring 2011.11.21
+I: Retrieving udev 175-0ubuntu9
 I: Validating udev 175-0ubuntu9
+I: Retrieving upstart 1.5-0ubuntu5
 I: Validating upstart 1.5-0ubuntu5
+I: Retrieving util-linux 2.20.1-1ubuntu3
 I: Validating util-linux 2.20.1-1ubuntu3
+I: Retrieving xz-utils 5.1.1alpha+20110809-3
 I: Validating xz-utils 5.1.1alpha+20110809-3
+I: Retrieving zlib1g 1:1.2.3.4.dfsg-3ubuntu4
 I: Validating zlib1g 1:1.2.3.4.dfsg-3ubuntu4
+I: Retrieving inetutils-ping 2:1.8-6
 I: Validating inetutils-ping 2:1.8-6
 I: Chosen extractor for .deb packages: ar
 I: Extracting adduser...
@@ -477,20 +591,20 @@ Ign http://de.archive.ubuntu.com precise InRelease
 Get:1 http://de.archive.ubuntu.com precise-updates InRelease [55.7 kB]
 Get:2 http://de.archive.ubuntu.com precise-security InRelease [55.7 kB]
 Hit http://de.archive.ubuntu.com precise Release.gpg
-Get:3 http://de.archive.ubuntu.com precise-updates/main amd64 Packages [1382 kB]
+Get:3 http://de.archive.ubuntu.com precise-updates/main amd64 Packages [1393 kB]
 Get:4 http://de.archive.ubuntu.com precise-updates/universe amd64 Packages [371 kB]
-Get:5 http://de.archive.ubuntu.com precise-updates/main i386 Packages [1482 kB]
-Get:6 http://de.archive.ubuntu.com precise-updates/universe i386 Packages [381 kB]
+Get:5 http://de.archive.ubuntu.com precise-updates/main i386 Packages [1496 kB]
+Get:6 http://de.archive.ubuntu.com precise-updates/universe i386 Packages [382 kB]
 Hit http://de.archive.ubuntu.com precise Release
-Get:7 http://de.archive.ubuntu.com precise-security/main amd64 Packages [889 kB]
-Get:8 http://de.archive.ubuntu.com precise-security/universe amd64 Packages [186 kB]
-Get:9 http://de.archive.ubuntu.com precise-security/main i386 Packages [987 kB]
+Get:7 http://de.archive.ubuntu.com precise-security/main amd64 Packages [902 kB]
+Get:8 http://de.archive.ubuntu.com precise-security/universe amd64 Packages [187 kB]
+Get:9 http://de.archive.ubuntu.com precise-security/main i386 Packages [1003 kB]
 Get:10 http://de.archive.ubuntu.com precise-security/universe i386 Packages [196 kB]
 Get:11 http://de.archive.ubuntu.com precise/main amd64 Packages [1640 kB]
 Get:12 http://de.archive.ubuntu.com precise/universe amd64 Packages [6167 kB]
 Get:13 http://de.archive.ubuntu.com precise/main i386 Packages [1641 kB]
 Get:14 http://de.archive.ubuntu.com precise/universe i386 Packages [6180 kB]
-Fetched 21.6 MB in 3s (5765 kB/s)
+Fetched 21.7 MB in 3s (5952 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -503,11 +617,11 @@ The following packages will be upgraded:
   libexpat1 libglib2.0-0 libmount1 libnih-dbus1 libnih1 libpam-modules
   libpam-modules-bin libpam-runtime libpam0g libpciaccess0 libpcre3
   libplymouth2 libpng12-0 libsqlite3-0 libss2 libssl1.0.0 libudev0 libuuid1
-  login lsb-base lsb-release mime-support mount mountall multiarch-support
-  passwd perl-base plymouth procps python python-minimal python2.7
-  python2.7-minimal sysv-rc sysvinit-utils tar tzdata ubuntu-keyring udev
-  upstart util-linux
-69 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+  login lsb-base lsb-release makedev mime-support mount mountall
+  multiarch-support passwd perl-base plymouth procps python python-minimal
+  python2.7 python2.7-minimal sysv-rc sysvinit-utils tar tzdata ubuntu-keyring
+  udev upstart util-linux
+70 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 Need to get 30.0 MB of archives.
 After this operation, 71.7 kB disk space will be freed.
 Get:1 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main base-files amd64 6.5ubuntu6.8 [68.2 kB]
@@ -542,43 +656,44 @@ Get:29 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main util-linux amd6
 Get:30 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main procps amd64 1:3.2.8-11ubuntu6.4 [233 kB]
 Get:31 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main udev amd64 175-0ubuntu9.10 [324 kB]
 Get:32 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libpng12-0 amd64 1.2.46-3ubuntu4.2 [133 kB]
-Get:33 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libnih-dbus1 amd64 1.0.3-4ubuntu9.1 [16.0 kB]
-Get:34 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libnih1 amd64 1.0.3-4ubuntu9.1 [54.8 kB]
-Get:35 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main mount amd64 2.20.1-1ubuntu3.1 [166 kB]
-Get:36 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libpam0g amd64 1.1.3-7ubuntu2.3 [61.8 kB]
-Get:37 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libpam-modules-bin amd64 1.1.3-7ubuntu2.3 [42.4 kB]
-Get:38 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libpam-modules amd64 1.1.3-7ubuntu2.3 [276 kB]
-Get:39 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main passwd amd64 1:4.1.4.2+svn3283-3ubuntu5.1 [959 kB]
-Get:40 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main iproute amd64 20111117-1ubuntu2.3 [444 kB]
-Get:41 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main ifupdown amd64 0.7~beta2ubuntu11.1 [48.3 kB]
-Get:42 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main e2fslibs amd64 1.42-1ubuntu2.3 [188 kB]
-Get:43 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main e2fsprogs amd64 1.42-1ubuntu2.3 [965 kB]
-Get:44 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main login amd64 1:4.1.4.2+svn3283-3ubuntu5.1 [291 kB]
-Get:45 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main perl-base amd64 5.14.2-6ubuntu2.5 [1513 kB]
-Get:46 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main tar amd64 1.26-4ubuntu1.1 [218 kB]
-Get:47 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main bsdutils amd64 1:2.20.1-1ubuntu3.1 [39.7 kB]
-Get:48 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libssl1.0.0 amd64 1.0.1-4ubuntu5.39 [1054 kB]
-Get:49 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main python2.7 amd64 2.7.3-0ubuntu3.9 [2678 kB]
-Get:50 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main python2.7-minimal amd64 2.7.3-0ubuntu3.9 [1745 kB]
-Get:51 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main mime-support all 3.51-1ubuntu1.1 [30.4 kB]
-Get:52 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libexpat1 amd64 2.0.1-7.2ubuntu1.4 [131 kB]
-Get:53 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libsqlite3-0 amd64 3.7.9-2ubuntu1.2 [349 kB]
-Get:54 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main python-minimal amd64 2.7.3-0ubuntu2.2 [29.7 kB]
-Get:55 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main python amd64 2.7.3-0ubuntu2.2 [168 kB]
-Get:56 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libapt-pkg4.12 amd64 0.8.16~exp12ubuntu10.27 [934 kB]
-Get:57 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main ubuntu-keyring all 2011.11.21.1 [16.7 kB]
-Get:58 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main gpgv amd64 1.4.11-3ubuntu2.10 [186 kB]
-Get:59 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main gnupg amd64 1.4.11-3ubuntu2.10 [809 kB]
-Get:60 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main apt amd64 0.8.16~exp12ubuntu10.27 [1098 kB]
-Get:61 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libuuid1 amd64 2.20.1-1ubuntu3.1 [12.8 kB]
-Get:62 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libblkid1 amd64 2.20.1-1ubuntu3.1 [73.7 kB]
-Get:63 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libcomerr2 amd64 1.42-1ubuntu2.3 [57.2 kB]
-Get:64 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libmount1 amd64 2.20.1-1ubuntu3.1 [71.5 kB]
-Get:65 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libss2 amd64 1.42-1ubuntu2.3 [62.3 kB]
-Get:66 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libelf1 amd64 0.152-1ubuntu3.1 [42.8 kB]
-Get:67 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libpam-runtime all 1.1.3-7ubuntu2.3 [40.6 kB]
-Get:68 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main multiarch-support amd64 2.15-0ubuntu10.18 [4482 B]
-Get:69 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main lsb-release all 4.0-0ubuntu20.3 [11.0 kB]
+Get:33 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main makedev all 2.3.1-89ubuntu3 [27.7 kB]
+Get:34 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libnih-dbus1 amd64 1.0.3-4ubuntu9.1 [16.0 kB]
+Get:35 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libnih1 amd64 1.0.3-4ubuntu9.1 [54.8 kB]
+Get:36 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main mount amd64 2.20.1-1ubuntu3.1 [166 kB]
+Get:37 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libpam0g amd64 1.1.3-7ubuntu2.3 [61.8 kB]
+Get:38 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libpam-modules-bin amd64 1.1.3-7ubuntu2.3 [42.4 kB]
+Get:39 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libpam-modules amd64 1.1.3-7ubuntu2.3 [276 kB]
+Get:40 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main passwd amd64 1:4.1.4.2+svn3283-3ubuntu5.1 [959 kB]
+Get:41 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main iproute amd64 20111117-1ubuntu2.3 [444 kB]
+Get:42 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main ifupdown amd64 0.7~beta2ubuntu11.1 [48.3 kB]
+Get:43 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main e2fslibs amd64 1.42-1ubuntu2.3 [188 kB]
+Get:44 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main e2fsprogs amd64 1.42-1ubuntu2.3 [965 kB]
+Get:45 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main login amd64 1:4.1.4.2+svn3283-3ubuntu5.1 [291 kB]
+Get:46 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main perl-base amd64 5.14.2-6ubuntu2.5 [1513 kB]
+Get:47 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main tar amd64 1.26-4ubuntu1.1 [218 kB]
+Get:48 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main bsdutils amd64 1:2.20.1-1ubuntu3.1 [39.7 kB]
+Get:49 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libssl1.0.0 amd64 1.0.1-4ubuntu5.39 [1054 kB]
+Get:50 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main python2.7 amd64 2.7.3-0ubuntu3.9 [2678 kB]
+Get:51 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main python2.7-minimal amd64 2.7.3-0ubuntu3.9 [1745 kB]
+Get:52 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main mime-support all 3.51-1ubuntu1.1 [30.4 kB]
+Get:53 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libexpat1 amd64 2.0.1-7.2ubuntu1.4 [131 kB]
+Get:54 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libsqlite3-0 amd64 3.7.9-2ubuntu1.2 [349 kB]
+Get:55 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main python-minimal amd64 2.7.3-0ubuntu2.2 [29.7 kB]
+Get:56 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main python amd64 2.7.3-0ubuntu2.2 [168 kB]
+Get:57 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libapt-pkg4.12 amd64 0.8.16~exp12ubuntu10.27 [934 kB]
+Get:58 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main ubuntu-keyring all 2011.11.21.1 [16.7 kB]
+Get:59 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main gpgv amd64 1.4.11-3ubuntu2.10 [186 kB]
+Get:60 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main gnupg amd64 1.4.11-3ubuntu2.10 [809 kB]
+Get:61 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main apt amd64 0.8.16~exp12ubuntu10.27 [1098 kB]
+Get:62 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libuuid1 amd64 2.20.1-1ubuntu3.1 [12.8 kB]
+Get:63 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libblkid1 amd64 2.20.1-1ubuntu3.1 [73.7 kB]
+Get:64 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libcomerr2 amd64 1.42-1ubuntu2.3 [57.2 kB]
+Get:65 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libmount1 amd64 2.20.1-1ubuntu3.1 [71.5 kB]
+Get:66 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libss2 amd64 1.42-1ubuntu2.3 [62.3 kB]
+Get:67 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libelf1 amd64 0.152-1ubuntu3.1 [42.8 kB]
+Get:68 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main libpam-runtime all 1.1.3-7ubuntu2.3 [40.6 kB]
+Get:69 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main multiarch-support amd64 2.15-0ubuntu10.18 [4482 B]
+Get:70 http://de.archive.ubuntu.com/ubuntu/ precise-updates/main lsb-release all 4.0-0ubuntu20.3 [11.0 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
@@ -596,7 +711,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 30.0 MB in 5s (5947 kB/s)
+Fetched 30.0 MB in 5s (5284 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 8208 files and directories currently installed.)
 Preparing to replace base-files 6.5ubuntu6 (using .../base-files_6.5ubuntu6.8_amd64.deb) ...
@@ -711,8 +826,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Mon Mar 27 10:57:46 UTC 2017.
-Universal Time is now:  Mon Mar 27 10:57:46 UTC 2017.
+Local time is now:      Thu Apr  6 09:44:37 UTC 2017.
+Universal Time is now:  Thu Apr  6 09:44:37 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Can not write log, openpty() failed (/dev/pts not mounted?)
@@ -762,6 +877,8 @@ Adding 'diversion of /sbin/udevadm to /sbin/udevadm.upgrade by fake-udev'
 Unpacking replacement udev ...
 Preparing to replace libpng12-0 1.2.46-3ubuntu4 (using .../libpng12-0_1.2.46-3ubuntu4.2_amd64.deb) ...
 Unpacking replacement libpng12-0 ...
+Preparing to replace makedev 2.3.1-89ubuntu2 (using .../makedev_2.3.1-89ubuntu3_all.deb) ...
+Unpacking replacement makedev ...
 Preparing to replace libnih-dbus1 1.0.3-4ubuntu9 (using .../libnih-dbus1_1.0.3-4ubuntu9.1_amd64.deb) ...
 Unpacking replacement libnih-dbus1 ...
 Preparing to replace libnih1 1.0.3-4ubuntu9 (using .../libnih1_1.0.3-4ubuntu9.1_amd64.deb) ...
@@ -1010,6 +1127,11 @@ invoke-rc.d: policy-rc.d denied execution of restart.
 Removing 'diversion of /sbin/udevadm to /sbin/udevadm.upgrade by fake-udev'
 update-initramfs: deferring update (trigger activated)
 Setting up libpng12-0 (1.2.46-3ubuntu4.2) ...
+Setting up makedev (2.3.1-89ubuntu3) ...
+grep: /proc/1/environ: No such file or directory
+/sbin/MAKEDEV: warning: can't read /proc/devices
+/sbin/MAKEDEV: warning: can't read /proc/devices
+/sbin/MAKEDEV: warning: can't read /proc/devices
 Setting up libnih1 (1.0.3-4ubuntu9.1) ...
 Setting up libnih-dbus1 (1.0.3-4ubuntu9.1) ...
 Setting up iproute (20111117-1ubuntu2.3) ...
