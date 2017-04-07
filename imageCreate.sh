@@ -18,6 +18,7 @@ build=(
     ['wheezy']='debian'
     ['jessie']='debian'
     ['stretch']='debian'
+    ['sid']='debian'
 )
 
 # Variant types
