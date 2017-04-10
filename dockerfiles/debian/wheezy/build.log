@@ -485,15 +485,15 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + /usr/bin/chroot /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Hit http://ftp.nl.debian.org wheezy Release.gpg
-Get:1 http://security.debian.org wheezy/updates Release.gpg [1554 B]
-Get:2 http://ftp.nl.debian.org wheezy-updates Release.gpg [1554 B]
+Get:1 http://ftp.nl.debian.org wheezy-updates Release.gpg [1554 B]
+Get:2 http://security.debian.org wheezy/updates Release.gpg [1554 B]
 Get:3 http://security.debian.org wheezy/updates Release [39.0 kB]
 Hit http://ftp.nl.debian.org wheezy Release
-Get:4 http://security.debian.org wheezy/updates/main amd64 Packages [613 kB]
-Get:5 http://ftp.nl.debian.org wheezy-updates Release [155 kB]
+Get:4 http://ftp.nl.debian.org wheezy-updates Release [155 kB]
+Get:5 http://security.debian.org wheezy/updates/main amd64 Packages [614 kB]
 Get:6 http://ftp.nl.debian.org wheezy/main amd64 Packages [7634 kB]
 Get:7 http://ftp.nl.debian.org wheezy-updates/main amd64 Packages [7481 B]
-Fetched 8452 kB in 8s (1032 kB/s)
+Fetched 8452 kB in 8s (1041 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -502,8 +502,8 @@ The following packages will be upgraded:
   bash gnupg gpgv libc-bin libc6 libexpat1 libsqlite3-0 libssl1.0.0 login
   multiarch-support passwd perl-base python2.7 python2.7-minimal tar tzdata
 16 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 21.0 MB of archives.
-After this operation, 1020 kB of additional disk space will be used.
+Need to get 21.1 MB of archives.
+After this operation, 1022 kB of additional disk space will be used.
 Get:1 http://security.debian.org/ wheezy/updates/main bash amd64 4.2+dfsg-0.1+deb7u4 [1499 kB]
 Get:2 http://security.debian.org/ wheezy/updates/main login amd64 1:4.1.5.1-1+deb7u1 [984 kB]
 Get:3 http://security.debian.org/ wheezy/updates/main perl-base amd64 5.14.2-21+deb7u4 [1522 kB]
@@ -516,7 +516,7 @@ Get:9 http://security.debian.org/ wheezy/updates/main libsqlite3-0 amd64 3.7.13-
 Get:10 http://security.debian.org/ wheezy/updates/main gpgv amd64 1.4.12-7+deb7u8 [229 kB]
 Get:11 http://security.debian.org/ wheezy/updates/main gnupg amd64 1.4.12-7+deb7u8 [1957 kB]
 Get:12 http://security.debian.org/ wheezy/updates/main passwd amd64 1:4.1.5.1-1+deb7u1 [1262 kB]
-Get:13 http://security.debian.org/ wheezy/updates/main tzdata all 2017a-0+deb7u1 [488 kB]
+Get:13 http://security.debian.org/ wheezy/updates/main tzdata all 2017b-0+deb7u1 [488 kB]
 Get:14 http://security.debian.org/ wheezy/updates/main multiarch-support amd64 2.13-38+deb7u11 [152 kB]
 Get:15 http://security.debian.org/ wheezy/updates/main python2.7 amd64 2.7.3-6+deb7u3 [2717 kB]
 Get:16 http://security.debian.org/ wheezy/updates/main python2.7-minimal amd64 2.7.3-6+deb7u3 [1759 kB]
@@ -540,7 +540,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 21.0 MB in 27s (777 kB/s)
+Fetched 21.1 MB in 24s (847 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
 Preparing to replace bash 4.2+dfsg-0.1+deb7u3 (using .../bash_4.2+dfsg-0.1+deb7u4_amd64.deb) ...
@@ -617,10 +617,10 @@ Can not write log, openpty() failed (/dev/pts not mounted?)
 Setting up passwd (1:4.1.5.1-1+deb7u1) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
-Preparing to replace tzdata 2016d-0+deb7u1 (using .../tzdata_2017a-0+deb7u1_all.deb) ...
+Preparing to replace tzdata 2016d-0+deb7u1 (using .../tzdata_2017b-0+deb7u1_all.deb) ...
 Unpacking replacement tzdata ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
-Setting up tzdata (2017a-0+deb7u1) ...
+Setting up tzdata (2017b-0+deb7u1) ...
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
@@ -630,8 +630,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Thu Apr  6 08:56:44 UTC 2017.
-Universal Time is now:  Thu Apr  6 08:56:44 UTC 2017.
+Local time is now:      Mon Apr 10 10:14:10 UTC 2017.
+Universal Time is now:  Mon Apr 10 10:14:10 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Can not write log, openpty() failed (/dev/pts not mounted?)

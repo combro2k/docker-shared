@@ -618,7 +618,7 @@ Get:5 http://de.archive.ubuntu.com wily-updates/main amd64 Packages [284 kB]
 Get:6 http://de.archive.ubuntu.com wily-updates/universe amd64 Packages [132 kB]
 Get:7 http://de.archive.ubuntu.com wily-security/main amd64 Packages [200 kB]
 Get:8 http://de.archive.ubuntu.com wily-security/universe amd64 Packages [70.7 kB]
-Fetched 11.3 MB in 8s (1385 kB/s)
+Fetched 11.3 MB in 8s (1364 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -678,7 +678,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 23.1 MB in 20s (1103 kB/s)
+Fetched 23.1 MB in 19s (1213 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
 (Reading database ... 9724 files and directories currently installed.)
 Preparing to unpack .../dpkg_1.18.2ubuntu5.1_amd64.deb ...
@@ -810,8 +810,8 @@ debconf: (No usable dialog-like program is installed, so the dialog based fronte
 debconf: falling back to frontend: Readline
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Thu Apr  6 09:26:15 UTC 2017.
-Universal Time is now:  Thu Apr  6 09:26:15 UTC 2017.
+Local time is now:      Mon Apr 10 10:34:34 UTC 2017.
+Universal Time is now:  Mon Apr 10 10:34:34 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 (Reading database ... 9738 files and directories currently installed.)

@@ -14,10 +14,10 @@ I: Retrieving libacl1 2.2.52-3+b1
 I: Validating libacl1 2.2.52-3+b1
 I: Retrieving adduser 3.115
 I: Validating adduser 3.115
-I: Retrieving apt 1.4~rc2
-I: Validating apt 1.4~rc2
-I: Retrieving libapt-pkg5.0 1.4~rc2
-I: Validating libapt-pkg5.0 1.4~rc2
+I: Retrieving apt 1.4
+I: Validating apt 1.4
+I: Retrieving libapt-pkg5.0 1.4
+I: Validating libapt-pkg5.0 1.4
 I: Retrieving libattr1 1:2.4.47-2+b2
 I: Validating libattr1 1:2.4.47-2+b2
 I: Retrieving libaudit-common 1:2.6.7-1
@@ -32,8 +32,8 @@ I: Retrieving bash 4.4-4+b1
 I: Validating bash 4.4-4+b1
 I: Retrieving libbz2-1.0 1.0.6-8.1
 I: Validating libbz2-1.0 1.0.6-8.1
-I: Retrieving libdebconfclient0 0.226
-I: Validating libdebconfclient0 0.226
+I: Retrieving libdebconfclient0 0.227
+I: Validating libdebconfclient0 0.227
 I: Retrieving coreutils 8.26-3
 I: Validating coreutils 8.26-3
 I: Retrieving dash 0.5.8-2.4
@@ -182,16 +182,16 @@ I: Retrieving passwd 1:4.4-4
 I: Validating passwd 1:4.4-4
 I: Retrieving libsqlite3-0 3.16.2-3
 I: Validating libsqlite3-0 3.16.2-3
-I: Retrieving libsystemd0 232-19
-I: Validating libsystemd0 232-19
-I: Retrieving libudev1 232-19
-I: Validating libudev1 232-19
+I: Retrieving libsystemd0 232-22
+I: Validating libsystemd0 232-22
+I: Retrieving libudev1 232-22
+I: Validating libudev1 232-22
 I: Retrieving sysvinit-utils 2.88dsf-59.9
 I: Validating sysvinit-utils 2.88dsf-59.9
 I: Retrieving tar 1.29b-1.1
 I: Validating tar 1.29b-1.1
-I: Retrieving tzdata 2017a-1
-I: Validating tzdata 2017a-1
+I: Retrieving tzdata 2017b-1
+I: Validating tzdata 2017b-1
 I: Retrieving libustr-1.0-1 1.0.4-6
 I: Validating libustr-1.0-1 1.0.4-6
 I: Retrieving bsdutils 1:2.29.2-1
@@ -517,9 +517,9 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + /usr/bin/chroot /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Hit:1 http://ftp.nl.debian.org/debian stretch InRelease
-Get:2 http://security.debian.org stretch/updates InRelease [62.9 kB]
-Get:3 http://ftp.nl.debian.org/debian stretch-updates InRelease [88.5 kB]
-Fetched 151 kB in 5s (28.2 kB/s)
+Get:2 http://ftp.nl.debian.org/debian stretch-updates InRelease [88.5 kB]
+Get:3 http://security.debian.org stretch/updates InRelease [62.9 kB]
+Fetched 151 kB in 5s (27.0 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
