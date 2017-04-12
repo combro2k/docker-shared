@@ -519,7 +519,7 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 Hit:1 http://ftp.nl.debian.org/debian stretch InRelease
 Get:2 http://ftp.nl.debian.org/debian stretch-updates InRelease [88.5 kB]
 Get:3 http://security.debian.org stretch/updates InRelease [62.9 kB]
-Fetched 151 kB in 5s (27.0 kB/s)
+Fetched 151 kB in 5s (26.9 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
