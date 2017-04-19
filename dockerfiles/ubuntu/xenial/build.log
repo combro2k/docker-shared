@@ -602,11 +602,11 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 Hit:1 http://de.archive.ubuntu.com/ubuntu xenial InRelease
 Get:2 http://de.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]
 Get:3 http://de.archive.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
-Get:4 http://de.archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [650 kB]
-Get:5 http://de.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [571 kB]
+Get:4 http://de.archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [652 kB]
+Get:5 http://de.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [577 kB]
 Get:6 http://de.archive.ubuntu.com/ubuntu xenial-security/main amd64 Packages [308 kB]
-Get:7 http://de.archive.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [132 kB]
-Fetched 1866 kB in 5s (319 kB/s)
+Get:7 http://de.archive.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [133 kB]
+Fetched 1875 kB in 0s (2246 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -685,7 +685,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 24.5 MB in 14s (1676 kB/s)
+Fetched 24.5 MB in 4s (5044 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
 (Reading database ... 8405 files and directories currently installed.)
 Preparing to unpack .../base-files_9.4ubuntu4.4_amd64.deb ...
@@ -933,8 +933,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Apr 12 09:19:17 UTC 2017.
-Universal Time is now:  Wed Apr 12 09:19:17 UTC 2017.
+Local time is now:      Wed Apr 19 10:12:19 UTC 2017.
+Universal Time is now:  Wed Apr 19 10:12:19 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up dh-python (2.20151103ubuntu1.1) ...

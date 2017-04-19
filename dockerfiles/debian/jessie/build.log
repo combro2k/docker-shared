@@ -616,7 +616,7 @@ Get:3 http://security.debian.org jessie/updates InRelease [63.1 kB]
 Hit http://ftp.nl.debian.org jessie Release
 Get:4 http://ftp.nl.debian.org jessie/main amd64 Packages [9049 kB]
 Get:5 http://security.debian.org jessie/updates/main amd64 Packages [464 kB]
-Fetched 9738 kB in 8s (1206 kB/s)
+Fetched 9738 kB in 4s (2153 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -625,8 +625,8 @@ The following packages will be upgraded:
   libssl1.0.0 login passwd tzdata
 4 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 Need to get 2970 kB of archives.
-After this operation, 750 kB disk space will be freed.
-Get:1 http://ftp.nl.debian.org/debian/ jessie-updates/main tzdata all 2017a-0+deb8u1 [232 kB]
+After this operation, 749 kB disk space will be freed.
+Get:1 http://ftp.nl.debian.org/debian/ jessie-updates/main tzdata all 2017b-0+deb8u1 [232 kB]
 Get:2 http://security.debian.org/ jessie/updates/main login amd64 1:4.2-3+deb8u3 [721 kB]
 Get:3 http://security.debian.org/ jessie/updates/main libssl1.0.0 amd64 1.0.1t-1+deb8u6 [1047 kB]
 Get:4 http://security.debian.org/ jessie/updates/main passwd amd64 1:4.2-3+deb8u3 [970 kB]
@@ -650,7 +650,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 2970 kB in 6s (431 kB/s)
+Fetched 2970 kB in 1s (2766 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
 (Reading database ... 8449 files and directories currently installed.)
 Preparing to unpack .../login_1%3a4.2-3+deb8u3_amd64.deb ...
@@ -663,9 +663,9 @@ Preparing to unpack .../passwd_1%3a4.2-3+deb8u3_amd64.deb ...
 Unpacking passwd (1:4.2-3+deb8u3) over (1:4.2-3+deb8u1) ...
 Setting up passwd (1:4.2-3+deb8u3) ...
 (Reading database ... 8449 files and directories currently installed.)
-Preparing to unpack .../tzdata_2017a-0+deb8u1_all.deb ...
-Unpacking tzdata (2017a-0+deb8u1) over (2016j-0+deb8u1) ...
-Setting up tzdata (2017a-0+deb8u1) ...
+Preparing to unpack .../tzdata_2017b-0+deb8u1_all.deb ...
+Unpacking tzdata (2017b-0+deb8u1) over (2016j-0+deb8u1) ...
+Setting up tzdata (2017b-0+deb8u1) ...
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
@@ -675,8 +675,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Apr 12 08:46:54 UTC 2017.
-Universal Time is now:  Wed Apr 12 08:46:54 UTC 2017.
+Local time is now:      Wed Apr 19 10:02:10 UTC 2017.
+Universal Time is now:  Wed Apr 19 10:02:10 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up libssl1.0.0:amd64 (1.0.1t-1+deb8u6) ...

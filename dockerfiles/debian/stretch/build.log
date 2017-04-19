@@ -20,12 +20,12 @@ I: Retrieving libapt-pkg5.0 1.4
 I: Validating libapt-pkg5.0 1.4
 I: Retrieving libattr1 1:2.4.47-2+b2
 I: Validating libattr1 1:2.4.47-2+b2
-I: Retrieving libaudit-common 1:2.6.7-1
-I: Validating libaudit-common 1:2.6.7-1
-I: Retrieving libaudit1 1:2.6.7-1
-I: Validating libaudit1 1:2.6.7-1
-I: Retrieving base-files 9.8
-I: Validating base-files 9.8
+I: Retrieving libaudit-common 1:2.6.7-2
+I: Validating libaudit-common 1:2.6.7-2
+I: Retrieving libaudit1 1:2.6.7-2
+I: Validating libaudit1 1:2.6.7-2
+I: Retrieving base-files 9.9
+I: Validating base-files 9.9
 I: Retrieving base-passwd 3.5.43
 I: Validating base-passwd 3.5.43
 I: Retrieving bash 4.4-4+b1
@@ -68,12 +68,12 @@ I: Retrieving libexpat1 2.2.0-2
 I: Validating libexpat1 2.2.0-2
 I: Retrieving findutils 4.6.0+git+20161106-2
 I: Validating findutils 4.6.0+git+20161106-2
-I: Retrieving gcc-6-base 6.3.0-11
-I: Validating gcc-6-base 6.3.0-11
-I: Retrieving libgcc1 1:6.3.0-11
-I: Validating libgcc1 1:6.3.0-11
-I: Retrieving libstdc++6 6.3.0-11
-I: Validating libstdc++6 6.3.0-11
+I: Retrieving gcc-6-base 6.3.0-12
+I: Validating gcc-6-base 6.3.0-12
+I: Retrieving libgcc1 1:6.3.0-12
+I: Validating libgcc1 1:6.3.0-12
+I: Retrieving libstdc++6 6.3.0-12
+I: Validating libstdc++6 6.3.0-12
 I: Retrieving libc-bin 2.24-9
 I: Validating libc-bin 2.24-9
 I: Retrieving libc6 2.24-9
@@ -519,7 +519,7 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 Hit:1 http://ftp.nl.debian.org/debian stretch InRelease
 Get:2 http://ftp.nl.debian.org/debian stretch-updates InRelease [88.5 kB]
 Get:3 http://security.debian.org stretch/updates InRelease [62.9 kB]
-Fetched 151 kB in 5s (26.9 kB/s)
+Fetched 151 kB in 0s (173 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
