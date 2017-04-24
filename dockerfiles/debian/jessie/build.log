@@ -615,8 +615,8 @@ Get:2 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [17.6 kB]
 Get:3 http://security.debian.org jessie/updates InRelease [63.1 kB]
 Hit http://ftp.nl.debian.org jessie Release
 Get:4 http://ftp.nl.debian.org jessie/main amd64 Packages [9049 kB]
-Get:5 http://security.debian.org jessie/updates/main amd64 Packages [464 kB]
-Fetched 9738 kB in 4s (2153 kB/s)
+Get:5 http://security.debian.org jessie/updates/main amd64 Packages [507 kB]
+Fetched 9781 kB in 3s (2884 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -650,7 +650,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 2970 kB in 1s (2766 kB/s)
+Fetched 2970 kB in 2s (1422 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
 (Reading database ... 8449 files and directories currently installed.)
 Preparing to unpack .../login_1%3a4.2-3+deb8u3_amd64.deb ...
@@ -675,8 +675,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Apr 19 10:02:10 UTC 2017.
-Universal Time is now:  Wed Apr 19 10:02:10 UTC 2017.
+Local time is now:      Mon Apr 24 07:57:18 UTC 2017.
+Universal Time is now:  Mon Apr 24 07:57:18 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up libssl1.0.0:amd64 (1.0.1t-1+deb8u6) ...

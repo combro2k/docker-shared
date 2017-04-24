@@ -50,8 +50,8 @@ I: Retrieving dh-python 2.20170125
 I: Validating dh-python 2.20170125
 I: Retrieving diffutils 1:3.5-3
 I: Validating diffutils 1:3.5-3
-I: Retrieving distro-info-data 0.33
-I: Validating distro-info-data 0.33
+I: Retrieving distro-info-data 0.35
+I: Validating distro-info-data 0.35
 I: Retrieving dpkg 1.18.23
 I: Validating dpkg 1.18.23
 I: Retrieving e2fslibs 1.43.4-2

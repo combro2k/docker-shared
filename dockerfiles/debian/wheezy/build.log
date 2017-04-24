@@ -491,9 +491,9 @@ Get:2 http://ftp.nl.debian.org wheezy-updates Release [155 kB]
 Get:3 http://security.debian.org wheezy/updates Release.gpg [1554 B]
 Get:4 http://ftp.nl.debian.org wheezy/main amd64 Packages [7634 kB]
 Get:5 http://security.debian.org wheezy/updates Release [39.0 kB]
-Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [659 kB]
+Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [660 kB]
 Get:7 http://ftp.nl.debian.org wheezy-updates/main amd64 Packages [7481 B]
-Fetched 8497 kB in 4s (2019 kB/s)
+Fetched 8498 kB in 3s (2803 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -540,7 +540,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 21.1 MB in 23s (884 kB/s)
+Fetched 21.1 MB in 11s (1781 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
 Preparing to replace bash 4.2+dfsg-0.1+deb7u3 (using .../bash_4.2+dfsg-0.1+deb7u4_amd64.deb) ...
@@ -630,8 +630,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Apr 19 10:17:49 UTC 2017.
-Universal Time is now:  Wed Apr 19 10:17:49 UTC 2017.
+Local time is now:      Mon Apr 24 08:14:29 UTC 2017.
+Universal Time is now:  Mon Apr 24 08:14:29 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Can not write log, openpty() failed (/dev/pts not mounted?)
