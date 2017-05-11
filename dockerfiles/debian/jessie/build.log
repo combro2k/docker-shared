@@ -28,8 +28,8 @@ I: Retrieving libaudit-common 1:2.4-1
 I: Validating libaudit-common 1:2.4-1
 I: Retrieving libaudit1 1:2.4-1+b1
 I: Validating libaudit1 1:2.4-1+b1
-I: Retrieving base-files 8+deb8u7
-I: Validating base-files 8+deb8u7
+I: Retrieving base-files 8+deb8u8
+I: Validating base-files 8+deb8u8
 I: Retrieving base-passwd 3.5.37
 I: Validating base-passwd 3.5.37
 I: Retrieving bash 4.3-11+deb8u1
@@ -78,12 +78,12 @@ I: Retrieving libgcc1 1:4.9.2-10
 I: Validating libgcc1 1:4.9.2-10
 I: Retrieving libstdc++6 4.9.2-10
 I: Validating libstdc++6 4.9.2-10
-I: Retrieving libc-bin 2.19-18+deb8u7
-I: Validating libc-bin 2.19-18+deb8u7
-I: Retrieving libc6 2.19-18+deb8u7
-I: Validating libc6 2.19-18+deb8u7
-I: Retrieving multiarch-support 2.19-18+deb8u7
-I: Validating multiarch-support 2.19-18+deb8u7
+I: Retrieving libc-bin 2.19-18+deb8u9
+I: Validating libc-bin 2.19-18+deb8u9
+I: Retrieving libc6 2.19-18+deb8u9
+I: Validating libc6 2.19-18+deb8u9
+I: Retrieving multiarch-support 2.19-18+deb8u9
+I: Validating multiarch-support 2.19-18+deb8u9
 I: Retrieving gnupg 1.4.18-7+deb8u3
 I: Validating gnupg 1.4.18-7+deb8u3
 I: Retrieving gpgv 1.4.18-7+deb8u3
@@ -158,8 +158,8 @@ I: Retrieving ncurses-bin 5.9+20140913-1+b1
 I: Validating ncurses-bin 5.9+20140913-1+b1
 I: Retrieving netbase 5.3
 I: Validating netbase 5.3
-I: Retrieving libssl1.0.0 1.0.1t-1+deb8u5
-I: Validating libssl1.0.0 1.0.1t-1+deb8u5
+I: Retrieving libssl1.0.0 1.0.1t-1+deb8u6
+I: Validating libssl1.0.0 1.0.1t-1+deb8u6
 I: Retrieving libpam-modules 1.1.8-3.1+deb8u2
 I: Validating libpam-modules 1.1.8-3.1+deb8u2
 I: Retrieving libpam-modules-bin 1.1.8-3.1+deb8u2
@@ -198,26 +198,26 @@ I: Retrieving sed 4.2.2-4+deb8u1
 I: Validating sed 4.2.2-4+deb8u1
 I: Retrieving sensible-utils 0.0.9
 I: Validating sensible-utils 0.0.9
-I: Retrieving login 1:4.2-3+deb8u1
-I: Validating login 1:4.2-3+deb8u1
-I: Retrieving passwd 1:4.2-3+deb8u1
-I: Validating passwd 1:4.2-3+deb8u1
+I: Retrieving login 1:4.2-3+deb8u3
+I: Validating login 1:4.2-3+deb8u3
+I: Retrieving passwd 1:4.2-3+deb8u3
+I: Validating passwd 1:4.2-3+deb8u3
 I: Retrieving libslang2 2.3.0-2
 I: Validating libslang2 2.3.0-2
 I: Retrieving libsqlite3-0 3.8.7.1-1+deb8u2
 I: Validating libsqlite3-0 3.8.7.1-1+deb8u2
 I: Retrieving startpar 0.59-3
 I: Validating startpar 0.59-3
-I: Retrieving libsystemd0 215-17+deb8u6
-I: Validating libsystemd0 215-17+deb8u6
-I: Retrieving libudev1 215-17+deb8u6
-I: Validating libudev1 215-17+deb8u6
-I: Retrieving systemd 215-17+deb8u6
-I: Validating systemd 215-17+deb8u6
-I: Retrieving systemd-sysv 215-17+deb8u6
-I: Validating systemd-sysv 215-17+deb8u6
-I: Retrieving udev 215-17+deb8u6
-I: Validating udev 215-17+deb8u6
+I: Retrieving libsystemd0 215-17+deb8u7
+I: Validating libsystemd0 215-17+deb8u7
+I: Retrieving libudev1 215-17+deb8u7
+I: Validating libudev1 215-17+deb8u7
+I: Retrieving systemd 215-17+deb8u7
+I: Validating systemd 215-17+deb8u7
+I: Retrieving systemd-sysv 215-17+deb8u7
+I: Validating systemd-sysv 215-17+deb8u7
+I: Retrieving udev 215-17+deb8u7
+I: Validating udev 215-17+deb8u7
 I: Retrieving initscripts 2.88dsf-59
 I: Validating initscripts 2.88dsf-59
 I: Retrieving sysv-rc 2.88dsf-59
@@ -226,8 +226,8 @@ I: Retrieving sysvinit-utils 2.88dsf-59
 I: Validating sysvinit-utils 2.88dsf-59
 I: Retrieving tar 1.27.1-2+deb8u1
 I: Validating tar 1.27.1-2+deb8u1
-I: Retrieving tzdata 2016j-0+deb8u1
-I: Validating tzdata 2016j-0+deb8u1
+I: Retrieving tzdata 2017b-0+deb8u1
+I: Validating tzdata 2017b-0+deb8u1
 I: Retrieving libustr-1.0-1 1.0.4-3+b2
 I: Validating libustr-1.0-1 1.0.4-3+b2
 I: Retrieving bsdutils 1:2.25.2-6
@@ -583,7 +583,7 @@ I: Base system installed successfully.
 + rootfs_chroot dpkg-divert --local --rename --add /sbin/initctl
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 + /usr/bin/chroot /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs dpkg-divert --local --rename --add /sbin/initctl
-Leaving 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
+Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + cp -a /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/usr/sbin/policy-rc.d /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/sbin/initctl
 + sed -i 's/^exit.*/exit 0/' /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/sbin/initctl
 + rootfs_chroot apt-get clean
@@ -610,87 +610,18 @@ Leaving 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + apt-get update
 Ign http://ftp.nl.debian.org jessie InRelease
 Get:1 http://ftp.nl.debian.org jessie-updates InRelease [145 kB]
-Get:2 http://security.debian.org jessie/updates InRelease [63.1 kB]
 Hit http://ftp.nl.debian.org jessie Release.gpg
 Hit http://ftp.nl.debian.org jessie Release
-Get:3 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [17.6 kB]
-Get:4 http://security.debian.org jessie/updates/main amd64 Packages [508 kB]
-Get:5 http://ftp.nl.debian.org jessie/main amd64 Packages [9049 kB]
-Fetched 9783 kB in 2s (3415 kB/s)
+Get:2 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [17.6 kB]
+Get:3 http://security.debian.org jessie/updates InRelease [63.1 kB]
+Get:4 http://ftp.nl.debian.org jessie/main amd64 Packages [9065 kB]
+Get:5 http://security.debian.org jessie/updates/main amd64 Packages [509 kB]
+Fetched 9800 kB in 3s (2914 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
-Reading state information...
-The following packages will be upgraded:
-  libssl1.0.0 login passwd tzdata
-4 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 2970 kB of archives.
-After this operation, 749 kB disk space will be freed.
-Get:1 http://ftp.nl.debian.org/debian/ jessie-updates/main tzdata all 2017b-0+deb8u1 [232 kB]
-Get:2 http://security.debian.org/ jessie/updates/main login amd64 1:4.2-3+deb8u3 [721 kB]
-Get:3 http://security.debian.org/ jessie/updates/main libssl1.0.0 amd64 1.0.1t-1+deb8u6 [1047 kB]
-Get:4 http://security.debian.org/ jessie/updates/main passwd amd64 1:4.2-3+deb8u3 [970 kB]
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_TIME = "nl_NL.UTF-8",
-	LC_MONETARY = "nl_NL.UTF-8",
-	LC_ADDRESS = "nl_NL.UTF-8",
-	LC_TELEPHONE = "nl_NL.UTF-8",
-	LC_NAME = "nl_NL.UTF-8",
-	LC_MEASUREMENT = "nl_NL.UTF-8",
-	LC_IDENTIFICATION = "nl_NL.UTF-8",
-	LC_NUMERIC = "nl_NL.UTF-8",
-	LC_PAPER = "nl_NL.UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to the standard locale ("C").
-locale: Cannot set LC_CTYPE to default locale: No such file or directory
-locale: Cannot set LC_MESSAGES to default locale: No such file or directory
-locale: Cannot set LC_ALL to default locale: No such file or directory
-debconf: delaying package configuration, since apt-utils is not installed
-Fetched 2970 kB in 1s (2540 kB/s)
-E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
-(Reading database ... 8449 files and directories currently installed.)
-Preparing to unpack .../login_1%3a4.2-3+deb8u3_amd64.deb ...
-Unpacking login (1:4.2-3+deb8u3) over (1:4.2-3+deb8u1) ...
-Setting up login (1:4.2-3+deb8u3) ...
-(Reading database ... 8449 files and directories currently installed.)
-Preparing to unpack .../libssl1.0.0_1.0.1t-1+deb8u6_amd64.deb ...
-Unpacking libssl1.0.0:amd64 (1.0.1t-1+deb8u6) over (1.0.1t-1+deb8u5) ...
-Preparing to unpack .../passwd_1%3a4.2-3+deb8u3_amd64.deb ...
-Unpacking passwd (1:4.2-3+deb8u3) over (1:4.2-3+deb8u1) ...
-Setting up passwd (1:4.2-3+deb8u3) ...
-(Reading database ... 8449 files and directories currently installed.)
-Preparing to unpack .../tzdata_2017b-0+deb8u1_all.deb ...
-Unpacking tzdata (2017b-0+deb8u1) over (2016j-0+deb8u1) ...
-Setting up tzdata (2017b-0+deb8u1) ...
-locale: Cannot set LC_ALL to default locale: No such file or directory
-debconf: unable to initialize frontend: Dialog
-debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
-debconf: falling back to frontend: Teletype
-
-Current default time zone: 'Etc/UTC'
-Local time is now:      Thu May  4 08:54:09 UTC 2017.
-Universal Time is now:  Thu May  4 08:54:09 UTC 2017.
-Run 'dpkg-reconfigure tzdata' if you wish to change it.
-
-Setting up libssl1.0.0:amd64 (1.0.1t-1+deb8u6) ...
-locale: Cannot set LC_CTYPE to default locale: No such file or directory
-locale: Cannot set LC_MESSAGES to default locale: No such file or directory
-locale: Cannot set LC_ALL to default locale: No such file or directory
-debconf: unable to initialize frontend: Dialog
-debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
-debconf: falling back to frontend: Teletype
-Processing triggers for libc-bin (2.19-18+deb8u7) ...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 + rm -rf /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release.gpg /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_InRelease /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/lock /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_InRelease /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_main_binary-amd64_Packages.gz
 + mkdir /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial
 + curl -sL https://github.com/krallin/tini/releases/download/v0.14.0/tini-static -o /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini

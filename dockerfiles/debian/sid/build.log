@@ -3,7 +3,6 @@
 I: Retrieving InRelease 
 I: Checking Release signature
 I: Valid Release signature (key id 126C0D24BD8A2942CC7DF8AC7638D0442B90D010)
-I: Retrieving Packages 
 I: Validating Packages 
 I: Resolving dependencies of required packages...
 I: Resolving dependencies of base packages...
@@ -14,10 +13,10 @@ I: Retrieving libacl1 2.2.52-3+b1
 I: Validating libacl1 2.2.52-3+b1
 I: Retrieving adduser 3.115
 I: Validating adduser 3.115
-I: Retrieving apt 1.4.1
-I: Validating apt 1.4.1
-I: Retrieving libapt-pkg5.0 1.4.1
-I: Validating libapt-pkg5.0 1.4.1
+I: Retrieving apt 1.4.2
+I: Validating apt 1.4.2
+I: Retrieving libapt-pkg5.0 1.4.2
+I: Validating libapt-pkg5.0 1.4.2
 I: Retrieving libattr1 1:2.4.47-2+b2
 I: Validating libattr1 1:2.4.47-2+b2
 I: Retrieving libaudit-common 1:2.6.7-2
@@ -70,20 +69,20 @@ I: Retrieving findutils 4.6.0+git+20161106-2
 I: Validating findutils 4.6.0+git+20161106-2
 I: Retrieving gcc-5-base 5.4.1-8
 I: Validating gcc-5-base 5.4.1-8
-I: Retrieving gcc-6-base 6.3.0-16
-I: Validating gcc-6-base 6.3.0-16
-I: Retrieving libgcc1 1:6.3.0-16
-I: Validating libgcc1 1:6.3.0-16
-I: Retrieving libstdc++6 6.3.0-16
-I: Validating libstdc++6 6.3.0-16
+I: Retrieving gcc-6-base 6.3.0-17
+I: Validating gcc-6-base 6.3.0-17
+I: Retrieving libgcc1 1:6.3.0-17
+I: Validating libgcc1 1:6.3.0-17
+I: Retrieving libstdc++6 6.3.0-17
+I: Validating libstdc++6 6.3.0-17
 I: Retrieving libc-bin 2.24-10
 I: Validating libc-bin 2.24-10
 I: Retrieving libc6 2.24-10
 I: Validating libc6 2.24-10
 I: Retrieving multiarch-support 2.24-10
 I: Validating multiarch-support 2.24-10
-I: Retrieving gpgv 2.1.18-6
-I: Validating gpgv 2.1.18-6
+I: Retrieving gpgv 2.1.18-8
+I: Validating gpgv 2.1.18-8
 I: Retrieving grep 2.27-2
 I: Validating grep 2.27-2
 I: Retrieving gzip 1.6-5+b1
@@ -184,10 +183,10 @@ I: Retrieving passwd 1:4.4-4
 I: Validating passwd 1:4.4-4
 I: Retrieving libsqlite3-0 3.16.2-3
 I: Validating libsqlite3-0 3.16.2-3
-I: Retrieving libsystemd0 232-22
-I: Validating libsystemd0 232-22
-I: Retrieving libudev1 232-22
-I: Validating libudev1 232-22
+I: Retrieving libsystemd0 232-23
+I: Validating libsystemd0 232-23
+I: Retrieving libudev1 232-23
+I: Validating libudev1 232-23
 I: Retrieving sysvinit-utils 2.88dsf-59.9
 I: Validating sysvinit-utils 2.88dsf-59.9
 I: Retrieving tar 1.29b-1.1
