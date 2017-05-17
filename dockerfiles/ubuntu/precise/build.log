@@ -604,7 +604,7 @@ Get:11 http://de.archive.ubuntu.com precise/main amd64 Packages [1640 kB]
 Get:12 http://de.archive.ubuntu.com precise/universe amd64 Packages [6167 kB]
 Get:13 http://de.archive.ubuntu.com precise/main i386 Packages [1641 kB]
 Get:14 http://de.archive.ubuntu.com precise/universe i386 Packages [6180 kB]
-Fetched 19.8 MB in 3s (6210 kB/s)
+Fetched 19.8 MB in 4s (4631 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -711,7 +711,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 30.0 MB in 4s (6155 kB/s)
+Fetched 30.0 MB in 6s (4723 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 8208 files and directories currently installed.)
 Preparing to replace base-files 6.5ubuntu6 (using .../base-files_6.5ubuntu6.8_amd64.deb) ...
@@ -826,8 +826,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Thu May 11 12:26:15 UTC 2017.
-Universal Time is now:  Thu May 11 12:26:15 UTC 2017.
+Local time is now:      Wed May 17 10:17:16 UTC 2017.
+Universal Time is now:  Wed May 17 10:17:16 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Can not write log, openpty() failed (/dev/pts not mounted?)

@@ -182,10 +182,10 @@ I: Retrieving passwd 1:4.4-4
 I: Validating passwd 1:4.4-4
 I: Retrieving libsqlite3-0 3.16.2-3
 I: Validating libsqlite3-0 3.16.2-3
-I: Retrieving libsystemd0 232-22
-I: Validating libsystemd0 232-22
-I: Retrieving libudev1 232-22
-I: Validating libudev1 232-22
+I: Retrieving libsystemd0 232-23
+I: Validating libsystemd0 232-23
+I: Retrieving libudev1 232-23
+I: Validating libudev1 232-23
 I: Retrieving sysvinit-utils 2.88dsf-59.9
 I: Validating sysvinit-utils 2.88dsf-59.9
 I: Retrieving tar 1.29b-1.1
@@ -519,7 +519,7 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 Hit:1 http://ftp.nl.debian.org/debian stretch InRelease
 Get:2 http://ftp.nl.debian.org/debian stretch-updates InRelease [88.5 kB]
 Get:3 http://security.debian.org stretch/updates InRelease [62.9 kB]
-Fetched 151 kB in 0s (425 kB/s)
+Fetched 151 kB in 0s (202 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
