@@ -1,8 +1,10 @@
 + mkdir -p /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs
 + debootstrap --components=main,beta --variant=minbase --include=inetutils-ping,iproute,lsb-release,procps,python3 --force-check-gpg stretch /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs http://ftp.nl.debian.org/debian
 I: Retrieving InRelease 
+I: Retrieving Release 
+I: Retrieving Release.gpg 
 I: Checking Release signature
-I: Valid Release signature (key id 126C0D24BD8A2942CC7DF8AC7638D0442B90D010)
+I: Valid Release signature (key id 75DDC3C4A499F1A18CB5F3C8CBF8D6FD518E17E1)
 I: Retrieving Packages 
 I: Validating Packages 
 I: Resolving dependencies of required packages...
@@ -14,10 +16,10 @@ I: Retrieving libacl1 2.2.52-3+b1
 I: Validating libacl1 2.2.52-3+b1
 I: Retrieving adduser 3.115
 I: Validating adduser 3.115
-I: Retrieving apt 1.4.1
-I: Validating apt 1.4.1
-I: Retrieving libapt-pkg5.0 1.4.1
-I: Validating libapt-pkg5.0 1.4.1
+I: Retrieving apt 1.4.6
+I: Validating apt 1.4.6
+I: Retrieving libapt-pkg5.0 1.4.6
+I: Validating libapt-pkg5.0 1.4.6
 I: Retrieving libattr1 1:2.4.47-2+b2
 I: Validating libattr1 1:2.4.47-2+b2
 I: Retrieving libaudit-common 1:2.6.7-2
@@ -28,8 +30,8 @@ I: Retrieving base-files 9.9
 I: Validating base-files 9.9
 I: Retrieving base-passwd 3.5.43
 I: Validating base-passwd 3.5.43
-I: Retrieving bash 4.4-4+b2
-I: Validating bash 4.4-4+b2
+I: Retrieving bash 4.4-5
+I: Validating bash 4.4-5
 I: Retrieving libbz2-1.0 1.0.6-8.1
 I: Validating libbz2-1.0 1.0.6-8.1
 I: Retrieving libdebconfclient0 0.227
@@ -40,20 +42,20 @@ I: Retrieving dash 0.5.8-2.4
 I: Validating dash 0.5.8-2.4
 I: Retrieving libdb5.3 5.3.28-12+b1
 I: Validating libdb5.3 5.3.28-12+b1
-I: Retrieving debconf 1.5.60
-I: Validating debconf 1.5.60
-I: Retrieving debian-archive-keyring 2014.3
-I: Validating debian-archive-keyring 2014.3
-I: Retrieving debianutils 4.8.1
-I: Validating debianutils 4.8.1
+I: Retrieving debconf 1.5.61
+I: Validating debconf 1.5.61
+I: Retrieving debian-archive-keyring 2017.5
+I: Validating debian-archive-keyring 2017.5
+I: Retrieving debianutils 4.8.1.1
+I: Validating debianutils 4.8.1.1
 I: Retrieving dh-python 2.20170125
 I: Validating dh-python 2.20170125
 I: Retrieving diffutils 1:3.5-3
 I: Validating diffutils 1:3.5-3
-I: Retrieving distro-info-data 0.35
-I: Validating distro-info-data 0.35
-I: Retrieving dpkg 1.18.23
-I: Validating dpkg 1.18.23
+I: Retrieving distro-info-data 0.36
+I: Validating distro-info-data 0.36
+I: Retrieving dpkg 1.18.24
+I: Validating dpkg 1.18.24
 I: Retrieving e2fslibs 1.43.4-2
 I: Validating e2fslibs 1.43.4-2
 I: Retrieving e2fsprogs 1.43.4-2
@@ -62,24 +64,24 @@ I: Retrieving libcomerr2 1.43.4-2
 I: Validating libcomerr2 1.43.4-2
 I: Retrieving libss2 1.43.4-2
 I: Validating libss2 1.43.4-2
-I: Retrieving libelf1 0.168-0.2
-I: Validating libelf1 0.168-0.2
+I: Retrieving libelf1 0.168-1
+I: Validating libelf1 0.168-1
 I: Retrieving libexpat1 2.2.0-2
 I: Validating libexpat1 2.2.0-2
 I: Retrieving findutils 4.6.0+git+20161106-2
 I: Validating findutils 4.6.0+git+20161106-2
-I: Retrieving gcc-6-base 6.3.0-16
-I: Validating gcc-6-base 6.3.0-16
-I: Retrieving libgcc1 1:6.3.0-16
-I: Validating libgcc1 1:6.3.0-16
-I: Retrieving libstdc++6 6.3.0-16
-I: Validating libstdc++6 6.3.0-16
-I: Retrieving libc-bin 2.24-10
-I: Validating libc-bin 2.24-10
-I: Retrieving libc6 2.24-10
-I: Validating libc6 2.24-10
-I: Retrieving multiarch-support 2.24-10
-I: Validating multiarch-support 2.24-10
+I: Retrieving gcc-6-base 6.3.0-18
+I: Validating gcc-6-base 6.3.0-18
+I: Retrieving libgcc1 1:6.3.0-18
+I: Validating libgcc1 1:6.3.0-18
+I: Retrieving libstdc++6 6.3.0-18
+I: Validating libstdc++6 6.3.0-18
+I: Retrieving libc-bin 2.24-11
+I: Validating libc-bin 2.24-11
+I: Retrieving libc6 2.24-11
+I: Validating libc6 2.24-11
+I: Retrieving multiarch-support 2.24-11
+I: Validating multiarch-support 2.24-11
 I: Retrieving gpgv 2.1.18-6
 I: Validating gpgv 2.1.18-6
 I: Retrieving grep 2.27-2
@@ -98,8 +100,8 @@ I: Retrieving iproute2 4.9.0-1
 I: Validating iproute2 4.9.0-1
 I: Retrieving libcap-ng0 0.7.7-3+b1
 I: Validating libcap-ng0 0.7.7-3+b1
-I: Retrieving libgcrypt20 1.7.6-1
-I: Validating libgcrypt20 1.7.6-1
+I: Retrieving libgcrypt20 1.7.6-2
+I: Validating libgcrypt20 1.7.6-2
 I: Retrieving libgpg-error0 1.26-2
 I: Validating libgpg-error0 1.26-2
 I: Retrieving libmnl0 1.0.4-2
@@ -136,20 +138,20 @@ I: Retrieving ncurses-bin 6.0+20161126-1
 I: Validating ncurses-bin 6.0+20161126-1
 I: Retrieving netbase 5.4
 I: Validating netbase 5.4
-I: Retrieving libssl1.1 1.1.0e-1
-I: Validating libssl1.1 1.1.0e-1
-I: Retrieving libpam-modules 1.1.8-3.5
-I: Validating libpam-modules 1.1.8-3.5
-I: Retrieving libpam-modules-bin 1.1.8-3.5
-I: Validating libpam-modules-bin 1.1.8-3.5
-I: Retrieving libpam-runtime 1.1.8-3.5
-I: Validating libpam-runtime 1.1.8-3.5
-I: Retrieving libpam0g 1.1.8-3.5
-I: Validating libpam0g 1.1.8-3.5
+I: Retrieving libssl1.1 1.1.0f-3
+I: Validating libssl1.1 1.1.0f-3
+I: Retrieving libpam-modules 1.1.8-3.6
+I: Validating libpam-modules 1.1.8-3.6
+I: Retrieving libpam-modules-bin 1.1.8-3.6
+I: Validating libpam-modules-bin 1.1.8-3.6
+I: Retrieving libpam-runtime 1.1.8-3.6
+I: Validating libpam-runtime 1.1.8-3.6
+I: Retrieving libpam0g 1.1.8-3.6
+I: Validating libpam0g 1.1.8-3.6
 I: Retrieving libpcre3 2:8.39-3
 I: Validating libpcre3 2:8.39-3
-I: Retrieving perl-base 5.24.1-2
-I: Validating perl-base 5.24.1-2
+I: Retrieving perl-base 5.24.1-3
+I: Validating perl-base 5.24.1-3
 I: Retrieving libprocps6 2:3.3.12-3
 I: Validating libprocps6 2:3.3.12-3
 I: Retrieving procps 2:3.3.12-3
@@ -168,24 +170,24 @@ I: Retrieving python3.5 3.5.3-1
 I: Validating python3.5 3.5.3-1
 I: Retrieving python3.5-minimal 3.5.3-1
 I: Validating python3.5-minimal 3.5.3-1
-I: Retrieving libreadline7 7.0-2
-I: Validating libreadline7 7.0-2
-I: Retrieving readline-common 7.0-2
-I: Validating readline-common 7.0-2
+I: Retrieving libreadline7 7.0-3
+I: Validating libreadline7 7.0-3
+I: Retrieving readline-common 7.0-3
+I: Validating readline-common 7.0-3
 I: Retrieving sed 4.4-1
 I: Validating sed 4.4-1
 I: Retrieving sensible-utils 0.0.9
 I: Validating sensible-utils 0.0.9
-I: Retrieving login 1:4.4-4
-I: Validating login 1:4.4-4
-I: Retrieving passwd 1:4.4-4
-I: Validating passwd 1:4.4-4
-I: Retrieving libsqlite3-0 3.16.2-3
-I: Validating libsqlite3-0 3.16.2-3
-I: Retrieving libsystemd0 232-23
-I: Validating libsystemd0 232-23
-I: Retrieving libudev1 232-23
-I: Validating libudev1 232-23
+I: Retrieving login 1:4.4-4.1
+I: Validating login 1:4.4-4.1
+I: Retrieving passwd 1:4.4-4.1
+I: Validating passwd 1:4.4-4.1
+I: Retrieving libsqlite3-0 3.16.2-5
+I: Validating libsqlite3-0 3.16.2-5
+I: Retrieving libsystemd0 232-25
+I: Validating libsystemd0 232-25
+I: Retrieving libudev1 232-25
+I: Validating libudev1 232-25
 I: Retrieving sysvinit-utils 2.88dsf-59.9
 I: Validating sysvinit-utils 2.88dsf-59.9
 I: Retrieving tar 1.29b-1.1
@@ -516,19 +518,83 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 + /usr/bin/chroot /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
-Hit:1 http://ftp.nl.debian.org/debian stretch InRelease
-Get:2 http://ftp.nl.debian.org/debian stretch-updates InRelease [88.5 kB]
-Get:3 http://security.debian.org stretch/updates InRelease [62.9 kB]
-Fetched 151 kB in 0s (202 kB/s)
+Ign:1 http://ftp.nl.debian.org/debian stretch InRelease
+Get:2 http://security.debian.org stretch/updates InRelease [62.9 kB]
+Get:3 http://ftp.nl.debian.org/debian stretch-updates InRelease [88.5 kB]
+Hit:4 http://ftp.nl.debian.org/debian stretch Release
+Get:5 http://security.debian.org stretch/updates/main amd64 Packages [64.9 kB]
+Fetched 216 kB in 0s (508 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
 Calculating upgrade...
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-+ rm -rf /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_stretch_InRelease /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_stretch_main_binary-amd64_Packages /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_stretch-updates_InRelease /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/lock /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/partial /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/security.debian.org_dists_stretch_updates_InRelease
+The following packages will be upgraded:
+  libc-bin libc6 libexpat1 libgcrypt20 multiarch-support
+5 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 4278 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 http://security.debian.org stretch/updates/main amd64 libc6 amd64 2.24-11+deb9u1 [2695 kB]
+Get:2 http://security.debian.org stretch/updates/main amd64 libc-bin amd64 2.24-11+deb9u1 [778 kB]
+Get:3 http://security.debian.org stretch/updates/main amd64 multiarch-support amd64 2.24-11+deb9u1 [200 kB]
+Get:4 http://security.debian.org stretch/updates/main amd64 libgcrypt20 amd64 1.7.6-2+deb9u1 [522 kB]
+Get:5 http://security.debian.org stretch/updates/main amd64 libexpat1 amd64 2.2.0-2+deb9u1 [83.4 kB]
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.utf8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 4278 kB in 1s (2479 kB/s)
+E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
+(Reading database ... 7596 files and directories currently installed.)
+Preparing to unpack .../libc6_2.24-11+deb9u1_amd64.deb ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.24.1 /usr/local/share/perl/5.24.1 /usr/lib/x86_64-linux-gnu/perl5/5.24 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.24 /usr/share/perl/5.24 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Unpacking libc6:amd64 (2.24-11+deb9u1) over (2.24-11) ...
+Setting up libc6:amd64 (2.24-11+deb9u1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.24.1 /usr/local/share/perl/5.24.1 /usr/lib/x86_64-linux-gnu/perl5/5.24 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.24 /usr/share/perl/5.24 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+(Reading database ... 7596 files and directories currently installed.)
+Preparing to unpack .../libc-bin_2.24-11+deb9u1_amd64.deb ...
+Unpacking libc-bin (2.24-11+deb9u1) over (2.24-11) ...
+Setting up libc-bin (2.24-11+deb9u1) ...
+Updating /etc/nsswitch.conf to current default.
+(Reading database ... 7596 files and directories currently installed.)
+Preparing to unpack .../multiarch-support_2.24-11+deb9u1_amd64.deb ...
+Unpacking multiarch-support (2.24-11+deb9u1) over (2.24-11) ...
+Setting up multiarch-support (2.24-11+deb9u1) ...
+(Reading database ... 7596 files and directories currently installed.)
+Preparing to unpack .../libgcrypt20_1.7.6-2+deb9u1_amd64.deb ...
+Unpacking libgcrypt20:amd64 (1.7.6-2+deb9u1) over (1.7.6-2) ...
+Setting up libgcrypt20:amd64 (1.7.6-2+deb9u1) ...
+(Reading database ... 7596 files and directories currently installed.)
+Preparing to unpack .../libexpat1_2.2.0-2+deb9u1_amd64.deb ...
+Unpacking libexpat1:amd64 (2.2.0-2+deb9u1) over (2.2.0-2) ...
+Setting up libexpat1:amd64 (2.2.0-2+deb9u1) ...
+Processing triggers for libc-bin (2.24-11+deb9u1) ...
++ rm -rf /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_stretch_main_binary-amd64_Packages /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_stretch_Release /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_stretch_Release.gpg /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_stretch-updates_InRelease /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/lock /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/partial /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/security.debian.org_dists_stretch_updates_InRelease /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/security.debian.org_dists_stretch_updates_main_binary-amd64_Packages.lz4
 + mkdir /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/download/v0.14.0/tini-static -o /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/usr/bin/tini
++ curl -sL https://github.com/krallin/tini/releases/download/v0.15.0/tini-static -o /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/usr/bin/tini
 + chmod +x /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs/usr/bin/tini
 + tar --numeric-owner --create --auto-compress --file /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs.tar.xz --directory /home/mma/project/docker-shared/dockerfiles/debian/stretch/rootfs '--transform=s,^./,,' .
 + cat > '/home/mma/project/docker-shared/dockerfiles/debian/stretch/Dockerfile'

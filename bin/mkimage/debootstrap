@@ -241,6 +241,6 @@ fi
 
 (
 	set -x
-	curl -sL 'https://github.com/krallin/tini/releases/download/v0.14.0/tini-static' -o "$rootfsDir/usr/bin/tini"
+	curl -sL 'https://github.com/krallin/tini/releases/download/v0.15.0/tini-static' -o "$rootfsDir/usr/bin/tini"
 	chmod +x "$rootfsDir/usr/bin/tini"
 )

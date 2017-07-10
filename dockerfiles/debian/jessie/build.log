@@ -583,7 +583,7 @@ I: Base system installed successfully.
 + rootfs_chroot dpkg-divert --local --rename --add /sbin/initctl
 + PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 + /usr/bin/chroot /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs dpkg-divert --local --rename --add /sbin/initctl
-Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
+Leaving 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + cp -a /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/usr/sbin/policy-rc.d /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/sbin/initctl
 + sed -i 's/^exit.*/exit 0/' /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/sbin/initctl
 + rootfs_chroot apt-get clean
@@ -609,22 +609,115 @@ Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
 + /usr/bin/chroot /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs sh -xc 'apt-get update && apt-get dist-upgrade -y'
 + apt-get update
 Ign http://ftp.nl.debian.org jessie InRelease
-Get:1 http://ftp.nl.debian.org jessie-updates InRelease [145 kB]
+Get:1 http://security.debian.org jessie/updates InRelease [63.1 kB]
+Get:2 http://ftp.nl.debian.org jessie-updates InRelease [145 kB]
+Get:3 http://security.debian.org jessie/updates/main amd64 Packages [524 kB]
 Hit http://ftp.nl.debian.org jessie Release.gpg
-Get:2 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [17.6 kB]
-Get:3 http://security.debian.org jessie/updates InRelease [63.1 kB]
+Get:4 http://ftp.nl.debian.org jessie-updates/main amd64 Packages [17.8 kB]
 Hit http://ftp.nl.debian.org jessie Release
-Get:4 http://ftp.nl.debian.org jessie/main amd64 Packages [9065 kB]
-Get:5 http://security.debian.org jessie/updates/main amd64 Packages [511 kB]
-Fetched 9802 kB in 3s (3242 kB/s)
+Get:5 http://ftp.nl.debian.org jessie/main amd64 Packages [9065 kB]
+Fetched 9815 kB in 2s (3591 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
 Building dependency tree...
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading state information...
+The following packages will be upgraded:
+  debian-archive-keyring libc-bin libc6 libexpat1 libffi6 libgcrypt20 login
+  multiarch-support passwd perl-base
+10 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 9595 kB of archives.
+After this operation, 39.9 kB of additional disk space will be used.
+Get:1 http://ftp.nl.debian.org/debian/ jessie-updates/main debian-archive-keyring all 2017.5~deb8u1 [56.7 kB]
+Get:2 http://security.debian.org/ jessie/updates/main login amd64 1:4.2-3+deb8u4 [722 kB]
+Get:3 http://security.debian.org/ jessie/updates/main perl-base amd64 5.20.2-3+deb8u7 [1227 kB]
+Get:4 http://security.debian.org/ jessie/updates/main libc-bin amd64 2.19-18+deb8u10 [1281 kB]
+Get:5 http://security.debian.org/ jessie/updates/main libc6 amd64 2.19-18+deb8u10 [4665 kB]
+Get:6 http://security.debian.org/ jessie/updates/main libgcrypt20 amd64 1.6.3-2+deb8u4 [392 kB]
+Get:7 http://security.debian.org/ jessie/updates/main libexpat1 amd64 2.1.0-6+deb8u4 [80.2 kB]
+Get:8 http://security.debian.org/ jessie/updates/main libffi6 amd64 3.1-2+deb8u1 [20.2 kB]
+Get:9 http://security.debian.org/ jessie/updates/main multiarch-support amd64 2.19-18+deb8u10 [181 kB]
+Get:10 http://security.debian.org/ jessie/updates/main passwd amd64 1:4.2-3+deb8u4 [971 kB]
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.utf8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 9595 kB in 6s (1543 kB/s)
+E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
+(Reading database ... 8452 files and directories currently installed.)
+Preparing to unpack .../login_1%3a4.2-3+deb8u4_amd64.deb ...
+Unpacking login (1:4.2-3+deb8u4) over (1:4.2-3+deb8u3) ...
+Setting up login (1:4.2-3+deb8u4) ...
+(Reading database ... 8452 files and directories currently installed.)
+Preparing to unpack .../perl-base_5.20.2-3+deb8u7_amd64.deb ...
+Unpacking perl-base (5.20.2-3+deb8u7) over (5.20.2-3+deb8u6) ...
+Setting up perl-base (5.20.2-3+deb8u7) ...
+(Reading database ... 8452 files and directories currently installed.)
+Preparing to unpack .../libc-bin_2.19-18+deb8u10_amd64.deb ...
+Unpacking libc-bin (2.19-18+deb8u10) over (2.19-18+deb8u9) ...
+Setting up libc-bin (2.19-18+deb8u10) ...
+(Reading database ... 8452 files and directories currently installed.)
+Preparing to unpack .../libc6_2.19-18+deb8u10_amd64.deb ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Unpacking libc6:amd64 (2.19-18+deb8u10) over (2.19-18+deb8u9) ...
+Setting up libc6:amd64 (2.19-18+deb8u10) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Processing triggers for libc-bin (2.19-18+deb8u10) ...
+(Reading database ... 8452 files and directories currently installed.)
+Preparing to unpack .../libgcrypt20_1.6.3-2+deb8u4_amd64.deb ...
+Unpacking libgcrypt20:amd64 (1.6.3-2+deb8u4) over (1.6.3-2+deb8u2) ...
+Setting up libgcrypt20:amd64 (1.6.3-2+deb8u4) ...
+Processing triggers for libc-bin (2.19-18+deb8u10) ...
+(Reading database ... 8452 files and directories currently installed.)
+Preparing to unpack .../libexpat1_2.1.0-6+deb8u4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-6+deb8u4) over (2.1.0-6+deb8u3) ...
+Preparing to unpack .../libffi6_3.1-2+deb8u1_amd64.deb ...
+Unpacking libffi6:amd64 (3.1-2+deb8u1) over (3.1-2+b2) ...
+Preparing to unpack .../debian-archive-keyring_2017.5~deb8u1_all.deb ...
+Unpacking debian-archive-keyring (2017.5~deb8u1) over (2014.3) ...
+Setting up debian-archive-keyring (2017.5~deb8u1) ...
+Removing obsolete conffile /etc/apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg ...
+Removing obsolete conffile /etc/apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg ...
+(Reading database ... 8452 files and directories currently installed.)
+Preparing to unpack .../multiarch-support_2.19-18+deb8u10_amd64.deb ...
+Unpacking multiarch-support (2.19-18+deb8u10) over (2.19-18+deb8u9) ...
+Setting up multiarch-support (2.19-18+deb8u10) ...
+(Reading database ... 8452 files and directories currently installed.)
+Preparing to unpack .../passwd_1%3a4.2-3+deb8u4_amd64.deb ...
+Unpacking passwd (1:4.2-3+deb8u4) over (1:4.2-3+deb8u3) ...
+Setting up passwd (1:4.2-3+deb8u4) ...
+Setting up libexpat1:amd64 (2.1.0-6+deb8u4) ...
+Setting up libffi6:amd64 (3.1-2+deb8u1) ...
+Processing triggers for libc-bin (2.19-18+deb8u10) ...
 + rm -rf /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie_Release.gpg /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_InRelease /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_jessie-updates_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/lock /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_InRelease /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/security.debian.org_dists_jessie_updates_main_binary-amd64_Packages.gz
 + mkdir /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/download/v0.14.0/tini-static -o /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini
++ curl -sL https://github.com/krallin/tini/releases/download/v0.15.0/tini-static -o /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini
 + chmod +x /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs/usr/bin/tini
 + tar --numeric-owner --create --auto-compress --file /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs.tar.xz --directory /home/mma/project/docker-shared/dockerfiles/debian/jessie/rootfs '--transform=s,^./,,' .
 + cat > '/home/mma/project/docker-shared/dockerfiles/debian/jessie/Dockerfile'

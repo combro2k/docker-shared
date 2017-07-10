@@ -596,7 +596,7 @@ Get:5 http://de.archive.ubuntu.com vivid-updates/main amd64 Packages [321 kB]
 Get:6 http://de.archive.ubuntu.com vivid-updates/universe amd64 Packages [179 kB]
 Get:7 http://de.archive.ubuntu.com vivid-security/main amd64 Packages [202 kB]
 Get:8 http://de.archive.ubuntu.com vivid-security/universe amd64 Packages [97.3 kB]
-Fetched 11.1 MB in 5s (2175 kB/s)
+Fetched 11.1 MB in 4s (2447 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -650,11 +650,11 @@ perl: warning: Please check that your locale settings:
 	LC_IDENTIFICATION = "nl_NL.UTF-8",
 	LC_NUMERIC = "nl_NL.UTF-8",
 	LC_PAPER = "nl_NL.UTF-8",
-	LANG = "en_US.UTF-8"
+	LANG = "en_US.utf8"
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 15.3 MB in 17s (855 kB/s)
+Fetched 15.3 MB in 11s (1296 kB/s)
 E: Can not write log (Is /dev/pts mounted?) - posix_openpt (19: No such device)
 (Reading database ... 8386 files and directories currently installed.)
 Preparing to unpack .../bsdutils_1%3a2.25.2-4ubuntu3_amd64.deb ...
@@ -692,8 +692,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Ter
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed May 17 09:59:40 UTC 2017.
-Universal Time is now:  Wed May 17 09:59:40 UTC 2017.
+Local time is now:      Fri Jul  7 15:05:08 UTC 2017.
+Universal Time is now:  Fri Jul  7 15:05:08 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 (Reading database ... 8389 files and directories currently installed.)
@@ -799,7 +799,7 @@ Setting up iproute (1:3.16.0-2ubuntu1.1) ...
 Processing triggers for libc-bin (2.21-0ubuntu4) ...
 + rm -rf /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid_InRelease /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-security_InRelease /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-security_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-security_universe_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid_universe_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-updates_InRelease /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-updates_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_vivid-updates_universe_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/lock /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/partial
 + mkdir /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/download/v0.14.0/tini-static -o /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/bin/tini
++ curl -sL https://github.com/krallin/tini/releases/download/v0.15.0/tini-static -o /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/bin/tini
 + chmod +x /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs/usr/bin/tini
 + tar --numeric-owner --create --auto-compress --file /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs.tar.xz --directory /home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/rootfs '--transform=s,^./,,' .
 + cat > '/home/mma/project/docker-shared/dockerfiles/ubuntu/vivid/Dockerfile'

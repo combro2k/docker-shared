@@ -604,7 +604,7 @@ Get:11 http://de.archive.ubuntu.com precise/main amd64 Packages [1640 kB]
 Get:12 http://de.archive.ubuntu.com precise/universe amd64 Packages [6167 kB]
 Get:13 http://de.archive.ubuntu.com precise/main i386 Packages [1641 kB]
 Get:14 http://de.archive.ubuntu.com precise/universe i386 Packages [6180 kB]
-Fetched 19.8 MB in 4s (4631 kB/s)
+Fetched 19.8 MB in 5s (3655 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -707,11 +707,11 @@ perl: warning: Please check that your locale settings:
 	LC_IDENTIFICATION = "nl_NL.UTF-8",
 	LC_NUMERIC = "nl_NL.UTF-8",
 	LC_PAPER = "nl_NL.UTF-8",
-	LANG = "en_US.UTF-8"
+	LANG = "en_US.utf8"
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 30.0 MB in 6s (4723 kB/s)
+Fetched 30.0 MB in 5s (5852 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 8208 files and directories currently installed.)
 Preparing to replace base-files 6.5ubuntu6 (using .../base-files_6.5ubuntu6.8_amd64.deb) ...
@@ -826,8 +826,8 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed May 17 10:17:16 UTC 2017.
-Universal Time is now:  Wed May 17 10:17:16 UTC 2017.
+Local time is now:      Fri Jul  7 15:18:51 UTC 2017.
+Universal Time is now:  Fri Jul  7 15:18:51 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Can not write log, openpty() failed (/dev/pts not mounted?)
@@ -1149,7 +1149,7 @@ ldconfig deferred processing now taking place
 Processing triggers for initramfs-tools ...
 + rm -rf /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise_main_binary-i386_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise_Release /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise_Release.gpg /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise-security_InRelease /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise-security_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise-security_main_binary-i386_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise-security_universe_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise-security_universe_binary-i386_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise_universe_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise_universe_binary-i386_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise-updates_InRelease /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise-updates_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise-updates_main_binary-i386_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise-updates_universe_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/de.archive.ubuntu.com_ubuntu_dists_precise-updates_universe_binary-i386_Packages.gz /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/lock /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/partial
 + mkdir /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/download/v0.14.0/tini-static -o /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/usr/bin/tini
++ curl -sL https://github.com/krallin/tini/releases/download/v0.15.0/tini-static -o /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/usr/bin/tini
 + chmod +x /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs/usr/bin/tini
 + tar --numeric-owner --create --auto-compress --file /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs.tar.xz --directory /home/mma/project/docker-shared/dockerfiles/ubuntu/precise/rootfs '--transform=s,^./,,' .
 + cat > '/home/mma/project/docker-shared/dockerfiles/ubuntu/precise/Dockerfile'

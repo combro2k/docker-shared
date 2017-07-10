@@ -488,12 +488,12 @@ Hit http://ftp.nl.debian.org wheezy Release.gpg
 Get:1 http://ftp.nl.debian.org wheezy-updates Release.gpg [1554 B]
 Hit http://ftp.nl.debian.org wheezy Release
 Get:2 http://ftp.nl.debian.org wheezy-updates Release [155 kB]
-Get:3 http://security.debian.org wheezy/updates Release.gpg [1554 B]
-Get:4 http://ftp.nl.debian.org wheezy/main amd64 Packages [7634 kB]
+Get:3 http://ftp.nl.debian.org wheezy/main amd64 Packages [7634 kB]
+Get:4 http://security.debian.org wheezy/updates Release.gpg [1554 B]
 Get:5 http://security.debian.org wheezy/updates Release [39.0 kB]
-Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [670 kB]
+Get:6 http://security.debian.org wheezy/updates/main amd64 Packages [683 kB]
 Get:7 http://ftp.nl.debian.org wheezy-updates/main amd64 Packages [7481 B]
-Fetched 8508 kB in 2s (3166 kB/s)
+Fetched 8522 kB in 2s (2850 kB/s)
 Reading package lists...
 + apt-get dist-upgrade -y
 Reading package lists...
@@ -502,22 +502,22 @@ The following packages will be upgraded:
   bash gnupg gpgv libc-bin libc6 libexpat1 libsqlite3-0 libssl1.0.0 login
   multiarch-support passwd perl-base python2.7 python2.7-minimal tar tzdata
 16 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 21.1 MB of archives.
-After this operation, 1022 kB of additional disk space will be used.
+Need to get 20.9 MB of archives.
+After this operation, 836 kB of additional disk space will be used.
 Get:1 http://security.debian.org/ wheezy/updates/main bash amd64 4.2+dfsg-0.1+deb7u4 [1499 kB]
 Get:2 http://security.debian.org/ wheezy/updates/main login amd64 1:4.1.5.1-1+deb7u1 [984 kB]
-Get:3 http://security.debian.org/ wheezy/updates/main perl-base amd64 5.14.2-21+deb7u4 [1522 kB]
+Get:3 http://security.debian.org/ wheezy/updates/main perl-base amd64 5.14.2-21+deb7u5 [1534 kB]
 Get:4 http://security.debian.org/ wheezy/updates/main tar amd64 1.26+dfsg-0.1+deb7u1 [984 kB]
-Get:5 http://security.debian.org/ wheezy/updates/main libc-bin amd64 2.13-38+deb7u11 [1275 kB]
-Get:6 http://security.debian.org/ wheezy/updates/main libc6 amd64 2.13-38+deb7u11 [4352 kB]
+Get:5 http://security.debian.org/ wheezy/updates/main libc-bin amd64 2.13-38+deb7u12 [1275 kB]
+Get:6 http://security.debian.org/ wheezy/updates/main libc6 amd64 2.13-38+deb7u12 [4226 kB]
 Get:7 http://security.debian.org/ wheezy/updates/main libssl1.0.0 amd64 1.0.1t-1+deb7u2 [1278 kB]
-Get:8 http://security.debian.org/ wheezy/updates/main libexpat1 amd64 2.1.0-1+deb7u4 [139 kB]
+Get:8 http://security.debian.org/ wheezy/updates/main libexpat1 amd64 2.1.0-1+deb7u5 [139 kB]
 Get:9 http://security.debian.org/ wheezy/updates/main libsqlite3-0 amd64 3.7.13-1+deb7u3 [455 kB]
 Get:10 http://security.debian.org/ wheezy/updates/main gpgv amd64 1.4.12-7+deb7u8 [229 kB]
 Get:11 http://security.debian.org/ wheezy/updates/main gnupg amd64 1.4.12-7+deb7u8 [1957 kB]
 Get:12 http://security.debian.org/ wheezy/updates/main passwd amd64 1:4.1.5.1-1+deb7u1 [1262 kB]
 Get:13 http://security.debian.org/ wheezy/updates/main tzdata all 2017b-0+deb7u1 [488 kB]
-Get:14 http://security.debian.org/ wheezy/updates/main multiarch-support amd64 2.13-38+deb7u11 [152 kB]
+Get:14 http://security.debian.org/ wheezy/updates/main multiarch-support amd64 2.13-38+deb7u12 [152 kB]
 Get:15 http://security.debian.org/ wheezy/updates/main python2.7 amd64 2.7.3-6+deb7u3 [2717 kB]
 Get:16 http://security.debian.org/ wheezy/updates/main python2.7-minimal amd64 2.7.3-6+deb7u3 [1759 kB]
 perl: warning: Setting locale failed.
@@ -533,14 +533,14 @@ perl: warning: Please check that your locale settings:
 	LC_IDENTIFICATION = "nl_NL.UTF-8",
 	LC_NUMERIC = "nl_NL.UTF-8",
 	LC_PAPER = "nl_NL.UTF-8",
-	LANG = "en_US.UTF-8"
+	LANG = "en_US.utf8"
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 21.1 MB in 11s (1883 kB/s)
+Fetched 20.9 MB in 7s (2978 kB/s)
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
 Preparing to replace bash 4.2+dfsg-0.1+deb7u3 (using .../bash_4.2+dfsg-0.1+deb7u4_amd64.deb) ...
@@ -556,10 +556,10 @@ Can not write log, openpty() failed (/dev/pts not mounted?)
 Setting up login (1:4.1.5.1-1+deb7u1) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
-Preparing to replace perl-base 5.14.2-21+deb7u3 (using .../perl-base_5.14.2-21+deb7u4_amd64.deb) ...
+Preparing to replace perl-base 5.14.2-21+deb7u3 (using .../perl-base_5.14.2-21+deb7u5_amd64.deb) ...
 Unpacking replacement perl-base ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
-Setting up perl-base (5.14.2-21+deb7u4) ...
+Setting up perl-base (5.14.2-21+deb7u5) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
 Preparing to replace tar 1.26+dfsg-0.1 (using .../tar_1.26+dfsg-0.1+deb7u1_amd64.deb) ...
@@ -569,13 +569,13 @@ Can not write log, openpty() failed (/dev/pts not mounted?)
 Setting up tar (1.26+dfsg-0.1+deb7u1) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
-Preparing to replace libc-bin 2.13-38+deb7u10 (using .../libc-bin_2.13-38+deb7u11_amd64.deb) ...
+Preparing to replace libc-bin 2.13-38+deb7u10 (using .../libc-bin_2.13-38+deb7u12_amd64.deb) ...
 Unpacking replacement libc-bin ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
-Setting up libc-bin (2.13-38+deb7u11) ...
+Setting up libc-bin (2.13-38+deb7u12) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
-Preparing to replace libc6:amd64 2.13-38+deb7u10 (using .../libc6_2.13-38+deb7u11_amd64.deb) ...
+Preparing to replace libc6:amd64 2.13-38+deb7u10 (using .../libc6_2.13-38+deb7u12_amd64.deb) ...
 debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
 debconf: falling back to frontend: Readline
@@ -584,7 +584,7 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 Unpacking replacement libc6:amd64 ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
-Setting up libc6:amd64 (2.13-38+deb7u11) ...
+Setting up libc6:amd64 (2.13-38+deb7u12) ...
 debconf: unable to initialize frontend: Dialog
 debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
 debconf: falling back to frontend: Readline
@@ -595,7 +595,7 @@ Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7677 files and directories currently installed.)
 Preparing to replace libssl1.0.0:amd64 1.0.1e-2+deb7u20 (using .../libssl1.0.0_1.0.1t-1+deb7u2_amd64.deb) ...
 Unpacking replacement libssl1.0.0:amd64 ...
-Preparing to replace libexpat1:amd64 2.1.0-1+deb7u2 (using .../libexpat1_2.1.0-1+deb7u4_amd64.deb) ...
+Preparing to replace libexpat1:amd64 2.1.0-1+deb7u2 (using .../libexpat1_2.1.0-1+deb7u5_amd64.deb) ...
 Unpacking replacement libexpat1:amd64 ...
 Preparing to replace libsqlite3-0:amd64 3.7.13-1+deb7u2 (using .../libsqlite3-0_3.7.13-1+deb7u3_amd64.deb) ...
 Unpacking replacement libsqlite3-0:amd64 ...
@@ -630,16 +630,16 @@ debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/l
 debconf: falling back to frontend: Teletype
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed May 17 09:54:04 UTC 2017.
-Universal Time is now:  Wed May 17 09:54:04 UTC 2017.
+Local time is now:      Fri Jul  7 15:00:05 UTC 2017.
+Universal Time is now:  Fri Jul  7 15:00:05 UTC 2017.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7692 files and directories currently installed.)
-Preparing to replace multiarch-support 2.13-38+deb7u10 (using .../multiarch-support_2.13-38+deb7u11_amd64.deb) ...
+Preparing to replace multiarch-support 2.13-38+deb7u10 (using .../multiarch-support_2.13-38+deb7u12_amd64.deb) ...
 Unpacking replacement multiarch-support ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
-Setting up multiarch-support (2.13-38+deb7u11) ...
+Setting up multiarch-support (2.13-38+deb7u12) ...
 Can not write log, openpty() failed (/dev/pts not mounted?)
 (Reading database ... 7692 files and directories currently installed.)
 Preparing to replace python2.7 2.7.3-6+deb7u2 (using .../python2.7_2.7.3-6+deb7u3_amd64.deb) ...
@@ -657,13 +657,13 @@ debconf: falling back to frontend: Readline
 debconf: unable to initialize frontend: Readline
 debconf: (Can't locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
 debconf: falling back to frontend: Teletype
-Setting up libexpat1:amd64 (2.1.0-1+deb7u4) ...
+Setting up libexpat1:amd64 (2.1.0-1+deb7u5) ...
 Setting up libsqlite3-0:amd64 (3.7.13-1+deb7u3) ...
 Setting up python2.7-minimal (2.7.3-6+deb7u3) ...
 Setting up python2.7 (2.7.3-6+deb7u3) ...
 + rm -rf /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy_Release.gpg /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/ftp.nl.debian.org_debian_dists_wheezy-updates_Release.gpg /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/lock /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_main_binary-amd64_Packages.gz /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/security.debian.org_dists_wheezy_updates_Release.gpg
 + mkdir /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/var/lib/apt/lists/partial
-+ curl -sL https://github.com/krallin/tini/releases/download/v0.14.0/tini-static -o /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
++ curl -sL https://github.com/krallin/tini/releases/download/v0.15.0/tini-static -o /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
 + chmod +x /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs/usr/bin/tini
 + tar --numeric-owner --create --auto-compress --file /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs.tar.xz --directory /home/mma/project/docker-shared/dockerfiles/debian/wheezy/rootfs '--transform=s,^./,,' .
 + cat > '/home/mma/project/docker-shared/dockerfiles/debian/wheezy/Dockerfile'
